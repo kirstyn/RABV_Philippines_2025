@@ -1,0 +1,46 @@
+id	notes	correction	correction made
+98-134	"fasta filename and header missing ""z-"" from beginning"	fasta renamed 	3-Jul-25
+98-206	"fasta filename and header missing ""z-"" from beginning"	fasta renamed 	3-Jul-25
+98-285	"fasta filename and header missing ""z-"" from beginning"	fasta renamed 	3-Jul-25
+98-286	"fasta filename and header missing ""z-"" from beginning"	fasta renamed 	3-Jul-25
+98-335	"fasta filename and header missing ""z-"" from beginning"	fasta renamed 	3-Jul-25
+C	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+E	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+H-21-002	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+H-21-005	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+H-22-006	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+H-23-011Sk_12	Named 'H-23-011Sk12' in metadata	metadata renamed in line with majority of format other sample labels	3-Jul-25
+H-23-032	rabv_4b_2024_run1 metadata not uploaded yet		
+H-23-050	rabv_4b_2024_run1 metadata not uploaded yet		
+H-25-18-1	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+H-25-18-2	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+NC-CDNA	rabv_4b_2024_run1 metadata not uploaded yet		
+NC-LIB	rabv_4b_2024_run1 metadata not uploaded yet		
+NFW4_1.	from 2022 seq not in metadata and also '.' in name but its not important as negative control sample	partial fix- removed '.' from filename	
+P	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+R5-09	from 2021 sequencing but can't see metadata issue		
+R5-22-40	rabv_4b_2024_run1 metadata not uploaded yet		
+R5-22-51	rabv_4b_2024_run1 metadata not uploaded yet		
+R5-22-54	rabv_4b_2024_run1 metadata not uploaded yet		
+R5-22-62	rabv_4b_2024_run1 metadata not uploaded yet		
+R5-22-65	rabv_4b_2024_run1 metadata not uploaded yet		
+R5-22-66	rabv_4b_2024_run1 metadata not uploaded yet		
+R5-KILLUA-B	rabv_4b_2024_run1 metadata not uploaded yet		
+R5-KILLUA-S	rabv_4b_2024_run1 metadata not uploaded yet		
+RADDL4B-23-103	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+RADDL4B-24-009	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+RADDL4B-24-014	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+RADDL4B-24-018	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+RADDL4B-24-097	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+RADDL4B-24-098	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+RADDL4B-24-099	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+RADDL4B-24-147	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+RADDL4B-24-148	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+RADDL4B-24-150	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+RADDL4B-24-151	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+RADDL4B-24-185	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+RADDL4B-24-186	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+RADDL4B-24-187	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+RADDL4B-24-188	rabv_4b_2025_r10_run4 metadata not uploaded yet		
+Z-23-092	rabv_4b_2024_run1 metadata not uploaded yet		
+Z-25-021	rabv_4b_2025_r10_run4 metadata not uploaded yet		
