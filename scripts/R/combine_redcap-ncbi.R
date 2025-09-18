@@ -9,7 +9,7 @@ source("scripts/redcap-getMetadata.R")
 # redcap data = 'df_phl_90'
 
 # ncbi dataset (pulled from vgtk)
-ncbi <- read.csv("raw_data/150725_metadata_coverage_90_country_Philippines.csv")
+ncbi <- read.csv("raw_data/vgtk_ncbi_data/150725_metadata_coverage_90_country_Philippines.csv")
 
 # Remove sequences excluded by VGTK
 ncbi_filt <- ncbi %>%
@@ -30,11 +30,11 @@ ncbi_otherseq <- ncbi %>%
   )
 
 # 412 sequences
-write.csv(ncbi_otherseq,paste0("philippines/processed_data/combined_redcap-ncbi/",format(Sys.time(), "%Y%m%d"),"_filtered_ncbi.csv"),row.names=F)
+write.csv(ncbi_otherseq,paste0("processed_data/processed_metadata/",format(Sys.time(), "%Y%m%d"),"_filtered_ncbi.csv"),row.names=F)
 
 # SEQUENCES
 # now filter the sequences to same set
-ncbi_seq <- read.fasta("philippines/raw_data/150725_metadata_coverage_90_country_Philippines_sequences.fa")
+ncbi_seq <- read.fasta("raw_data/vgtk_ncbi_data/150725_metadata_coverage_90_country_Philippines_sequences.fa")
 
 # Keep only sequences in ncbi_otherseq and not in typo list
 keep_samples <- ncbi_otherseq$primary_accession[!ncbi_otherseq$isolate %in% manual_remove]
@@ -46,12 +46,12 @@ ncbi_seq_filtered <- ncbi_seq[names(ncbi_seq) %in% keep_samples]
 write.fasta(
   sequences = ncbi_seq_filtered,
   names = names(ncbi_seq_filtered),
-  file.out = paste0("philippines/processed_data/combined_redcap-ncbi/",format(Sys.time(), "%Y%m%d"),"_filtered_ncbi_sequences.fasta")
+  file.out = paste0("processed_data/processed_sequences/",format(Sys.time(), "%Y%m%d"),"_filtered_ncbi_sequences.fasta")
 )
 
 # JOIN DATASETS
 # Join redcap and ncbi data (metadata + sequences) 
-redcap_seq=read.fasta("philippines/processed_data/redcap_sequences_and_metadata/redcap_download_20250814_1219_all_seq.fasta")
+redcap_seq=read.fasta("processed_data/redcap_sequences_and_metadata/redcap_download_20250814_1219_all_seq.fasta")
 
 # Combine them
 combined_seq <- c(redcap_seq, ncbi_seq_filtered)

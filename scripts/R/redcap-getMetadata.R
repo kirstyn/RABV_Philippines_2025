@@ -76,7 +76,7 @@ df_phl_90 <- df_phl %>%
 # 
 # # Create an output folder named with the current date/time
 # 
-# output_dir <- file.path("processed_data/redcap_sequences_and_metadata/", paste0("redcap_download_", format(Sys.time(), "%Y%m%d_%H%M")))
+# output_dir <- file.path("raw_data/redcap_sequences_and_metadata/", paste0("redcap_download_", format(Sys.time(), "%Y%m%d_%H%M")))
 # dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
 # # Write the associated metadata there too
 # write.csv(df_phl_90, paste0(output_dir, format(Sys.time(), "%Y%m%d_%H%M"),"redcap_meta_phl.csv"), row.names=F)

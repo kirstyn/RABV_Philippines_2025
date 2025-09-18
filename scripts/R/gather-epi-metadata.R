@@ -81,7 +81,7 @@ speedier <- speedier %>%
   slice(1:171)
 
 # vgtk (NCBI metadata)
-vgtk <- read.csv("raw_data/gathered_epi_metadata/metadata_coverage_90_country_Philippines.csv") %>%
+vgtk <- read.csv("processed_data/processed_metadata/20250917_filtered_ncbi.csv") %>%
   mutate(Source = "vgtk")
 
 # Essel/REDCap
@@ -234,9 +234,10 @@ dup_rows     # full rows to check
 # -----------------------------
 # Create timestamp
 timestamp <- format(Sys.time(), "%Y%m%d_%H%M%S")
+records <- nrow(phylo_meta)
 
 # Build filename with timestamp
-outfile <- paste0("processed_data/processed_metadata/gathered_metadata_n823_", timestamp, ".csv")
+outfile <- paste0("processed_data/processed_metadata/gathered_metadata_n", records,"_",timestamp, ".csv")
 
 # Write file
 write.csv(phylo_meta, outfile, row.names = FALSE)
