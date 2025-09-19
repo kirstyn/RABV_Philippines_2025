@@ -5,7 +5,7 @@ library(dplyr)
 library(lubridate)
 library(gsheet)
 library(tibble)
-
+library(stringr)
 # -----------------------------
 # Create empty phylo_meta template
 # -----------------------------
@@ -23,6 +23,7 @@ phylo_meta <- data.frame(
   Latitude = numeric(),
   Longitude = numeric(),
   Source = character(),
+  Genome_coverage = numeric(),
   stringsAsFactors = FALSE
 )
 
@@ -75,10 +76,10 @@ map_and_clean <- function(df, col_map, template = phylo_meta) {
 genomics_link <- "https://docs.google.com/spreadsheets/d/1o9Ykf__3YTs33tqczZahjwmcnOEve90uw-AkduzDWXU/edit?gid=469362849#gid=469362849"
 speedier <- gsheet2tbl(genomics_link) %>%
   rename(Host = Source) %>%
-  mutate(Source = "speedier", Region = "MIMIROPA")
-## TEMPORARY FIX to get rid of primer optimisation results 
-speedier <- speedier %>% 
-  slice(1:171)
+  mutate(Source = "speedier", Region = "MIMIROPA") %>%
+  mutate(`% coverage (nonMasked)` = `% coverage (nonMasked)`/ 100) %>%
+  filter(`% coverage (nonMasked)` >= 0.9)
+
 
 # vgtk (NCBI metadata)
 vgtk <- read.csv("processed_data/processed_metadata/20250917_filtered_ncbi.csv") %>%
@@ -86,7 +87,8 @@ vgtk <- read.csv("processed_data/processed_metadata/20250917_filtered_ncbi.csv")
 
 # Essel/REDCap
 mydata <- read.csv("raw_data/gathered_epi_metadata/ph_redcap_2024.v1.csv") %>%
-  mutate(Source = "phd")
+  mutate(Source = "phd") %>%
+  mutate(Isolate.ID = str_replace(Isolate.ID, "H-23-011Sk12", "H-23-011Sk_12")) #corrects common typo
 
 # Zhang 2025 paper
 zhang <- read.csv("raw_data/gathered_epi_metadata/zhang2025/Supplementary Table 3.csv")
@@ -157,7 +159,8 @@ speedier_col_map <- c(
   "Longitude" = "Longitude",
   "Host" = "Host",
   "Date_collected" = "Preferred_date",
-  "Source" = "Source"
+  "Source" = "Source",
+  "% coverage (nonMasked)" = "Genome_coverage"
 )
 
 vgtk_col_map <- c(
@@ -167,7 +170,8 @@ vgtk_col_map <- c(
   "host" = "Host",
   "collection_date" = "Preferred_date",
   "Source" = "Source",
-  "primary_accession" = "Accession"
+  "primary_accession" = "Accession",
+  "coverage" = "Genome_coverage"
 )
 
 mydata_col_map <- c(
@@ -209,14 +213,16 @@ phylo_meta <- bind_rows(
 # Check result
 # -----------------------------
 head(phylo_meta)
+dim(phylo_meta)
 
 # -----------------------------
 # Check for duplicate Sample_id in phylo_meta
 # -----------------------------
 
 # Find duplicates
-dup_ids <- phylo_meta %>%
-  count(Sample_ID) %>%
+phylo_meta %>%
+  group_by(Sample_ID = .data[["Sample_ID"]]) %>%
+  tally() %>%
   filter(n > 1) %>%
   pull(Sample_ID)
 

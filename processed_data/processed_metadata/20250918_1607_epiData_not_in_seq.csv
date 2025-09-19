@@ -1,0 +1,16 @@
+"Sample_ID","Case_no","Accession","Host","Sample_type","Preferred_date","Barangay","Municipality","Province","Region","Latitude","Longitude","Source","Genome_coverage"
+"RADDL4B-23-065","M-4",NA,"Dog",NA,"23-Oct-2023","Laylay","Boac","Marinduque","MIMIROPA",13.43668126,121.8203817,"speedier",0.9717566209
+"RADDL4B-24-162-D","OM-75",NA,"Dog",NA,"27-Sep-2024","Ilaya","Calapan City","Or. Mindoro","MIMIROPA",13.41158277,121.1938885,"speedier",0.9878478042
+"RADDL4B-24-184-C","M-135",NA,"Dog",NA,"19-Nov-2024","Bangbang","Gasan","Marinduque","MIMIROPA",13.343593,121.838409,"speedier",0.9887696949
+"H-23-011Sk_12",NA,NA,"Homo sapiens",NA,"02-Feb-2023","Concepcion Sur","Santa Maria","Romblon","Southwestern Tagalog Region ",12.40310216,122.0836566,"phd",NA
+"Z-04-664",NA,NA,"Canis familiaris",NA,"15-Dec-2004","Lower Bicutan","Taguig","Metropolitan Manila","National Capital Region",14.51469695,121.0660524,"phd",NA
+"Z-07-22",NA,NA,"Canis familiaris",NA,"23-Jan-2007","Tierra Nevada","Amadeo","Cavite","Calabarzon",14.187281,120.9251442,"phd",NA
+"Z-07-222",NA,NA,"Canis familiaris",NA,"30-Jun-2007","Dagatan","General Trias","Cavite","Calabarzon",14.32966619,120.8999068,"phd",NA
+"Z-12-034",NA,NA,"Canis familiaris",NA,"06-Feb-2012","Bgy. Santo Anghel","San Pablo City ","Laguna","Calabarzon",14.05146733,121.3315598,"phd",NA
+"Z-13-037",NA,NA,"Canis familiaris",NA,"25-Feb-2013","-","Cavinti","Laguna","Calabarzon",14.24291032,121.5551642,"phd",NA
+"Z-98-134",NA,NA,"Canis familiaris",NA,"09-Feb-1998","Sampaloc   Homes","Dasmariñas","Cavite","Calabarzon",14.31850325,120.9657797,"phd",NA
+"Z-98-206",NA,NA,"Canis familiaris",NA,"02-Mar-1998","Bagongbayan","Santa Cruz","Laguna","Calabarzon",14.26443013,121.4040122,"phd",NA
+"Z-98-335",NA,NA,"Canis familiaris",NA,"01-Apr-1998","-","Nagcarlan","Laguna","Calabarzon",14.14027602,121.4032743,"phd",NA
+"Z-98-667",NA,NA,"Canis familiaris",NA,"29-Jun-1998","Mayapa","Calamba City","Laguna","Calabarzon",14.18862277,121.1242055,"phd",NA
+"Z-98-712",NA,NA,"Canis familiaris",NA,"11-Jul-1998","Macantod","Siniloan","Laguna","Calabarzon",14.43714914,121.4867785,"phd",NA
+"Z-98-823",NA,NA,"Canis familiaris",NA,"05-Aug-1998","Tejero","General Trias","Cavite","Calabarzon",14.32966619,120.8999068,"phd",NA

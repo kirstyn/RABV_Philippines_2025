@@ -17,7 +17,7 @@ ncbi_filt <- ncbi %>%
 
 # Filter ncbi data to remove records already in redcap
 # Note that there are later sequencing instances for samples on ncbi that have improved coverage/quality, so prefer to use these new versions rather than ncbi version
-# Therefore, search by isolate ID to remove, instead of accession id
+#Therefore, search by isolate ID to remove, instead of accession id
 
 # manually remove samples that won't match due to sampleid typos (known issue for 4 samples)
 manual_remove <- c("Z15-185", "Z14-152", "Z14-142", "Z12-012")

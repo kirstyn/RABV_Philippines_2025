@@ -1,0 +1,16 @@
+Sample_ID,Case_no,Accession,Host,Sample_type,Preferred_date,Barangay,Municipality,Province,Region,Latitude,Longitude,Source,Genome_coverage,Problem
+RADDL4B-23-065,M-4,NA,Dog,NA,23-Oct-23,Laylay,Boac,Marinduque,MIMIROPA,13.43668126,121.8203817,speedier,0.971756621,Latest instance not on redcap
+RADDL4B-24-162-D,OM-75,NA,Dog,NA,27-Sep-24,Ilaya,Calapan City,Or. Mindoro,MIMIROPA,13.41158277,121.1938885,speedier,0.987847804,Latest instance not on redcap and appended letter means no match
+RADDL4B-24-184-C,M-135,NA,Dog,NA,19-Nov-24,Bangbang,Gasan,Marinduque,MIMIROPA,13.343593,121.838409,speedier,0.988769695,Latest instance not on redcap and appended letter means no match
+H-23-011Sk12,NA,NA,Homo sapiens,NA,2-Feb-23,Concepcion Sur,Santa Maria,Romblon,Southwestern Tagalog Region ,12.40310216,122.0836566,phd,NA,Called H-23-011Sk_12 in redcap
+Z-04-664,NA,NA,Canis familiaris,NA,15-Dec-04,Lower Bicutan,Taguig,Metropolitan Manila,National Capital Region,14.51469695,121.0660524,phd,NA,Less than 90% cov
+Z-07-22,NA,NA,Canis familiaris,NA,23-Jan-07,Tierra Nevada,Amadeo,Cavite,Calabarzon,14.187281,120.9251442,phd,NA,Less than 90% cov
+Z-07-222,NA,NA,Canis familiaris,NA,30-Jun-07,Dagatan,General Trias,Cavite,Calabarzon,14.32966619,120.8999068,phd,NA,Less than 90% cov
+Z-12-034,NA,NA,Canis familiaris,NA,6-Feb-12,Bgy. Santo Anghel,San Pablo City ,Laguna,Calabarzon,14.05146733,121.3315598,phd,NA,Less than 90% cov
+Z-13-037,NA,NA,Canis familiaris,NA,25-Feb-13,-,Cavinti,Laguna,Calabarzon,14.24291032,121.5551642,phd,NA,Less than 90% cov
+Z-98-134,NA,NA,Canis familiaris,NA,9-Feb-98,Sampaloc   Homes,Dasmariñas,Cavite,Calabarzon,14.31850325,120.9657797,phd,NA,Less than 90% cov
+Z-98-206,NA,NA,Canis familiaris,NA,2-Mar-98,Bagongbayan,Santa Cruz,Laguna,Calabarzon,14.26443013,121.4040122,phd,NA,Less than 90% cov
+Z-98-335,NA,NA,Canis familiaris,NA,1-Apr-98,-,Nagcarlan,Laguna,Calabarzon,14.14027602,121.4032743,phd,NA,Less than 90% cov
+Z-98-667,NA,NA,Canis familiaris,NA,29-Jun-98,Mayapa,Calamba City,Laguna,Calabarzon,14.18862277,121.1242055,phd,NA,Less than 90% cov
+Z-98-712,NA,NA,Canis familiaris,NA,11-Jul-98,Macantod,Siniloan,Laguna,Calabarzon,14.43714914,121.4867785,phd,NA,Less than 90% cov
+Z-98-823,NA,NA,Canis familiaris,NA,5-Aug-98,Tejero,General Trias,Cavite,Calabarzon,14.32966619,120.8999068,phd,NA,Less than 90% cov
