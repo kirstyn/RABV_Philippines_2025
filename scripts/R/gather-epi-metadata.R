@@ -16,6 +16,7 @@ phylo_meta <- data.frame(
   Host = character(),
   Sample_type = character(),
   Preferred_date = character(),  # store as day-month-year string
+  Date_source = character(),
   Barangay = character(),
   Municipality = character(),
   Province = character(),
@@ -23,6 +24,8 @@ phylo_meta <- data.frame(
   Latitude = numeric(),
   Longitude = numeric(),
   Source = character(),
+  Author = character(),
+  Pubmed= numeric(),
   Genome_coverage = numeric(),
   stringsAsFactors = FALSE
 )
@@ -76,22 +79,54 @@ map_and_clean <- function(df, col_map, template = phylo_meta) {
 genomics_link <- "https://docs.google.com/spreadsheets/d/1o9Ykf__3YTs33tqczZahjwmcnOEve90uw-AkduzDWXU/edit?gid=469362849#gid=469362849"
 speedier <- gsheet2tbl(genomics_link) %>%
   rename(Host = Source) %>%
-  mutate(Source = "speedier", Region = "MIMIROPA") %>%
+  # Remove duplicated sample first
+  filter(sample_id != "RADDL4B-24-184") %>%
+  mutate(Source = "speedier", Region = "MIMIROPA",
+  # Correct typos in sample IDs
+  sample_id = case_when(
+    sample_id == "RADDL4B-24-184-C" ~ "RADDL4B-24-184",
+    sample_id == "RADDL4B-24-162-D" ~ "RADDL4B-24-162",
+    TRUE ~ sample_id
+  )) %>%
   mutate(`% coverage (nonMasked)` = `% coverage (nonMasked)`/ 100) %>%
-  filter(`% coverage (nonMasked)` >= 0.9)
+  filter(`% coverage (nonMasked)` >= 0.9) %>%
+  mutate(Date_source = "date_collected") 
+  
 
 
 # vgtk (NCBI metadata)
 vgtk <- read.csv("processed_data/processed_metadata/20250917_filtered_ncbi.csv") %>%
-  mutate(Source = "vgtk")
+  mutate(Source = "vgtk")%>%
+  mutate(Date_source = "date_collected")
 
 # Essel/REDCap
 mydata <- read.csv("raw_data/gathered_epi_metadata/ph_redcap_2024.v1.csv") %>%
   mutate(Source = "phd") %>%
-  mutate(Isolate.ID = str_replace(Isolate.ID, "H-23-011Sk12", "H-23-011Sk_12")) #corrects common typo
+  mutate(Isolate.ID = str_replace(Isolate.ID, "H-23-011Sk12", "H-23-011Sk_12")) %>% #corrects common typo
+mutate(Date_source = "date_collected")
 
 # Zhang 2025 paper
-zhang <- read.csv("raw_data/gathered_epi_metadata/zhang2025/Supplementary Table 3.csv")
+zhang <- read.csv("raw_data/gathered_epi_metadata/zhang2025/Supplementary Table 3.csv")%>%
+  mutate(Date_source = "date_collected")
+
+# 2018 workshop trip data
+workshop <- read.csv("raw_data/gathered_epi_metadata/2018_workshop/2018_sequenced_collated_epi.csv")%>%
+  mutate(Date_source = "date_collected")%>%
+  mutate(across(
+    c(lab_date, Date_sorted, Date_tested),
+    ~ format(parse_date_time(., orders = c("mdy", "dmy")), "%d-%b-%Y"),
+    .names = "{.col}_std"
+  ))%>%
+  mutate(
+    Preferred_date = coalesce(lab_date_std, Date_sorted_std, Date_tested_std),
+    Date_source = case_when(
+      !is.na(lab_date_std) ~ "lab_date",
+      !is.na(Date_sorted_std) ~ "Date_sorted",
+      !is.na(Date_tested_std) ~ "Date_tested",
+      TRUE ~ NA_character_
+    )
+  )%>%
+  mutate(Source="2018_workshop")
 
 # -----------------------------
 # Check for duplicates of mydata in vgtk
@@ -107,6 +142,28 @@ if(length(common_key) > 0) {
       vgtk %>%
         select(isolate, primary_accession),
       by = c("Isolate.ID" = "isolate")
+    ) %>%
+    rename(Accession = primary_accession)
+  
+  # Remove the duplicates from vgtk
+  vgtk <- vgtk %>%
+    filter(!isolate %in% common_key)
+}
+# -----------------------------
+# Check for duplicates of workshop in vgtk
+# -----------------------------
+
+# Ensure both datasets have a common key for matching
+common_key <- intersect(workshop$sample_id, vgtk$isolate)
+
+if (length(common_key) > 0) {
+  
+  # For matched samples, add Accession from vgtk to workshop
+  workshop <- workshop %>%
+    left_join(
+      vgtk %>%
+        select(isolate, primary_accession),
+      by = c("sample_id" = "isolate")
     ) %>%
     rename(Accession = primary_accession)
   
@@ -145,6 +202,59 @@ if(length(common_key) > 0) {
 }
 
 # -----------------------------
+# Check for duplicates of speedier in workshop
+# -----------------------------
+
+# Identify common sample IDs
+common_key <- intersect(workshop$sample_id, speedier$sample_id)
+
+if (length(common_key) > 0) {
+  
+  # Add any useful metadata from speedier into workshop
+  workshop <- workshop %>%
+    left_join(
+      speedier %>%
+        select(sample_id, case_number, SAMPLE_TYPE, Date_collected),
+      by = "sample_id"
+    ) %>%
+    mutate(
+      # Keep workshop values if present, otherwise use speedier’s
+      Case_no        = coalesce(Case_no, case_number),
+      Sample_type    = coalesce(Sample_type, SAMPLE_TYPE),
+      Preferred_date = coalesce(Preferred_date, Date_collected)
+    ) %>%
+    select(-case_number, -SAMPLE_TYPE, -Date_collected)
+  
+  # Remove duplicates from speedier
+  speedier <- speedier %>%
+    filter(!sample_id %in% common_key)
+}
+
+# -----------------------------
+# Check for duplicates of workshop in mydata (phd)
+# -----------------------------
+
+# Identify common sample IDs
+common_key <- intersect(workshop$sample_id, mydata$Isolate.ID)
+
+if (length(common_key) > 0) {
+  
+  # Add any useful metadata from workshop into mydata
+  mydata <- mydata %>%
+    left_join(
+      workshop %>% select(sample_id, Preferred_date),
+      by = c("Isolate.ID" = "sample_id")
+    ) %>%
+    mutate(
+      Preferred_date = coalesce(date, Preferred_date)  # use mydata$date first
+    ) %>%
+    select(-date)  # drop original date column if no longer needed
+  
+  # Remove duplicates from workshop
+  workshop <- workshop %>%
+    filter(!sample_id %in% common_key)
+}
+# -----------------------------
 # Define column maps
 # -----------------------------
 speedier_col_map <- c(
@@ -171,7 +281,9 @@ vgtk_col_map <- c(
   "collection_date" = "Preferred_date",
   "Source" = "Source",
   "primary_accession" = "Accession",
-  "coverage" = "Genome_coverage"
+  "coverage" = "Genome_coverage", 
+  "authors" = "Author",
+  "pubmed_id" = "Pubmed"
 )
 
 mydata_col_map <- c(
@@ -182,11 +294,22 @@ mydata_col_map <- c(
   "province" = "Province",
   "region" = "Region",
   "species" = "Host",
-  "date" = "Preferred_date",
+  "Preferred_date" = "Preferred_date",
   "Source" = "Source",
   "latitude" = "Latitude",
   "longitude" = "Longitude",
   "Accession" = "Accession"
+)
+
+workshop_col_map <- c(
+  "sample_id" = "Sample_ID",
+  "Barangay" = "Barangay",
+  "Municipality" = "Municipality",
+  "Province" = "Province",
+  "Region" = "Region",
+  "Specimen" = "Host",
+  "Preferred_date" = "Preferred_date",
+  "Source" = "Source"
 )
 
 # -----------------------------
@@ -206,8 +329,13 @@ phylo_meta <- bind_rows(
   phylo_meta,
   map_and_clean(speedier, speedier_col_map),
   map_and_clean(vgtk, vgtk_col_map),
-  map_and_clean(mydata, mydata_col_map)
+  map_and_clean(mydata, mydata_col_map),
+  map_and_clean(workshop,workshop_col_map)
 )
+
+# Strip whitespace from all character columns
+phylo_meta  <- phylo_meta %>%
+  mutate(across(where(is.character), ~ str_trim(.)))
 
 # -----------------------------
 # Check result
@@ -220,7 +348,7 @@ dim(phylo_meta)
 # -----------------------------
 
 # Find duplicates
-phylo_meta %>%
+dup_ids <- phylo_meta %>%
   group_by(Sample_ID = .data[["Sample_ID"]]) %>%
   tally() %>%
   filter(n > 1) %>%

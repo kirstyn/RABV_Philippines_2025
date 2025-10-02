@@ -1,0 +1,12 @@
+name: rage-redcap
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - biopython
+  - requests
+  - python-dotenv
+  - pip
+  - pip:
+      - tqdm       

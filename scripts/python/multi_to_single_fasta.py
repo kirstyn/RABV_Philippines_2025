@@ -31,8 +31,8 @@ def multifasta_to_single_fasta(input_file, output_folder):
         print(f"Error processing the file: {e}")
 
 # Example usage:
-input_file = "/Users/kirstyn.brunker/philippines/files_received/fasta_fromBea_17Jul2025/17Jul2025_rabv_ph_clean_40cov.fas"  # Path to the input multifasta file
-output_folder = "/Users/kirstyn.brunker/philippines/files_received/fasta_fromBea_17Jul2025/split_fasta"  # Path to the output folder where single fasta files will be saved
+input_file = "/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/redcap/rabv_4b_2025_r10_run7/rabv_4b_2025_r10_run7.fasta"  # Path to the input multifasta file
+output_folder = "/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/redcap/rabv_4b_2025_r10_run7/split_fasta"  # Path to the output folder where single fasta files will be saved
 
 # Call the function
 multifasta_to_single_fasta(input_file, output_folder)
