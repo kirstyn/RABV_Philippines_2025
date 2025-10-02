@@ -1,0 +1,795 @@
+"Sample_ID","Case_no","Accession","Host","Sample_type","Preferred_date","Date_source","Barangay","Municipality","Province","Region","Latitude","Longitude","Source","Author","Pubmed","Genome_coverage"
+"Z-24-141","P-34",NA,"Dog",NA,"24-Sep-2024",NA,"Poblacion","Narra","Palawan","MIMIROPA",9.250884096,118.3463664,"speedier",NA,NA,0.9884
+"Z-24-142","P-35",NA,"Dog",NA,"24-Sep-2024",NA,"Culandanum","Bataraza","Palawan","MIMIROPA",8.6727041,117.450586,"speedier",NA,NA,0.9716
+"RADDL4B-23-060","M-2",NA,"Dog",NA,"06-Oct-2023",NA,"Balogo","Boac","Marinduque","MIMIROPA",13.46850874,121.8289235,"speedier",NA,NA,0.9716
+"RADDL4B-23-061","M-3",NA,"Dog",NA,"09-Oct-2023",NA,"Agumaymayan","Boac","Marinduque","MIMIROPA",13.44998665,121.8994821,"speedier",NA,NA,0.9885
+"RADDL4B-23-070","M-10",NA,"Dog",NA,"23-Oct-2023",NA,"Pili","Boac","Marinduque","MIMIROPA",13.46393265,121.8260512,"speedier",NA,NA,0.9885
+"RADDL4B-23-072","M-9",NA,"Dog",NA,"23-Oct-2023",NA,"Bocboc","Mogpog","Marinduque","MIMIROPA",13.47143036,121.9410823,"speedier",NA,NA,0.9713
+"RADDL4B-23-057","M-1",NA,"Pig",NA,"24-Sep-2023",NA,"Apitong","Boac","Marinduque","MIMIROPA",13.45365494,121.8709323,"speedier",NA,NA,0.9887
+"RADDL4B-24-019","M-47",NA,"Pig",NA,"08-Feb-2024",NA,"Daykitin","Buenavista","Marinduque","MIMIROPA",13.27382681,121.9228134,"speedier",NA,NA,0.9885
+"RADDL4B-24-021","M-44",NA,"Dog",NA,"01-Feb-2024",NA,"Tabi","Boac","Marinduque","MIMIROPA",13.45428134,121.8406166,"speedier",NA,NA,0.9721
+"RADDL4B-24-026","M-53",NA,"Dog",NA,"16-Feb-2024",NA,"Bangbangalon","Boac","Marinduque","MIMIROPA",13.43848981,121.8276107,"speedier",NA,NA,0.972
+"RADDL4B-24-027","M-52",NA,"Dog",NA,"14-Feb-2024",NA,"Daykitin","Buenavista","Marinduque","MIMIROPA",13.27382681,121.9228134,"speedier",NA,NA,0.9716
+"RADDL4B-24-029","M-50",NA,"Dog",NA,"20-Feb-2024",NA,"Caigangan","Buenavista","Marinduque","MIMIROPA",13.26212226,121.9342731,"speedier",NA,NA,0.9716
+"RADDL4B-24-034","M-55",NA,"Dog",NA,"29-Feb-2024",NA,"Bamban","Boac","Marinduque","MIMIROPA",13.42366341,121.8779105,"speedier",NA,NA,0.9713
+"RADDL4B-24-035","M-56",NA,"Dog",NA,"26-Feb-2024",NA,"Masiga","Gasan","Marinduque","MIMIROPA",13.35871898,121.8255082,"speedier",NA,NA,0.9889
+"RADDL4B-24-037","M-58",NA,"Dog",NA,"28-Feb-2024",NA,"Buangan","Torrijos","Marinduque","MIMIROPA",13.31305087,122.0537056,"speedier",NA,NA,0.9718
+"RADDL4B-24-053","M-65",NA,"Dog",NA,"17-Mar-2024",NA,"Barangay 1","Buenavista","Marinduque","MIMIROPA",13.2559971,121.9418071,"speedier",NA,NA,0.9718
+"RADDL4B-24-055","M-67",NA,"Dog",NA,"21-Mar-2024",NA,"Barangay 2","Buenavista","Marinduque","MIMIROPA",13.25463205,121.9448458,"speedier",NA,NA,0.9888
+"RADDL4B-24-056","M-68",NA,"Dog",NA,"26-Mar-2024",NA,"Barangay 1","Buenavista","Marinduque","MIMIROPA",13.2559971,121.9418071,"speedier",NA,NA,0.9892
+"RADDL4B-24-057","M-69",NA,"Dog",NA,"20-Jan-2024",NA,"Barangay 1","Buenavista","Marinduque","MIMIROPA",13.2559971,121.9418071,"speedier",NA,NA,0.9884
+"RADDL4B-24-058","M-70",NA,"Dog",NA,"20-Mar-2024",NA,"Mendez","Mogpog","Marinduque","MIMIROPA",13.5108188,121.8994064,"speedier",NA,NA,0.9717
+"RADDL4B-24-059","M-71",NA,"Dog",NA,"20-Mar-2024",NA,"Villa Mendez","Mogpog","Marinduque","MIMIROPA",13.47788656,121.8607316,"speedier",NA,NA,0.9888
+"RADDL4B-24-067","M-75",NA,"Dog",NA,"20-Feb-2024",NA,"Cabugao","Gasan","Marinduque","MIMIROPA",13.35486893,121.8479733,"speedier",NA,NA,0.9892
+"RADDL4B-24-070","M-78",NA,"Dog",NA,"20-Apr-2024",NA,"Malibago","Buenavista","Marinduque","MIMIROPA",13.28798166,122.0068653,"speedier",NA,NA,0.9883
+"RADDL4B-24-071","M-79",NA,"Dog",NA,"20-May-2024",NA,"Murallon","Boac","Marinduque","MIMIROPA",13.44947749,121.8370936,"speedier",NA,NA,0.9722
+"RADDL4B-24-077","M-85",NA,"Dog",NA,"20-Nov-2024",NA,"Bicas-Bicas","Buenavista","Marinduque","MIMIROPA",13.24157594,122.0002222,"speedier",NA,NA,0.9887
+"RADDL4B-24-082","M-89",NA,"Dog",NA,"18-Apr-2024",NA,"Mahunig","Gasan","Marinduque","MIMIROPA",13.31497743,121.8549846,"speedier",NA,NA,0.9884
+"RADDL4B-24-102","M-100",NA,"Dog",NA,"28-Apr-2024",NA,"Bagacay","Buenavista","Marinduque","MIMIROPA",13.24881654,121.9900226,"speedier",NA,NA,0.9886
+"RADDL4B-23-085","M-13",NA,"Dog",NA,"20-Aug-2023",NA,"Maligaya","Boac","Marinduque","MIMIROPA",13.47444205,121.840682,"speedier",NA,NA,0.9891
+"RADDL4B-23-093","M-20",NA,"Goat",NA,"26-Nov-2023",NA,"Lupac","Boac","Marinduque","MIMIROPA",13.45972903,121.8180698,"speedier",NA,NA,0.9888
+"RADDL4B-23-095","M-22",NA,"Dog",NA,"28-Nov-2023",NA,"Laon","Mogpog","Marinduque","MIMIROPA",13.4919948,121.8532421,"speedier",NA,NA,0.9888
+"RADDL4B-23-097","M-23",NA,"Dog",NA,"27-Nov-2023",NA,"Poctoy","Boac","Marinduque","MIMIROPA",13.43235691,121.8690073,"speedier",NA,NA,0.9889
+"RADDL4B-23-098","M-24",NA,"Dog",NA,"27-Nov-2023",NA,"Cawit","Boac","Marinduque","MIMIROPA",13.38170012,121.8415498,"speedier",NA,NA,0.9887
+"RADDL4B-23-099","M-25",NA,"Dog",NA,"30-Nov-2023",NA,"Bunganay","Boac","Marinduque","MIMIROPA",13.38814351,121.830912,"speedier",NA,NA,0.9889
+"RADDL4B-23-100","M-26",NA,"Pig",NA,"05-Dec-2023",NA,"Tabigue","Boac","Marinduque","MIMIROPA",13.4508379,121.820882,"speedier",NA,NA,0.9889
+"RADDL4B-24-001","M-29",NA,"Dog",NA,"05-Jan-2024",NA,"Dampulan","Torrijos","Marinduque","MIMIROPA",13.23584673,122.0313094,"speedier",NA,NA,0.9891
+"RADDL4B-24-011","M-38",NA,"Dog",NA,"24-Jan-2024",NA,"Laylay","Boac","Marinduque","MIMIROPA",13.43668126,121.8203817,"speedier",NA,NA,0.9889
+"RADDL4B-24-012","M-40",NA,"Dog",NA,"25-Jan-2024",NA,"Poblacion","Torrijos","Marinduque","MIMIROPA",13.32381038,122.0762274,"speedier",NA,NA,0.9713
+"RADDL4B-24-015","M-41",NA,"Dog",NA,"31-Jan-2024",NA,"Tampus","Boac","Marinduque","MIMIROPA",13.44607203,121.8483871,"speedier",NA,NA,0.95
+"RADDL4B-24-016","M-42",NA,"Dog",NA,"31-Jan-2024",NA,"San Isidro","Santa Cruz","Marinduque","MIMIROPA",13.52187638,121.937044,"speedier",NA,NA,0.9679
+"RADDL4B-24-049","M-63",NA,"Dog",NA,"13-Mar-2024",NA,"Barangay IV","Buenavista","Marinduque","MIMIROPA",13.25222414,121.9482043,"speedier",NA,NA,0.9885
+"RADDL4B-24-084","M-91",NA,"Dog",NA,"19-Apr-2024",NA,"Matandang Gasan","Gasan","Marinduque","MIMIROPA",13.32695219,121.8773683,"speedier",NA,NA,0.9888
+"RADDL4B-24-085","M-92",NA,"Dog",NA,"20-Apr-2024",NA,"Malibago","Torrijos","Marinduque","MIMIROPA",13.28714633,122.0077236,"speedier",NA,NA,0.9883
+"RADDL4B-24-086","M-93",NA,"Dog",NA,"20-Apr-2024",NA,"Pulong-Parang","Santa Cruz","Marinduque","MIMIROPA",13.41549537,122.0584289,"speedier",NA,NA,0.9345
+"RADDL4B-24-087","M-94",NA,"Dog",NA,"21-Apr-2024",NA,"Marlangga","Torrijos","Marinduque","MIMIROPA",13.33186615,122.0865576,"speedier",NA,NA,0.9712
+"RADDL4B-24-088","M-95",NA,"Dog",NA,"22-Apr-2024",NA,"Mangiliol","Gasan","Marinduque","MIMIROPA",13.35766762,121.8384787,"speedier",NA,NA,0.9155
+"RADDL4B-24-101","M-99",NA,"Dog",NA,"25-Apr-2024",NA,"Poras","Boac","Marinduque","MIMIROPA",13.45804967,121.8323598,"speedier",NA,NA,0.9888
+"RADDL4B-24-106","M-104",NA,"Dog",NA,"20-Mar-2024",NA,"Daykitin","Buenavista","Marinduque","MIMIROPA",13.27382681,121.9228134,"speedier",NA,NA,0.9885
+"RADDL4B-24-120","M-106",NA,"Dog",NA,"20-Sep-2024",NA,"Mainit","Boac","Marinduque","MIMIROPA",13.40855837,121.8831096,"speedier",NA,NA,0.9886
+"RADDL4B-24-124","M-110",NA,"Dog",NA,"13-May-2024",NA,"Yook","Buenavista","Marinduque","MIMIROPA",13.22428692,121.9851771,"speedier",NA,NA,0.9889
+"RADDL4B-23-042","R-56",NA,"Dog",NA,"07-Jul-2023",NA,"Matutuna","San Andres","Romblon","MIMIROPA",12.485430189542,122.037858315898,"speedier",NA,NA,0.9884
+"RADDL4B-23-044","OM-35",NA,"Dog",NA,"01-Aug-2023",NA,"Libtong","Roxas","Oriental Mindoro","MIMIROPA",12.62432924,121.5031667,"speedier",NA,NA,0.9893
+"RADDL4B-23-045","R-58",NA,"Dog",NA,"03-Aug-2023",NA,"Linawan","San Andres","Romblon","MIMIROPA",12.5613811526055,122.024643646665,"speedier",NA,NA,0.9884
+"RADDL4B-23-046","R-59",NA,"Dog",NA,"04-Jul-2023",NA,"Carmen","San Agustin","Romblon","MIMIROPA",12.6207441732869,122.112268131429,"speedier",NA,NA,0.9884
+"RADDL4B-23-047","OM-36",NA,"Dog",NA,"23-Aug-2023",NA,"San Isidro","Puerto Galera","Oriental Mindoro","MIMIROPA",13.37785692,120.8703821,"speedier",NA,NA,0.9884
+"RADDL4B-23-049","OM-37",NA,"Dog",NA,"31-Aug-2023",NA,"Bagumbayan I","Bongabong","Oriental Mindoro","MIMIROPA",12.74706568,121.4748503,"speedier",NA,NA,0.9889
+"RADDL4B-23-052","R-61",NA,"Dog",NA,"29-Aug-2023",NA,"Mat-I","Santa Fe","Romblon","MIMIROPA",12.1825790019622,121.982068760844,"speedier",NA,NA,0.9887
+"RADDL4B-23-056","R-63",NA,"Dog",NA,"11-Sep-2023",NA,"Concepcion Norte","Santa Maria","Romblon","MIMIROPA",12.4009725318673,122.089783542696,"speedier",NA,NA,0.9882
+"RADDL4B-23-058","OM-38",NA,"Dog",NA,"02-Oct-2023",NA,"Poblacion III","Victoria","Oriental Mindoro","MIMIROPA",13.1693714,121.2550578,"speedier",NA,NA,0.9485
+"RADDL4B-23-076","R-66",NA,"Dog",NA,"17-Oct-2023",NA,"Poblacion","Alcantara","Romblon","MIMIROPA",12.2598547361178,122.053286260471,"speedier",NA,NA,0.972
+"RADDL4B-23-080","R-67",NA,"Dog",NA,"26-Oct-2023",NA,"Pangulo","Calatrava","Romblon","MIMIROPA",12.6133966287614,122.093403546437,"speedier",NA,NA,0.9874
+"RADDL4B-23-081","R-65",NA,"Dog",NA,"30-Sep-2023",NA,"Bachawan","San Agustin","Romblon","MIMIROPA",12.4577618696032,122.090565303083,"speedier",NA,NA,0.9711
+"RADDL4B-23-090","OM-41",NA,"Dog",NA,"16-Nov-2023",NA,"Ilag","San Teodoro","Oriental Mindoro","MIMIROPA",13.45164877,120.9775215,"speedier",NA,NA,0.9884
+"RADDL4B-23-101","M-27",NA,"Dog",NA,"05-Dec-2023",NA,"Hinapulan","Boac","Marinduque","MIMIROPA",13.40056028,121.9413747,"speedier",NA,NA,0.9886
+"RADDL4B-23-104","R-70",NA,"Dog",NA,"12-Dec-2023",NA,"Poblacion","Alcantara","Romblon","MIMIROPA",12.2598547361178,122.053286260471,"speedier",NA,NA,0.9885
+"RADDL4B-23-105","R-69",NA,"Dog",NA,"13-Nov-2023",NA,"Poblacion","Looc","Romblon","MIMIROPA",12.2710913046505,122.007370649571,"speedier",NA,NA,0.9878
+"RADDL4B-24-002","M-30",NA,"Dog",NA,"09-Jan-2024",NA,"Malusak","Boac","Marinduque","MIMIROPA",13.44708203,121.8412843,"speedier",NA,NA,0.9883
+"RADDL4B-24-003","M-31",NA,"Dog",NA,"09-Jan-2024",NA,"Masiga","Gasan","Marinduque","MIMIROPA",13.35871898,121.8255082,"speedier",NA,NA,0.9884
+"RADDL4B-24-017","M-39",NA,"Dog",NA,"25-Jan-2024",NA,"Masiga","Gasan","Marinduque","MIMIROPA",13.35871898,121.8255082,"speedier",NA,NA,0.9883
+"RADDL4B-24-023","OM-48",NA,"Dog",NA,"15-Feb-2024",NA,"Canubing I","Calapan City","Oriental Mindoro","MIMIROPA",13.34916389,121.1373121,"speedier",NA,NA,0.9882
+"RADDL4B-24-028","M-51",NA,"Dog",NA,"14-Feb-2024",NA,"Masiga","Gasan","Marinduque","MIMIROPA",13.35871898,121.8255082,"speedier",NA,NA,0.9884
+"RADDL4B-24-038","M-59",NA,"Dog",NA,"05-Mar-2024",NA,"Barangay I","Buenavista","Marinduque","MIMIROPA",13.2559971,121.9418071,"speedier",NA,NA,0.988
+"RADDL4B-24-042","R-63",NA,"Dog",NA,"12-Feb-2024",NA,"Mahabang Baybay","San Agustin","Romblon","MIMIROPA",12.6389756037373,122.150335754756,"speedier",NA,NA,0.9884
+"RADDL4B-24-043","R-56",NA,"Dog",NA,"04-Mar-2024",NA,"Camili","Alcantara","Romblon","MIMIROPA",12.2601674937412,122.042413009168,"speedier",NA,NA,0.9878
+"RADDL4B-24-046","OM-55",NA,"Dog",NA,"10-Mar-2024",NA,"Poblacion I","Victoria","Oriental Mindoro","MIMIROPA",13.17380713,121.2853345,"speedier",NA,NA,0.9888
+"RADDL4B-24-051","OM-56",NA,"Dog",NA,"26-Mar-2024",NA,"Bagumbayan","Roxas","Oriental Mindoro","MIMIROPA",12.5902022,121.5209491,"speedier",NA,NA,0.9887
+"RADDL4B-24-054","M-66",NA,"Dog",NA,"20-Mar-2024",NA,"Caigangan","Buenavista","Marinduque","MIMIROPA",13.26212226,121.9342731,"speedier",NA,NA,0.9884
+"RADDL4B-24-063","R-77",NA,"Dog",NA,"13-Apr-2024",NA,"Tulay","Odiongan","Romblon","MIMIROPA",12.3900864414564,121.992303480972,"speedier",NA,NA,0.9881
+"RADDL4B-24-066","R-75",NA,"Dog",NA,"20-Oct-2024",NA,"Tugdan","Alcantara","Romblon","MIMIROPA",12.3272698719486,122.070177099507,"speedier",NA,NA,0.9879
+"RADDL4B-24-069","M-77",NA,"Dog",NA,"20-Mar-2024",NA,"Barangay I","Buenavista","Marinduque","MIMIROPA",13.2559971,121.9418071,"speedier",NA,NA,0.9885
+"RADDL4B-24-073","M-81",NA,"Dog",NA,"20-Jul-2024",NA,"Bangbangalon","Boac","Marinduque","MIMIROPA",13.43848981,121.8276107,"speedier",NA,NA,0.9886
+"RADDL4B-24-074","M-82",NA,"Dog",NA,"20-Nov-2024",NA,"Caigangan","Buenavista","Marinduque","MIMIROPA",13.26212226,121.9342731,"speedier",NA,NA,0.9889
+"RADDL4B-24-076","M-84",NA,"Dog",NA,"20-Jul-2024",NA,"Barangay I","Buenavista","Marinduque","MIMIROPA",13.2559971,121.9418071,"speedier",NA,NA,0.9884
+"RADDL4B-24-078","M-86",NA,"Dog",NA,"20-Dec-2024",NA,"Barangay II","Buenavista","Marinduque","MIMIROPA",13.25463205,121.9448458,"speedier",NA,NA,0.9884
+"RADDL4B-24-081","M-88",NA,"Dog",NA,"15-Apr-2024",NA,"Buangan","Torrijos","Marinduque","MIMIROPA",13.31305087,122.0537056,"speedier",NA,NA,0.9882
+"RADDL4B-24-099","R-84",NA,"Dog",NA,"20-Mar-2024",NA,"Poctoy","Odiongan","Romblon","MIMIROPA",12.4086736675198,122.002251059774,"speedier",NA,NA,0.9876
+"RADDL4B-24-098","R-83",NA,"Dog",NA,"30-Apr-2024",NA,"Pili","San Fernando","Romblon","MIMIROPA",12.3202302160604,122.59889299915,"speedier",NA,NA,0.9878
+"RADDL4B-24-097","R-82",NA,"Dog",NA,"26-Apr-2024",NA,"Bonlao","Alcantara","Romblon","MIMIROPA",12.3144065613179,122.048142854933,"speedier",NA,NA,0.9878
+"RADDL4B-24-096","R-81",NA,"Dog",NA,"15-Apr-2024",NA,"Tumingad","Odiongan","Romblon","MIMIROPA",12.4371876319143,122.042943243506,"speedier",NA,NA,0.9874
+"RADDL4B-24-095","R-80",NA,"Dog",NA,"20-Mar-2024",NA,"Malilico","Odiongan","Romblon","MIMIROPA",12.3452844690591,121.972738203729,"speedier",NA,NA,0.9875
+"RADDL4B-24-018","M-43",NA,"Dog",NA,"01-Feb-2024",NA,"Barangay IV","Buenavista","Marinduque","MIMIROPA",13.25222414,121.9482043,"speedier",NA,NA,0.9708
+"RADDL4B-24-014","M-35",NA,"Dog",NA,"29-Jan-2024",NA,"Masiga","Gasan","Marinduque","MIMIROPA",13.35871898,121.8255082,"speedier",NA,NA,0.9878
+"RADDL4B-24-009","OM-46",NA,"Dog",NA,"29-Jan-2024",NA,"Balatero","Puerto Galera","Oriental Mindoro","MIMIROPA",13.34693739,120.8836262,"speedier",NA,NA,0.9873
+"RADDL4B-24-138","R-109",NA,"Dog",NA,"20-Jun-2024",NA,"Agutay","Magdiwang","Romblon","MIMIROPA",12.4602661224461,122.448777181916,"speedier",NA,NA,0.9877
+"RADDL4B-24-154","R-111",NA,"Dog",NA,"15-Jul-2024",NA,"Cambajao","Cajidiocan","Romblon","MIMIROPA",12.3683040199771,122.669872643641,"speedier",NA,NA,0.9878
+"RADDL4B-24-155","R-110",NA,"Dog",NA,"11-Jul-2024",NA,"Taclobo","San Fernando","Romblon","MIMIROPA",12.3622272502327,122.575373756321,"speedier",NA,NA,0.9877
+"RADDL4B-24-100","M-98",NA,"Dog",NA,"24-Apr-2024",NA,"Caigangan","Buenavista","Marinduque","MIMIROPA",13.26212226,121.9342731,"speedier",NA,NA,0.9708
+"RADDL4B-24-112","R-88",NA,"Dog",NA,"16-May-2024",NA,"Pili","Looc","Romblon","MIMIROPA",12.3030336406049,122.004635465751,"speedier",NA,NA,0.988
+"RADDL4B-24-113","R-89",NA,"Dog",NA,"20-Aug-2024",NA,"Limon Norte","Looc","Romblon","MIMIROPA",12.3220188515114,122.021920139859,"speedier",NA,NA,0.9884
+"RADDL4B-24-114","R-90",NA,"Dog",NA,"18-May-2024",NA,"Mahabang Baybay","San Agustin","Romblon","MIMIROPA",12.6389756037373,122.150335754756,"speedier",NA,NA,0.9873
+"RADDL4B-24-116","R-91",NA,"Dog",NA,"13-May-2024",NA,"Tugdan","Alcantara","Romblon","MIMIROPA",12.3272698719486,122.070177099507,"speedier",NA,NA,0.9872
+"RADDL4B-24-117","R-92",NA,"Dog",NA,"20-Aug-2024",NA,"Tabobo-An","Odiongan","Romblon","MIMIROPA",12.3661296017299,121.992456948138,"speedier",NA,NA,0.9879
+"RADDL4B-24-121","M-107",NA,"Dog",NA,"20-Sep-2024",NA,"Barangay II","Buenavista","Marinduque","MIMIROPA",13.25463205,121.9448458,"speedier",NA,NA,0.9882
+"RADDL4B-24-122","M-108",NA,"Dog",NA,"20-Oct-2024",NA,"Bangbangalon","Boac","Marinduque","MIMIROPA",13.43848981,121.8276107,"speedier",NA,NA,0.988
+"RADDL4B-24-153","OM-92",NA,"Dog",NA,"25-Jul-2024",NA,"Camilmil","Calapan City","Oriental Mindoro","MIMIROPA",13.40118777,121.1833225,"speedier",NA,NA,0.9708
+"RADDL4B-24-156","R-113",NA,"Dog",NA,"26-Jul-2024",NA,"Calagonsao","Alcantara","Romblon","MIMIROPA",12.3475553588476,122.079254920785,"speedier",NA,NA,0.971
+"RADDL4B-24-157","R-112",NA,"Dog",NA,"08-Jul-2024",NA,"San Isidro","Alcantara","Romblon","MIMIROPA",12.2919290027811,122.052741797624,"speedier",NA,NA,0.9531
+"RADDL4B-24-173","OM-80",NA,"Dog",NA,"20-Aug-2024",NA,"Poblacion IV","Victoria","Oriental Mindoro","MIMIROPA",13.19101365,121.2841142,"speedier",NA,NA,0.9285
+"RADDL4B-24-174","OM-81",NA,"Dog",NA,"22-Nov-2024",NA,"Maligaya","Gloria","Oriental Mindoro","MIMIROPA",12.97843859,121.4769904,"speedier",NA,NA,0.954
+"RADDL4B-24-178","M-132",NA,"Dog",NA,"15-Jul-2024",NA,"Barangay I","Buenavista","Marinduque","MIMIROPA",13.255314,121.940796,"speedier",NA,NA,0.9875
+"RADDL4B-24-180","M-131",NA,"Dog",NA,"22-Aug-2024",NA,"Sawi","Boac","Marinduque","MIMIROPA",13.440701,121.854599,"speedier",NA,NA,0.9884
+"RADDL4B-24-181","M-134",NA,"Dog",NA,"09-Sep-2024",NA,"Yook","Buenavista","Marinduque","MIMIROPA",13.223896,121.981628,"speedier",NA,NA,0.9882
+"RADDL4B-24-183","M-127",NA,"Dog",NA,"20-Nov-2024",NA,"Tawiran","Santa Cruz","Marinduque","MIMIROPA",13.462624,122.076691,"speedier",NA,NA,0.9325
+"RADDL4B-24-185","R-121",NA,"Dog",NA,"20-Nov-2024",NA,"Poblacion","Cajidiocan","Romblon","MIMIROPA",12.3738159498218,122.680201141506,"speedier",NA,NA,0.9875
+"RADDL4B-24-186","R-120",NA,"Dog",NA,"20-Dec-2024",NA,"Poblacion","Magdiwang","Romblon","MIMIROPA",12.4908099892792,122.508178781622,"speedier",NA,NA,0.9358
+"RADDL4B-24-187","R-122",NA,"Dog",NA,"20-Nov-2024",NA,"Poblacion","Magdiwang","Romblon","MIMIROPA",12.4908099892792,122.508178781622,"speedier",NA,NA,0.9886
+"RADDL4B-24-188","R-119",NA,"Dog",NA,"29-Nov-2024",NA,"Ipil","Magdiwang","Romblon","MIMIROPA",12.473056623118,122.475619478547,"speedier",NA,NA,0.9878
+"RADDL4B-25-005","M-137",NA,"Dog",NA,"17-Dec-2024",NA,"Bahi","Gasan","Marinduque","MIMIROPA",13.368669,121.834976,"speedier",NA,NA,0.9537
+"RADDL4B-25-006","M-138",NA,"Dog",NA,"20-Dec-2024",NA,"Ihatub","Boac","Marinduque","MIMIROPA",13.425975,121.829941,"speedier",NA,NA,0.9537
+"RADDL4B-25-008","M-140",NA,"Cow",NA,"04-Jan-2025",NA,"Bocboc","Mogpog","Marinduque","MIMIROPA",13.471229,121.931534,"speedier",NA,NA,0.9539
+"RADDL4B-25-009","M-141",NA,"Dog",NA,"09-Jan-2025",NA,"Bunganay","Boac","Marinduque","MIMIROPA",13.397696,121.847771,"speedier",NA,NA,0.9313
+"RADDL4B-25-017","OC-16",NA,"Dog",NA,"07-Mar-2025",NA,"Rumbang","Rizal","Occidental Mindoro","MIMIROPA",12.4726457,120.967584,"speedier",NA,NA,0.9869
+"RADDL4B-24-151","M-124",NA,"Dog",NA,"08-Jul-2024",NA,"Angas","Santa Cruz","Marinduque","MIMIROPA",13.440175,122.105919,"speedier",NA,NA,0.9144317801
+"RADDL4B-23-089","M-14",NA,"Dog",NA,"20-Jul-2023",NA,"Maligaya","Boac","Marinduque","MIMIROPA",13.47444205,121.840682,"speedier",NA,NA,0.9509721757
+"RADDL4B-23-092","M-15",NA,"Dog",NA,NA,NA,"Balimbing","Boac","Marinduque","MIMIROPA",13.43694015,121.8821268,"speedier",NA,NA,0.9507207509
+"RADDL4B-23-094","M-21",NA,"Dog",NA,"28-Nov-2023",NA,"Maligaya","Boac","Marinduque","MIMIROPA",13.47444205,121.840682,"speedier",NA,NA,0.9146832048
+"RADDL4B-24-007","OM-45",NA,"Dog",NA,"17-Jan-2024",NA,"Poblacion","Bansud","Oriental Mindoro","MIMIROPA",12.84652574,121.4611416,"speedier",NA,NA,0.9702480724
+"RADDL4B-24-013","M-34",NA,"Dog",NA,"16-Jan-2024",NA,"Buangan","Torrijos","Marinduque","MIMIROPA",13.31305087,122.0537056,"speedier",NA,NA,0.9503855179
+"RADDL4B-24-030","M-49",NA,"Dog",NA,"17-Feb-2024",NA,"Barangay I","Buenavista","Marinduque","MIMIROPA",13.2559971,121.9418071,"speedier",NA,NA,0.9875125712
+"RADDL4B-24-048","M-62",NA,"Dog",NA,"07-Mar-2024",NA,"Daykitin","Buenavista","Marinduque","MIMIROPA",13.27382681,121.9228134,"speedier",NA,NA,0.9497988602
+"RADDL4B-24-052","OM-57",NA,"Dog",NA,"29-Mar-2024",NA,"Poblacion","Mansalay","Oriental Mindoro","MIMIROPA",12.53483774,121.4385791,"speedier",NA,NA,0.9883506537
+"RADDL4B-24-062","M-74",NA,"Dog",NA,"20-Jan-2024",NA,"Masiga","Gasan","Marinduque","MIMIROPA",13.35871898,121.8255082,"speedier",NA,NA,0.9025310091
+"RADDL4B-24-080","OM-58",NA,"Dog",NA,"18-Apr-2024",NA,"Baruyan","Calapan City","Oriental Mindoro","MIMIROPA",13.35919359,121.1359505,"speedier",NA,NA,0.9704994972
+"RADDL4B-24-093","OM-61",NA,"Dog",NA,"29-Apr-2024",NA,"B. Del Mundo","Mansalay","Oriental Mindoro","MIMIROPA",12.53191189,121.4645635,"speedier",NA,NA,0.988434462
+"RADDL4B-24-107","M-105",NA,"Dog",NA,"20-Mar-2024",NA,"Daykitin","Buenavista","Marinduque","MIMIROPA",13.27382681,121.9228134,"speedier",NA,NA,0.9503017097
+"RADDL4B-24-125","M-111",NA,"Dog",NA,"13-May-2024",NA,"Yook","Buenavista","Marinduque","MIMIROPA",13.22428692,121.9851771,"speedier",NA,NA,0.9871773383
+"RADDL4B-24-127","M-113",NA,"Dog",NA,"16-May-2024",NA,"Caigangan","Buenavista","Marinduque","MIMIROPA",13.26212226,121.9342731,"speedier",NA,NA,0.9706671136
+"H24-028","H24-028",NA,"Human",NA,"27-Mar-2024",NA,"Barangay 7","San Jose","Occidental Mindoro","MIMIROPA",12.3494949,121.073921,"speedier",NA,NA,0.9560006705
+"RADDL4B-23-065","M-4",NA,"Dog",NA,"23-Oct-2023",NA,"Laylay","Boac","Marinduque","MIMIROPA",13.43668126,121.8203817,"speedier",NA,NA,0.9717566209
+"RADDL4B-24-162","OM-75",NA,"Dog",NA,"27-Sep-2024",NA,"Ilaya","Calapan City","Oriental Mindoro","MIMIROPA",13.41158277,121.1938885,"speedier",NA,NA,0.9878478042
+"RADDL4B-24-184","M-135",NA,"Dog",NA,"19-Nov-2024",NA,"Bangbang","Gasan","Marinduque","MIMIROPA",13.343593,121.838409,"speedier",NA,NA,0.9887696949
+"94275PHI",NA,"KX148263","dog","brain","01-Jan-1994",NA,NA,NA,"",NA,NA,NA,"vgtk","Troupin,C., Dacheux,L., Tanguy,M., Blanc,H., Bouchier,C., Vignuzzi,M., Bourhy,H.",NA,0.988937311
+"94278PHI",NA,"KX148262","dog","brain","01-Jan-1994",NA,NA,NA,"",NA,NA,NA,"vgtk","Troupin,C., Dacheux,L., Tanguy,M., Blanc,H., Bouchier,C., Vignuzzi,M., Bourhy,H.",NA,0.988937311
+"94281PHI",NA,"KX148261","dog","brain","01-Jan-1994",NA,NA,NA,"",NA,NA,NA,"vgtk","Troupin,C., Dacheux,L., Tanguy,M., Blanc,H., Bouchier,C., Vignuzzi,M., Bourhy,H.",NA,0.988937311
+"04030PHI",NA,"KX148260","dog","","01-Jan-2004",NA,NA,NA,"",NA,NA,NA,"vgtk","Troupin,C., Dacheux,L., Tanguy,M., Blanc,H., Bouchier,C., Vignuzzi,M., Bourhy,H.",NA,0.989272544
+"94272PHI",NA,"KX148259","dog","brain","01-Jan-1994",NA,NA,NA,"",NA,NA,NA,"vgtk","Troupin,C., Dacheux,L., Tanguy,M., Blanc,H., Bouchier,C., Vignuzzi,M., Bourhy,H.",NA,0.989188736
+"18-103",NA,"OQ326754","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-116",NA,"OQ326753","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-102",NA,"OQ326752","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-106",NA,"OQ326751","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-099",NA,"OQ326750","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-107",NA,"OQ326749","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Compostela Valley",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-138",NA,"OQ326748","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-163",NA,"OQ326747","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-188",NA,"OQ326746","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-214",NA,"OQ326745","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-162",NA,"OQ326744","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Samal",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-174",NA,"OQ326743","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-216",NA,"OQ326742","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"19-011",NA,"OQ326741","Canis lupus familiaris","brain","01-Jan-2019",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"19-004",NA,"OQ326740","Canis lupus familiaris","brain","01-Jan-2019",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"19-015",NA,"OQ326739","Canis lupus familiaris","brain","01-Jan-2019",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-164",NA,"OQ326738","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Digos",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-172",NA,"OQ326737","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-199",NA,"OQ326736","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"R3-2022-0016",NA,"OR971444","Canis lupus familiaris","brain","01-Nov-2022",NA,NA,NA,"Bulacan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2022-0014",NA,"OR971443","Canis lupus familiaris","brain","01-Oct-2022",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2022-0013",NA,"OR971442","Canis lupus familiaris","brain","01-Jul-2022",NA,NA,NA,"Zambales",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2022-0006",NA,"OR971441","Canis lupus familiaris","brain","18-Jan-2022",NA,NA,NA,"Nueva Ecija",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2022-0004",NA,"OR971440","Canis lupus familiaris","brain","01-Apr-2022",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2022-0002",NA,"OR971439","Canis lupus familiaris","brain","01-Mar-2022",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-3790",NA,"OR971438","Canis lupus familiaris","brain","25-Oct-2021",NA,NA,NA,"Bulacan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0753",NA,"OR971437","Canis lupus familiaris","brain","22-Dec-2021",NA,NA,NA,"Nueva Ecija",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0731",NA,"OR971436","Canis lupus familiaris","brain","12-Sep-2021",NA,NA,NA,"Nueva Ecija",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0543",NA,"OR971435","Canis lupus familiaris","brain","27-Oct-2021",NA,NA,NA,"Bulacan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0514",NA,"OR971434","Felis catus","brain","13-Oct-2021",NA,NA,NA,"Zambales",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0513",NA,"OR971433","Canis lupus familiaris","brain","13-Oct-2021",NA,NA,NA,"Bataan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0504",NA,"OR971432","Canis lupus familiaris","brain","10-Aug-2021",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0502",NA,"OR971431","Canis lupus familiaris","brain","10-Jul-2021",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0501",NA,"OR971430","Canis lupus familiaris","brain","10-May-2021",NA,NA,NA,"Bataan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0498",NA,"OR971429","Canis lupus familiaris","brain","10-Apr-2021",NA,NA,NA,"Bulacan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0495",NA,"OR971428","Canis lupus familiaris","brain","24-Sep-2021",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R3-2021-0487",NA,"OR971427","Canis lupus familiaris","brain","09-Oct-2021",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0484",NA,"OR971426","Canis lupus familiaris","brain","09-Sep-2021",NA,NA,NA,"Bulacan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0483",NA,"OR971425","Canis lupus familiaris","brain","09-Sep-2021",NA,NA,NA,"Bulacan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0472",NA,"OR971424","Canis lupus familiaris","brain","09-Mar-2021",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0469",NA,"OR971423","Canis lupus familiaris","brain","31-Aug-2021",NA,NA,NA,"Bulacan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0468",NA,"OR971422","Canis lupus familiaris","brain","31-Aug-2021",NA,NA,NA,"Nueva Ecija",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0467",NA,"OR971421","Canis lupus familiaris","brain","31-Aug-2021",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0322",NA,"OR971420","Canis lupus familiaris","brain","24-May-2021",NA,NA,NA,"Bulacan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0304",NA,"OR971419","Canis lupus familiaris","brain","05-May-2021",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2021-0300",NA,"OR971418","Canis lupus familiaris","brain","26-Apr-2021",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R3-2021-0296",NA,"OR971417","Canis lupus familiaris","brain","16-Apr-2021",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R3-2021-0294",NA,"OR971416","Canis lupus familiaris","brain","16-Apr-2021",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R3-2021-0289",NA,"OR971415","Canis lupus familiaris","brain","13-Apr-2021",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R3-2021-0286",NA,"OR971414","Canis lupus familiaris","brain","07-Apr-2021",NA,NA,NA,"Nueva Ecija",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R3-2021-0282",NA,"OR971413","Canis lupus familiaris","brain","05-Apr-2021",NA,NA,NA,"Nueva Ecija",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R3-2021-0274",NA,"OR971412","Canis lupus familiaris","brain","17-Mar-2021",NA,NA,NA,"Bataan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R3-2019-6317",NA,"OR971411","Canis lupus familiaris","brain","13-Sep-2019",NA,NA,NA,"Bulacan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2019-5868",NA,"OR971410","Canis lupus familiaris","brain","20-Aug-2019",NA,NA,NA,"Bulacan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,1.777824338
+"R3-2019-5829",NA,"OR971409","Canis lupus familiaris","brain","20-Aug-2019",NA,NA,NA,"Bulacan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2019-5590",NA,"OR971408","Canis lupus familiaris","brain","08-Feb-2019",NA,NA,NA,"Bulacan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R2-2021-125",NA,"OR971407","Canis lupus familiaris","brain","30-Dec-2021",NA,NA,NA,"Cagayan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R2-2021-124",NA,"OR971406","Canis lupus familiaris","brain","27-Dec-2021",NA,NA,NA,"Cagayan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R2-2021-121",NA,"OR971405","Canis lupus familiaris","brain","20-Dec-2021",NA,NA,NA,"Isabela",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R2-2021-106",NA,"OR971404","Canis lupus familiaris","brain","11-May-2021",NA,NA,NA,"Isabela",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999245726
+"R2-2021-087",NA,"OR971403","Canis lupus familiaris","brain","17-Aug-2021",NA,NA,NA,"Nueva Vizcaya",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R2-2021-084",NA,"OR971402","Canis lupus familiaris","brain","13-Aug-2021",NA,NA,NA,"Cagayan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999245726
+"R2-2021-083",NA,"OR971401","Canis lupus familiaris","brain","08-Oct-2021",NA,NA,NA,"Nueva Vizcaya",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R2-2021-082",NA,"OR971400","Canis lupus familiaris","brain","08-Sep-2021",NA,NA,NA,"Isabela",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999245726
+"R2-2019-8228",NA,"OR971399","Canis lupus familiaris","brain","10-Oct-2019",NA,NA,NA,"Isabela",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R2-2019-8204",NA,"OR971398","Canis lupus familiaris","brain","08-Oct-2019",NA,NA,NA,"Isabela",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R2-2019-8166",NA,"OR971397","Canis lupus familiaris","brain","07-Oct-2019",NA,NA,NA,"Nueva Vizcaya",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R2-2019-8088",NA,"OR971396","Canis lupus familiaris","brain","04-Oct-2019",NA,NA,NA,"Isabela",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R2-2019-7838",NA,"OR971395","Canis lupus familiaris","brain","20-Sep-2019",NA,NA,NA,"Nueva Vizcaya",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"18-142",NA,"OQ326784","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Nabunturan",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-181",NA,"OQ326783","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-221",NA,"OQ326782","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-209",NA,"OQ326781","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-194",NA,"OQ326780","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-196",NA,"OQ326779","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-223",NA,"OQ326778","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-183",NA,"OQ326777","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-144",NA,"OQ326776","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-179",NA,"OQ326775","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Cotabato",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-151",NA,"OQ326774","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-153",NA,"OQ326773","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-147",NA,"OQ326772","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-225",NA,"OQ326771","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"19-022",NA,"OQ326770","Canis lupus familiaris","brain","01-Jan-2019",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-224",NA,"OQ326769","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-191",NA,"OQ326768","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-135",NA,"OQ326767","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-121",NA,"OQ326766","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"19-050",NA,"OQ326765","Canis lupus familiaris","brain","01-Jan-2019",NA,NA,NA,"Panabo",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-096",NA,"OQ326764","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"19-045",NA,"OQ326763","Canis lupus familiaris","brain","01-Jan-2019",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-120",NA,"OQ326762","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-094",NA,"OQ326761","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-133",NA,"OQ326760","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Tagum",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-130",NA,"OQ326759","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-118",NA,"OQ326758","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Digos Cogon",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-092",NA,"OQ326757","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-114",NA,"OQ326756","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"18-101",NA,"OQ326755","Canis lupus familiaris","brain","01-Jan-2018",NA,NA,NA,"Davao",NA,NA,NA,"vgtk","Bacus,M.G., Buenaventura,S.G.C., Mamites,A.M.C., Elizagaque,H.G., Labrador,C., Delfin,F.C., Eng,M.N.J., Lagare,A.P., Marquez,G.N., Murao,L.A.E.",33878454,0.988937311
+"R6-2021-4568",NA,"OR971544","Canis lupus familiaris","brain","12-Oct-2021",NA,NA,NA,"Guimaras",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2021-4511",NA,"OR971543","Canis lupus familiaris","brain","07-Oct-2021",NA,NA,NA,"Antique",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R6-2021-4447",NA,"OR971542","Canis lupus familiaris","brain","06-Oct-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2021-4446",NA,"OR971541","Canis lupus familiaris","brain","06-Oct-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2021-4431",NA,"OR971540","Canis lupus familiaris","brain","05-Oct-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2019-3499",NA,"OR971539","Canis lupus familiaris","brain","10-Oct-2019",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2019-3303",NA,"OR971538","Canis lupus familiaris","brain","17-Sep-2019",NA,NA,NA,"Antique",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2019-2940",NA,"OR971537","Canis lupus familiaris","brain","29-Aug-2019",NA,NA,NA,"Capiz",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2019-2722",NA,"OR971536","Canis lupus familiaris","brain","17-Jun-2019",NA,NA,NA,"Guimaras",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2019-2184",NA,"OR971535","Canis lupus familiaris","brain","11-Jun-2019",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2019-1399",NA,"OR971534","Canis lupus familiaris","brain","15-Apr-2019",NA,NA,NA,"Aklan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R5-2021-0517",NA,"OR971533","Canis lupus familiaris","brain","10-May-2021",NA,NA,NA,"Camarines Norte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0478",NA,"OR971532","Canis lupus familiaris","brain","06-May-2021",NA,NA,NA,"Albay",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0475",NA,"OR971531","Canis lupus familiaris","brain","05-May-2021",NA,NA,NA,"Camarines Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0472",NA,"OR971530","Canis lupus familiaris","brain","03-May-2021",NA,NA,NA,"Camarines Norte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0470",NA,"OR971529","Canis lupus familiaris","brain","03-May-2021",NA,NA,NA,"Camarines Norte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0447",NA,"OR971528","Canis lupus familiaris","brain","26-Apr-2021",NA,NA,NA,"Sorsogon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R5-2021-0446",NA,"OR971527","Canis lupus familiaris","brain","27-Apr-2021",NA,NA,NA,"Camarines Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0445",NA,"OR971526","Canis lupus familiaris","brain","26-Apr-2021",NA,NA,NA,"Sorsogon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0426",NA,"OR971525","Canis lupus familiaris","brain","19-Apr-2021",NA,NA,NA,"Albay",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0424",NA,"OR971524","Canis lupus familiaris","brain","19-Apr-2021",NA,NA,NA,"Camarines Norte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0404",NA,"OR971523","Canis lupus familiaris","brain","12-Apr-2021",NA,NA,NA,"Camarines Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R5-2021-0376",NA,"OR971522","Canis lupus familiaris","brain","02-Apr-2021",NA,NA,NA,"Albay",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0335",NA,"OR971521","Canis lupus familiaris","brain","22-Mar-2021",NA,NA,NA,"Albay",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0334",NA,"OR971520","Canis lupus familiaris","brain","22-Mar-2021",NA,NA,NA,"Sorsogon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0329",NA,"OR971519","Canis lupus familiaris","brain","22-Mar-2021",NA,NA,NA,"Camarines Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0328",NA,"OR971518","Canis lupus familiaris","brain","22-Mar-2021",NA,NA,NA,"Camarines Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0278",NA,"OR971517","Canis lupus familiaris","brain","05-Mar-2021",NA,NA,NA,"Albay",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0276",NA,"OR971516","Canis lupus familiaris","brain","05-Mar-2021",NA,NA,NA,"Camarines Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0142",NA,"OR971515","Canis lupus familiaris","brain","01-Feb-2021",NA,NA,NA,"Camarines Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0140",NA,"OR971514","Canis lupus familiaris","brain","01-Feb-2021",NA,NA,NA,"Camarines Norte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0139",NA,"OR971513","Canis lupus familiaris","brain","01-Feb-2021",NA,NA,NA,"Camarines Norte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0138",NA,"OR971512","Canis lupus familiaris","brain","01-Feb-2021",NA,NA,NA,"Camarines Norte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0093",NA,"OR971511","Canis lupus familiaris","brain","20-Jan-2021",NA,NA,NA,"Albay",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0092",NA,"OR971510","Canis lupus familiaris","brain","19-Jan-2021",NA,NA,NA,"Albay",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0069",NA,"OR971509","Canis lupus familiaris","brain","11-Jan-2021",NA,NA,NA,"Albay",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0042",NA,"OR971508","Canis lupus familiaris","brain","05-Jan-2021",NA,NA,NA,"Albay",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2021-0041",NA,"OR971507","Canis lupus familiaris","brain","05-Jan-2021",NA,NA,NA,"Albay",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2019-0064",NA,"OR971506","Canis lupus familiaris","brain","07-Mar-2019",NA,NA,NA,"Camarines Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2018-0334",NA,"OR971505","Canis lupus familiaris","brain","07-Dec-2018",NA,NA,NA,"Camarines Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2018-0259",NA,"OR971504","Canis lupus familiaris","brain","14-Sep-2018",NA,NA,NA,"Sorsogon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2018-0219",NA,"OR971503","Canis lupus familiaris","brain","10-Aug-2018",NA,NA,NA,"Sorsogon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2018-0151",NA,"OR971502","Bos taurus","brain","02-May-2018",NA,NA,NA,"Sorsogon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2018-0070",NA,"OR971501","Canis lupus familiaris","brain","27-Feb-2018",NA,NA,NA,"Sorsogon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2018-0069",NA,"OR971500","Canis lupus familiaris","brain","27-Feb-2018",NA,NA,NA,"Sorsogon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2018-0067",NA,"OR971499","Canis lupus familiaris","brain","20-Feb-2018",NA,NA,NA,"Sorsogon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R5-2018-0051",NA,"OR971498","Canis lupus familiaris","brain","08-Feb-2018",NA,NA,NA,"Sorsogon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R4B-2022-00011",NA,"OR971497","Canis lupus familiaris","brain",NA,NA,NA,NA,"Oriental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4B-2022-00010",NA,"OR971496","Canis lupus familiaris","brain","03-Mar-2022",NA,NA,NA,"Oriental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4B-2022-00008",NA,"OR971495","Canis lupus familiaris","brain","17-Feb-2022",NA,NA,NA,"Oriental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"CAR-2022-007",NA,"OR971344","Canis lupus familiaris","brain","02-Jan-2022",NA,NA,NA,"Abra",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"CAR-2022-004",NA,"OR971343","Canis lupus familiaris","brain","14-Jan-2022",NA,NA,NA,"Abra",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"CAR-2022-002",NA,"OR971342","Canis lupus familiaris","brain","01-Jun-2022",NA,NA,NA,"Mountain",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"CAR-2022-001",NA,"OR971341","Canis lupus familiaris","brain","01-Apr-2022",NA,NA,NA,"Abra",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"CAR-2021-075",NA,"OR971340","Canis lupus familiaris","brain","15-Nov-2021",NA,NA,NA,"Abra",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"CAR-2021-074",NA,"OR971339","Canis lupus familiaris","brain","11-Mar-2021",NA,NA,NA,"Abra",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"CAR-2021-046",NA,"OR971338","Canis lupus familiaris","brain","25-Jun-2021",NA,NA,NA,"Benguet",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"CAR-2021-044",NA,"OR971337","Canis lupus familiaris","brain","18-Jun-2021",NA,NA,NA,"Abra",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"CAR-2021-040",NA,"OR971336","Canis lupus familiaris","brain","06-Aug-2021",NA,NA,NA,"Abra",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"CAR-2021-034",NA,"OR971335","Canis lupus familiaris","brain","14-May-2021",NA,NA,NA,"Apayao",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"CAR-2021-033",NA,"OR971334","Canis lupus familiaris","brain","10-May-2021",NA,NA,NA,"Abra",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"CAR-2021-032",NA,"OR971333","Canis lupus familiaris","brain","03-May-2021",NA,NA,NA,"Apayao",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"CAR-2021-022",NA,"OR971332","Canis lupus familiaris","brain","11-Mar-2021",NA,NA,NA,"Ifugao",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"CAR-2021-016",NA,"OR971331","Canis lupus familiaris","brain","28-Feb-2021",NA,NA,NA,"Abra",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"CAR-2021-015",NA,"OR971330","Canis lupus familiaris","brain","24-Feb-2021",NA,NA,NA,"Abra",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"CAR-2019-208",NA,"OR971329","Canis lupus familiaris","brain","28-Oct-2019",NA,NA,NA,"Kalinga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"CAR-2019-111",NA,"OR971328","Canis lupus familiaris","brain","14-Oct-2019",NA,NA,NA,"Abra",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"CAR-2019-103",NA,"OR971327","Canis lupus familiaris","brain","23-Sep-2019",NA,NA,NA,"Kalinga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"CAR-2019-099",NA,"OR971326","Canis lupus familiaris","brain","26-Sep-2019",NA,NA,NA,"Benguet",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"CAR-2019-098",NA,"OR971325","Canis lupus familiaris","brain","16-Sep-2019",NA,NA,NA,"Kalinga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"CAR-2019-092",NA,"OR971324","Canis lupus familiaris","brain","04-Sep-2019",NA,NA,NA,"Benguet",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"CAR-2019-085",NA,"OR971323","Canis lupus familiaris","brain","26-Aug-2019",NA,NA,NA,"Kalinga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R12-2019-0538",NA,"OR971644","Canis lupus familiaris","brain","24-Jun-2019",NA,NA,NA,"Sultan Kudarat",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R12-2019-0521",NA,"OR971643","Canis lupus familiaris","brain","19-Jun-2019",NA,NA,NA,"South Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R12-2019-0472",NA,"OR971642","Canis lupus familiaris","brain","07-Jun-2019",NA,NA,NA,"Sarangani",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R12-2019-0014",NA,"OR971641","Sus scrofa","brain","09-Jan-2019",NA,NA,NA,"Sultan Kudarat",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R11-2022-33",NA,"OR971640","Canis lupus familiaris","brain","05-May-2022",NA,NA,NA,"Davao del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R11-2022-32",NA,"OR971639","Canis lupus familiaris","brain","05-Feb-2022",NA,NA,NA,"Davao de Oro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R11-2022-30",NA,"OR971638","Canis lupus familiaris","brain","25-Apr-2022",NA,NA,NA,"Davao del Norte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R11-2022-28",NA,"OR971637","Canis lupus familiaris","brain","04-Jan-2022",NA,NA,NA,"Davao del Norte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R11-2022-25",NA,"OR971636","Canis lupus familiaris","brain","25-Mar-2022",NA,NA,NA,"Davao del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R11-2022-19",NA,"OR971635","Canis lupus familiaris","brain","03-Nov-2022",NA,NA,NA,"Davao del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R11-2022-16",NA,"OR971634","Canis lupus familiaris","brain","15-Feb-2022",NA,NA,NA,"Davao del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R11-2022-15",NA,"OR971633","Canis lupus familiaris","brain","15-Feb-2022",NA,NA,NA,"Davao del Norte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R11-2022-14",NA,"OR971632","Canis lupus familiaris","brain","15-Feb-2022",NA,NA,NA,"Davao del Norte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R11-2022-11",NA,"OR971631","Canis lupus familiaris","brain","02-Apr-2022",NA,NA,NA,"Davao del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R11-2022-07",NA,"OR971630","Canis lupus familiaris","brain","18-Jan-2022",NA,NA,NA,"Davao del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R11-2021-68",NA,"OR971629","Canis lupus familiaris","brain","12-Jul-2021",NA,NA,NA,"Davao del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R11-2021-61",NA,"OR971628","Canis lupus familiaris","brain","14-Oct-2021",NA,NA,NA,"Davao del Norte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R11-2021-58",NA,"OR971627","Felis catus","brain","10-Jun-2021",NA,NA,NA,"Davao del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R11-2021-02",NA,"OR971626","Canis lupus familiaris","brain","01-Jun-2021",NA,NA,NA,"Davao del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R10-2021-010",NA,"OR971625","Canis lupus familiaris","brain","21-Apr-2021",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R10-2021-009",NA,"OR971624","Canis lupus familiaris","brain","18-May-2021",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R10-2021-008",NA,"OR971623","Canis lupus familiaris","brain","21-May-2021",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R10-2021-007",NA,"OR971622","Canis lupus familiaris","brain","07-Jun-2021",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R10-2021-006",NA,"OR971621","Canis lupus familiaris","brain","09-Jun-2021",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R10-2021-005",NA,"OR971620","Canis lupus familiaris","brain","02-Jul-2021",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R10-2021-004",NA,"OR971619","Canis lupus familiaris","brain","20-Aug-2021",NA,NA,NA,"Bukidnon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R10-2021-003",NA,"OR971618","Canis lupus familiaris","brain","23-Aug-2021",NA,NA,NA,"Bukidnon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R10-2021-002",NA,"OR971617","Canis lupus familiaris","brain","02-Sep-2021",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R10-2021-001",NA,"OR971616","Canis lupus familiaris","brain","02-Sep-2021",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R10-2019-970",NA,"OR971615","Canis lupus familiaris","brain","27-Dec-2019",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R10-2019-951",NA,"OR971614","Canis lupus familiaris","brain","16-Dec-2019",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R10-2019-950",NA,"OR971613","Canis lupus familiaris","brain","16-Dec-2019",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R10-2019-909",NA,"OR971612","Canis lupus familiaris","brain","04-Dec-2019",NA,NA,NA,"Iligan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R10-2019-908",NA,"OR971611","Canis lupus familiaris","brain","04-Dec-2019",NA,NA,NA,"Iligan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R10-2019-907",NA,"OR971610","Canis lupus familiaris","brain","04-Dec-2019",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R10-2019-892",NA,"OR971609","Canis lupus familiaris","brain","28-Nov-2019",NA,NA,NA,"Bukidnon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R10-2019-887",NA,"OR971608","Canis lupus familiaris","brain","25-Nov-2019",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R10-2019-823",NA,"OR971607","Canis lupus familiaris","brain","11-Nov-2019",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R10-2019-819",NA,"OR971606","Canis lupus familiaris","brain","09-Nov-2019",NA,NA,NA,"Bukidnon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R10-2019-818",NA,"OR971605","Canis lupus familiaris","brain","08-Nov-2019",NA,NA,NA,"Iligan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R10-2019-810",NA,"OR971604","Canis lupus familiaris","brain","07-Nov-2019",NA,NA,NA,"Bukidnon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R10-2019-777",NA,"OR971603","Canis lupus familiaris","brain","21-Oct-2019",NA,NA,NA,"Iligan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R10-2019-753",NA,"OR971602","Canis lupus familiaris","brain","14-Oct-2019",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R10-2019-752",NA,"OR971601","Canis lupus familiaris","brain","11-Oct-2019",NA,NA,NA,"Bukidnon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R10-2019-669",NA,"OR971600","Canis lupus familiaris","brain","12-Sep-2019",NA,NA,NA,"Misamis Oriental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R9-2021-105",NA,"OR971599","Canis lupus familiaris","brain","12-Sep-2021",NA,NA,NA,"Zamboanga Del Norte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R9-2021-090",NA,"OR971598","Canis lupus familiaris","brain","10-Dec-2021",NA,NA,NA,"Zamboanga del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R9-2021-089",NA,"OR971597","Canis lupus familiaris","brain","10-Jul-2021",NA,NA,NA,"Zamboanga Sibugay",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R9-2021-078",NA,"OR971596","Canis lupus familiaris","brain","27-Aug-2021",NA,NA,NA,"Zamboanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R9-2021-075",NA,"OR971595","Canis lupus familiaris","brain","23-Aug-2021",NA,NA,NA,"Zamboanga del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"BAI/BAI3/2019-01/fel",NA,"MN857171","feline","","06-May-2019",NA,NA,NA,"San Miguel, Bulacan",NA,NA,NA,"vgtk","Ubaldo,F.P.J.R., Cruz,J.L., Gonzales,R.M.C., Legaspi,C.F., Maravilla,J.L.",NA,0.999161918
+"BAI/BAI4A/2019-01/can",NA,"MN857170","canine","","27-May-2019",NA,NA,NA,"Angono, Rizal",NA,NA,NA,"vgtk","Ubaldo,F.P.J.R., Cruz,J.L., Gonzales,R.M.C., Legaspi,C.F., Maravilla,J.L.",NA,0.999161918
+"BAI/BAINCR/2019-03/can",NA,"MN857169","canine","","31-May-2019",NA,NA,NA,"Pasay City",NA,NA,NA,"vgtk","Ubaldo,F.P.J.R., Cruz,J.L., Gonzales,R.M.C., Legaspi,C.F., Maravilla,J.L.",NA,0.999161918
+"BAI/BAINCR/2019-02/can",NA,"MN857168","canine","","28-May-2019",NA,NA,NA,"Quezon City",NA,NA,NA,"vgtk","Ubaldo,F.P.J.R., Cruz,J.L., Gonzales,R.M.C., Legaspi,C.F., Maravilla,J.L.",NA,0.999161918
+"BAI/BAINCR/2019-01/can",NA,"MN857167","canine","","26-Jun-2019",NA,NA,NA,"Caloocan City",NA,NA,NA,"vgtk","Ubaldo,F.P.J.R., Cruz,J.L., Gonzales,R.M.C., Legaspi,C.F., Maravilla,J.L.",NA,0.999161918
+"R9-2021-074",NA,"OR971594","Canis lupus familiaris","brain","20-Aug-2021",NA,NA,NA,"Zamboanga del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R9-2021-041",NA,"OR971593","Canis lupus familiaris","brain","05-Jan-2021",NA,NA,NA,"Zamboanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R9-2019-311",NA,"OR971592","Canis lupus familiaris","brain","09-Oct-2019",NA,NA,NA,"Zamboanga Del Norte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R8-2021-025",NA,"OR971591","Canis lupus familiaris","brain","26-Apr-2021",NA,NA,NA,"Samar",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R8-2021-024",NA,"OR971590","Canis lupus familiaris","brain","16-Apr-2021",NA,NA,NA,"Biliran",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R8-2021-021",NA,"OR971589","Canis lupus familiaris","brain","15-Apr-2021",NA,NA,NA,"Samar",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R8-2021-020",NA,"OR971588","Canis lupus familiaris","brain","07-Apr-2021",NA,NA,NA,"Southern Leyte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R8-2021-019",NA,"OR971587","Canis lupus familiaris","brain","30-Mar-2021",NA,NA,NA,"Leyte",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R8-2021-015",NA,"OR971586","Canis lupus familiaris","brain","23-Mar-2021",NA,NA,NA,"Biliran",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R8-2021-011",NA,"OR971585","Canis lupus familiaris","brain","26-Feb-2021",NA,NA,NA,"Biliran",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R8-2021-010",NA,"OR971584","Canis lupus familiaris","brain","22-Feb-2021",NA,NA,NA,"Biliran",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R7-0205",NA,"OR971583","Canis lupus familiaris","brain",NA,NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R7-0203",NA,"OR971582","Canis lupus familiaris","brain",NA,NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R7-0201",NA,"OR971581","Canis lupus familiaris","brain",NA,NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R7-0185",NA,"OR971580","Canis lupus familiaris","brain",NA,NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R7-0106",NA,"OR971579","Canis lupus familiaris","brain",NA,NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R7-0095",NA,"OR971578","Canis lupus familiaris","brain",NA,NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R7-2022-0010",NA,"OR971577","Canis lupus familiaris","brain","28-Feb-2022",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999245726
+"R7-2022-0009",NA,"OR971576","Canis lupus familiaris","brain","21-Feb-2022",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R7-2022-0008",NA,"OR971575","Canis lupus familiaris","brain","15-Feb-2022",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R7-2022-0007",NA,"OR971574","Canis lupus familiaris","brain","14-Feb-2022",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R7-2022-0004",NA,"OR971573","Canis lupus familiaris","brain","02-Aug-2022",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999245726
+"R7-2022-0003",NA,"OR971572","Canis lupus familiaris","brain","26-Jan-2022",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999245726
+"R7-2022-0001",NA,"OR971571","Canis lupus familiaris","brain","01-Jul-2022",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R7-2021-0168",NA,"OR971570","Canis lupus familiaris","brain","22-Nov-2021",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999245726
+"R7-2021-0167",NA,"OR971569","Canis lupus familiaris","brain","22-Nov-2021",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999245726
+"R7-2021-0163",NA,"OR971568","Canis lupus familiaris","brain","11-Dec-2021",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R7-2021-0162",NA,"OR971567","Canis lupus familiaris","brain","11-Oct-2021",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R7-2021-0161",NA,"OR971566","Canis lupus familiaris","brain","11-Sep-2021",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R7-2021-0160",NA,"OR971565","Canis lupus familiaris","brain","11-Sep-2021",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999245726
+"R7-2021-0159",NA,"OR971564","Canis lupus familiaris","brain","11-Sep-2021",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R7-2021-0155",NA,"OR971563","Canis lupus familiaris","brain","26-Oct-2021",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999245726
+"R7-2021-0153",NA,"OR971562","Canis lupus familiaris","brain","21-Oct-2021",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R7-2021-0151",NA,"OR971561","Canis lupus familiaris","brain","18-Oct-2021",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999245726
+"R7-2021-0150",NA,"OR971560","Canis lupus familiaris","brain","13-Oct-2021",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R7-2021-0149",NA,"OR971559","Canis lupus familiaris","brain","13-Oct-2021",NA,NA,NA,"Cebu",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2021-5964",NA,"OR971558","Canis lupus familiaris","brain","12-Sep-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R6-2021-5961",NA,"OR971557","Canis lupus familiaris","brain","12-Sep-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R6-2021-5932",NA,"OR971556","Canis lupus familiaris","brain","12-Jul-2021",NA,NA,NA,"Guimaras",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R6-2021-4965",NA,"OR971555","Canis lupus familiaris","brain","27-Oct-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2021-4798",NA,"OR971554","Canis lupus familiaris","brain","29-Oct-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2021-4770",NA,"OR971553","Canis lupus familiaris","brain","27-Oct-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2021-4769",NA,"OR971552","Canis lupus familiaris","brain","26-Oct-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2021-4768",NA,"OR971551","Canis lupus familiaris","brain","25-Oct-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2021-4767",NA,"OR971550","Canis lupus familiaris","brain","25-Oct-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2021-4711",NA,"OR971549","Canis lupus familiaris","brain","22-Oct-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2021-4703",NA,"OR971548","Canis lupus familiaris","brain","19-Oct-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2021-4702",NA,"OR971547","Canis lupus familiaris","brain","19-Oct-2021",NA,NA,NA,"Negros Occidental",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2021-4600",NA,"OR971546","Canis lupus familiaris","brain","13-Oct-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R6-2021-4599",NA,"OR971545","Canis lupus familiaris","brain","12-Oct-2021",NA,NA,NA,"Iloilo",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R4B-2022-00007",NA,"OR971494","Canis lupus familiaris","brain","16-Feb-2022",NA,NA,NA,"Oriental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4B-2022-00006",NA,"OR971493","Canis lupus familiaris","brain","09-Feb-2022",NA,NA,NA,"Oriental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R4B-2022-00005",NA,"OR971492","Canis lupus familiaris","brain","02-Sep-2022",NA,NA,NA,"Oriental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R4B-2022-00004",NA,"OR971491","Canis lupus familiaris","brain","04-Feb-2022",NA,NA,NA,"Occidental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4B-2022-00002",NA,"OR971490","Canis lupus familiaris","brain","14-Jan-2022",NA,NA,NA,"Oriental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R4B-2022-00001",NA,"OR971489","Canis lupus familiaris","brain","05-Jan-2022",NA,NA,NA,"Oriental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R4B-2021-070",NA,"OR971488","Canis lupus familiaris","brain","23-Apr-2021",NA,NA,NA,"Oriental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4B-2021-067",NA,"OR971487","Canis lupus familiaris","brain","14-Apr-2021",NA,NA,NA,"Oriental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4B-2021-061",NA,"OR971486","Canis lupus familiaris","brain","03-Oct-2021",NA,NA,NA,"Oriental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4B-2021-060",NA,"OR971485","Canis lupus familiaris","brain","03-May-2021",NA,NA,NA,"Oriental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4B-2021-058",NA,"OR971484","Canis lupus familiaris","brain","02-Sep-2021",NA,NA,NA,"Oriental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4B-2019-5816",NA,"OR971483","Canis lupus familiaris","brain","16-Aug-2019",NA,NA,NA,"Oriental Mindoro",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2022-577",NA,"OR971482","Canis lupus familiaris","brain","24-Mar-2022",NA,NA,NA,"Quezon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2022-408",NA,"OR971481","Canis lupus familiaris","brain","03-Oct-2022",NA,NA,NA,"Quezon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2022-261",NA,"OR971480","Canis lupus familiaris","brain","24-Feb-2022",NA,NA,NA,"Cavite",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R4A-2022-252",NA,"OR971479","Canis lupus familiaris","brain","22-Feb-2022",NA,NA,NA,"Laguna",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2022-234",NA,"OR971478","Canis lupus familiaris","brain","17-Feb-2022",NA,NA,NA,"Quezon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2022-210",NA,"OR971477","Canis lupus familiaris","brain","15-Feb-2022",NA,NA,NA,"Quezon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2022-203",NA,"OR971476","Canis lupus familiaris","brain","14-Feb-2022",NA,NA,NA,"Quezon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R4A-2022-171",NA,"OR971475","Canis lupus familiaris","brain","02-Jul-2022",NA,NA,NA,"Cavite",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2022-104",NA,"OR971474","Canis lupus familiaris","brain","25-Jan-2022",NA,NA,NA,"Batangas",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2022-99",NA,"OR971473","Canis lupus familiaris","brain","25-Jan-2022",NA,NA,NA,"Quezon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2022-98",NA,"OR971472","Canis lupus familiaris","brain","24-Jan-2022",NA,NA,NA,"Quezon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2022-93",NA,"OR971471","Canis lupus familiaris","brain","21-Jan-2022",NA,NA,NA,"Quezon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2022-40",NA,"OR971470","Canis lupus familiaris","brain","01-Nov-2022",NA,NA,NA,"Batangas",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2021-4446",NA,"OR971469","Canis lupus familiaris","brain","12-Jan-2021",NA,NA,NA,"Rizal",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2021-4119",NA,"OR971468","Canis lupus familiaris","brain","11-Nov-2021",NA,NA,NA,"Rizal",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2021-3398",NA,"OR971467","Canis lupus familiaris","brain","23-Sep-2021",NA,NA,NA,"Rizal",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2021-3000",NA,"OR971466","Canis lupus familiaris","brain","26-Aug-2021",NA,NA,NA,"Rizal",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2021-2999",NA,"OR971465","Canis lupus familiaris","brain","26-Aug-2021",NA,NA,NA,"Rizal",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2021-2849",NA,"OR971464","Canis lupus familiaris","brain","08-Nov-2021",NA,NA,NA,"Rizal",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2021-2750",NA,"OR971463","Canis lupus familiaris","brain","08-May-2021",NA,NA,NA,"Rizal",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2021-2633",NA,"OR971462","Canis lupus familiaris","brain","27-Jul-2021",NA,NA,NA,"Rizal",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2021-1668",NA,"OR971461","Canis lupus familiaris","brain","29-Nov-2021",NA,NA,NA,"Quezon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2021-1574",NA,"OR971460","Canis lupus familiaris","brain","10-Dec-2021",NA,NA,NA,"Batangas",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2020-2577",NA,"OR971459","Canis lupus familiaris","brain","29-May-2020",NA,NA,NA,"Rizal",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R4A-2020-2377",NA,"OR971458","Canis lupus familiaris","brain","04-Mar-2020",NA,NA,NA,"Rizal",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R4A-2020-0084",NA,"OR971457","Canis lupus familiaris","brain","03-Jan-2020",NA,NA,NA,"Rizal",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R4A-2019-5970",NA,"OR971456","Canis lupus familiaris","brain","27-Aug-2019",NA,NA,NA,"Rizal",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R4A-2019-5622",NA,"OR971455","Canis lupus familiaris","brain","05-Aug-2019",NA,NA,NA,"Rizal",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R4A-2019-1033",NA,"OR971454","Canis lupus familiaris","brain","24-Oct-2019",NA,NA,NA,"Quezon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R4A-2019-1023",NA,"OR971453","Canis lupus familiaris","brain","17-Oct-2019",NA,NA,NA,"Quezon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R4A-2019-989",NA,"OR971452","Canis lupus familiaris","brain","03-Oct-2019",NA,NA,NA,"Laguna",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R4A-2019-949",NA,"OR971451","Canis lupus familiaris","brain","25-Sep-2019",NA,NA,NA,"Laguna",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R4A-2019-892",NA,"OR971450","Canis lupus familiaris","brain","09-Sep-2019",NA,NA,NA,"Batangas",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R4A-2019-857",NA,"OR971449","Canis lupus familiaris","brain","27-Aug-2019",NA,NA,NA,"Quezon",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R4A-2019-772",NA,"OR971448","Canis lupus familiaris","brain","01-Aug-2019",NA,NA,NA,"Batangas",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R4A-2019-472",NA,"OR971447","Canis lupus familiaris","brain","06-May-2019",NA,NA,NA,"Batangas",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R3-2022-0019",NA,"OR971446","Canis lupus familiaris","brain","18-Jan-2022",NA,NA,NA,"Pampanga",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R3-2022-0017",NA,"OR971445","Canis lupus familiaris","brain","13-Jan-2022",NA,NA,NA,"Bulacan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R2-2019-7465",NA,"OR971394","Canis lupus familiaris","brain",NA,NA,NA,NA,"Pangasinan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R2-2019-7027",NA,"OR971393","Canis lupus familiaris","brain","20-Aug-2019",NA,NA,NA,"Cagayan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R1-2022-042",NA,"OR971392","Canis lupus familiaris","brain","21-Apr-2022",NA,NA,NA,"Pangasinan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R1-2022-040",NA,"OR971391","Canis lupus familiaris","brain","18-Apr-2022",NA,NA,NA,"Pangasinan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R1-2022-034",NA,"OR971390","Canis lupus familiaris","brain","04-Apr-2022",NA,NA,NA,"La Union",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R1-2021-166",NA,"OR971389","Canis lupus familiaris","brain","11-Aug-2021",NA,NA,NA,"Pangasinan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"R1-2021-165",NA,"OR971388","Canis lupus familiaris","brain","11-Feb-2021",NA,NA,NA,"La Union",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R1-2021-162",NA,"OR971387","Felis catus","brain","29-Oct-2021",NA,NA,NA,"Pangasinan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R1-2021-161",NA,"OR971386","Canis lupus familiaris","brain","28-Oct-2021",NA,NA,NA,"Pangasinan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R1-2019-212",NA,"OR971385","Canis lupus familiaris","brain","06-Nov-2019",NA,NA,NA,"Ilocos Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R1-2019-204",NA,"OR971384","Canis lupus familiaris","brain","21-Oct-2019",NA,NA,NA,"Pangasinan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R1-2019-196",NA,"OR971383","Canis lupus familiaris","brain","15-Oct-2019",NA,NA,NA,"Pangasinan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R1-2019-193",NA,"OR971382","Canis lupus familiaris","brain","01-Oct-2019",NA,NA,NA,"Pangasinan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R1-2019-178",NA,"OR971381","Canis lupus familiaris","brain","10-Sep-2019",NA,NA,NA,"Pangasinan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"NCR-2022-3616",NA,"OR971380","Canis lupus familiaris","brain","28-Sep-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-3580",NA,"OR971379","Canis lupus familiaris","brain","23-Sep-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-3487",NA,"OR971378","Canis lupus familiaris","brain","16-Sep-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-3357",NA,"OR971377","Canis lupus familiaris","brain","08-Sep-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-3281",NA,"OR971376","Canis lupus familiaris","brain","05-Sep-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-3207",NA,"OR971375","Canis lupus familiaris","brain","30-Aug-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-3197",NA,"OR971374","Canis lupus familiaris","brain","26-Aug-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-3192",NA,"OR971373","Canis lupus familiaris","brain","26-Aug-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-3089",NA,"OR971372","Canis lupus familiaris","brain","22-Aug-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-3041",NA,"OR971371","Felis catus","brain","18-Aug-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"NCR-2022-2995",NA,"OR971370","Canis lupus familiaris","brain","15-Aug-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-2994",NA,"OR971369","Canis lupus familiaris","brain","15-Aug-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-2923",NA,"OR971368","Felis catus","brain","09-Aug-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-2918",NA,"OR971367","Canis lupus familiaris","brain","09-Aug-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-2837",NA,"OR971366","Canis lupus familiaris","brain","05-Aug-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-2610",NA,"OR971365","Canis lupus familiaris","brain","21-Jul-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-2209",NA,"OR971364","Canis lupus familiaris","brain","28-Jun-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-2199",NA,"OR971363","Canis lupus familiaris","brain","27-Jun-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-1961",NA,"OR971362","Canis lupus familiaris","brain","13-Jun-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2022-1945",NA,"OR971361","Canis lupus familiaris","brain","10-Jun-2022",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2021-4011",NA,"OR971360","Canis lupus familiaris","brain","11-May-2021",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"NCR-2021-3901",NA,"OR971359","Canis lupus familiaris","brain","11-Feb-2021",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2021-3654",NA,"OR971358","Canis lupus familiaris","brain","13-Oct-2021",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2021-3600",NA,"OR971357","Canis lupus familiaris","brain","10-Jul-2021",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2020-3323",NA,"OR971356","Canis lupus familiaris","brain","10-Jan-2020",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2020-3257",NA,"OR971355","Canis lupus familiaris","brain","21-Sep-2020",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"NCR-2020-3068",NA,"OR971354","Canis lupus familiaris","brain","24-Aug-2020",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"NCR-2020-2865",NA,"OR971353","Canis lupus familiaris","brain","23-Jul-2020",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"NCR-2020-2625",NA,"OR971352","Canis lupus familiaris","brain","15-Jun-2020",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"NCR-2020-2509",NA,"OR971351","Canis lupus familiaris","brain","31-Mar-2020",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"NCR-2020-1676",NA,"OR971350","Canis lupus familiaris","brain","05-Feb-2020",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"NCR-2019-6661",NA,"OR971349","Canis lupus familiaris","brain","30-Sep-2019",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"NCR-2019-6544",NA,"OR971348","Canis lupus familiaris","brain","24-Sep-2019",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999161918
+"NCR-2019-6154",NA,"OR971347","Canis lupus familiaris","brain","05-Sep-2019",NA,NA,NA,"Metro Manila",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"CAR-2022-020",NA,"OR971346","Canis lupus familiaris","brain","16-Mar-2022",NA,NA,NA,"Abra",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"CAR-2022-018",NA,"OR971345","Canis lupus familiaris","brain","03-Oct-2022",NA,NA,NA,"Mountain",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R13-2021-2155",NA,"OR971675","Canis lupus familiaris","brain","20-Oct-2021",NA,NA,NA,"Agusan Del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R13-2021-2146",NA,"OR971674","Canis lupus familiaris","brain","18-Oct-2021",NA,NA,NA,"Agusan Del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R13-2021-2136",NA,"OR971673","Canis lupus familiaris","brain","10-Jun-2021",NA,NA,NA,"Butuan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R13-2021-2131",NA,"OR971672","Canis lupus familiaris","brain","15-Sep-2021",NA,NA,NA,"Agusan Del Sur",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R13-2021-2121",NA,"OR971671","Canis lupus familiaris","brain","25-Aug-2021",NA,NA,NA,"Butuan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R13-2021-1748",NA,"OR971670","Canis lupus familiaris","brain","07-May-2021",NA,NA,NA,"Butuan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R13-2021-1745",NA,"OR971669","Canis lupus familiaris","brain","30-Jun-2021",NA,NA,NA,"Butuan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R13-2021-1498",NA,"OR971668","Canis lupus familiaris","brain","30-May-2021",NA,NA,NA,"Butuan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R13-2021-617",NA,"OR971667","Canis lupus familiaris","brain","03-Oct-2021",NA,NA,NA,"Butuan",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999329534
+"R12-2021-1087",NA,"OR971666","Canis lupus familiaris","brain","09-Aug-2021",NA,NA,NA,"South Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R12-2021-1086",NA,"OR971665","Canis lupus familiaris","brain","09-Aug-2021",NA,NA,NA,"South Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R12-2021-954",NA,"OR971664","Canis lupus familiaris","brain","07-Jan-2021",NA,NA,NA,"South Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R12-2021-905",NA,"OR971663","Canis lupus familiaris","brain","24-Jun-2021",NA,NA,NA,"North Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R12-2021-384",NA,"OR971662","Canis lupus familiaris","brain","03-Sep-2021",NA,NA,NA,"South Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R12-2021-339",NA,"OR971661","Canis lupus familiaris","brain","03-Mar-2021",NA,NA,NA,"North Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R12-2021-280",NA,"OR971660","Canis lupus familiaris","brain","23-Feb-2021",NA,NA,NA,"Sultan Kudarat",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R12-2021-244",NA,"OR971659","Canis lupus familiaris","brain","18-Feb-2021",NA,NA,NA,"North Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R12-2021-237",NA,"OR971658","Canis lupus familiaris","brain","15-Sep-2021",NA,NA,NA,"South Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R12-2021-232",NA,"OR971657","Canis lupus familiaris","brain","16-Feb-2021",NA,NA,NA,"South Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R12-2021-176",NA,"OR971656","Canis lupus familiaris","brain","02-Feb-2021",NA,NA,NA,"Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R12-2021-175",NA,"OR971655","Canis lupus familiaris","brain","02-Feb-2021",NA,NA,NA,"North Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999497151
+"R12-2021-100",NA,"OR971654","Canis lupus familiaris","brain","19-Jan-2021",NA,NA,NA,"Sultan Kudarat",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R12-2021-063",NA,"OR971653","Canis lupus familiaris","brain","11-Aug-2021",NA,NA,NA,"Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R12-2021-047",NA,"OR971652","Canis lupus familiaris","brain","11-Jan-2021",NA,NA,NA,"Sultan Kudarat",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R12-2021-033",NA,"OR971651","Canis lupus familiaris","brain","01-Nov-2021",NA,NA,NA,"South Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R12-2021-020",NA,"OR971650","Canis lupus familiaris","brain","05-Jan-2021",NA,NA,NA,"Sultan Kudarat",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R12-2019-0861",NA,"OR971649","Canis lupus familiaris","brain","07-Nov-2019",NA,NA,NA,"Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999664767
+"R12-2019-0699",NA,"OR971648","Canis lupus familiaris","brain","05-Sep-2019",NA,NA,NA,"South Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R12-2019-0684",NA,"OR971647","Felis catus","brain","27-Aug-2019",NA,NA,NA,"South Cotabato",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"R12-2019-0637",NA,"OR971646","Canis lupus familiaris","brain","02-Aug-2019",NA,NA,NA,"Sultan Kudarat",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999413342
+"R12-2019-0611",NA,"OR971645","Canis lupus familiaris","brain","23-Jul-2019",NA,NA,NA,"Sarangani",NA,NA,NA,"vgtk","Cruz,J.L., Gonzales,R.M.C., Azul,R.R., Pena,R.C.D.",NA,0.999580959
+"153",NA,NA,"Canis familiaris",NA,"17-May-2018",NA,"Paulog","Ligao City","Albay","Bicol Region",13.18230598,123.4944229,"phd",NA,NA,NA
+"4A-22-104",NA,NA,"Canis familiaris",NA,"25-Jan-2022",NA,"Sabang","Lipa City","Batangas","Calabarzon",13.94086577,121.1746864,"phd",NA,NA,NA
+"4A-22-171",NA,NA,"Canis familiaris",NA,"06-Feb-2022",NA,"Buenavista","General Trias","Cavite","Calabarzon",14.32966619,120.8999068,"phd",NA,NA,NA
+"4A-22-203",NA,NA,"Canis familiaris",NA,"11-Feb-2022",NA,"Guiang-Guiang","Lucena","Quezon","Calabarzon",13.93834754,121.6153593,"phd",NA,NA,NA
+"4A-22-40",NA,NA,"Canis familiaris",NA,"10-Jan-2022",NA,"-","Batangas  City","Batangas","Calabarzon",13.7207195,121.103796,"phd",NA,NA,NA
+"4A-22-98",NA,NA,"Canis familiaris",NA,"22-Jan-2022",NA,"Baguio","Tayabas City","Quezon","Calabarzon",14.04055469,121.6122459,"phd",NA,NA,NA
+"4B-21-126",NA,NA,"Canis familiaris",NA,"26-Jan-2021",NA,"Sapul","Calapan City","Oriental Mindoro","Southwestern Tagalog Region",13.33178512,121.1780294,"phd",NA,NA,NA
+"4B-21-29",NA,NA,"Canis familiaris",NA,"09-Feb-2021",NA,"San Narciso","Victoria","Oriental Mindoro","Southwestern Tagalog Region",13.14368391,121.2438544,"phd",NA,NA,NA
+"4B-21-310",NA,NA,"Canis familiaris",NA,"10-Mar-2021",NA,"Tabinay","Puerto Galera","Oriental Mindoro","Southwestern Tagalog Region",13.39217641,120.8953101,"phd",NA,NA,NA
+"4B-21-35",NA,NA,"Canis familiaris",NA,"05-Mar-2021",NA,"Tabinay","Puerto Galera","Oriental Mindoro","Southwestern Tagalog Region",13.39217641,120.8953101,"phd",NA,NA,NA
+"4B-21-412",NA,NA,"Canis familiaris",NA,"12-Apr-2021",NA,"Sto Nino","Puerto Galera","Oriental Mindoro","Southwestern Tagalog Region",13.39217641,120.8953101,"phd",NA,NA,NA
+"4B-21-421",NA,NA,"Canis familiaris",NA,"14-Apr-2021",NA,"Malapad","Baco","Oriental Mindoro","Southwestern Tagalog Region",13.29039427,121.066837,"phd",NA,NA,NA
+"4B-21-423",NA,NA,"Canis familiaris",NA,"23-Apr-2021",NA,"Camilmil","Calapan City","Oriental Mindoro","Southwestern Tagalog Region",13.33178512,121.1780294,"phd",NA,NA,NA
+"4B-21-528",NA,NA,"Canis familiaris",NA,"28-May-2021",NA,"Aninuan","Puerto Galera","Oriental Mindoro","Southwestern Tagalog Region",13.39217641,120.8953101,"phd",NA,NA,NA
+"4B-21622",NA,NA,"Canis familiaris",NA,"16-Feb-2022",NA,"Mangangan","Baco","Oriental Mindoro","Southwestern Tagalog Region",13.29039427,121.066837,"phd",NA,NA,NA
+"4B-22-114",NA,NA,"Canis familiaris",NA,"14-Jan-2022",NA,"Mayabig","Baco","Oriental Mindoro","Southwestern Tagalog Region",13.29039427,121.066837,"phd",NA,NA,NA
+"4B-22-13",NA,NA,"Canis familiaris",NA,"22-Apr-2022",NA,"Teresita","Mansalay","Oriental Mindoro","Southwestern Tagalog Region",12.54836969,121.3482134,"phd",NA,NA,NA
+"4B-22-15",NA,NA,"Canis familiaris",NA,"05-Jan-2022",NA,"San Isidro","Puerto Galera","Oriental Mindoro","Southwestern Tagalog Region",13.39217641,120.8953101,"phd",NA,NA,NA
+"4B-22-16",NA,NA,"Canis familiaris",NA,"28-Apr-2022",NA,"Orcenuma","Bongabong","Oriental Mindoro","Southwestern Tagalog Region",12.71623574,121.3862303,"phd",NA,NA,NA
+"4B-22-17",NA,NA,"Canis familiaris",NA,"08-May-2022",NA,"Narra","Gloria","Oriental Mindoro","Southwestern Tagalog Region",12.92166054,121.3754507,"phd",NA,NA,NA
+"4B-22-20",NA,NA,"Canis familiaris",NA,"19-May-2022",NA,"Don Pedro","Mansalay","Oriental Mindoro","Southwestern Tagalog Region",12.54836969,121.3482134,"phd",NA,NA,NA
+"4B-22-21",NA,NA,"Canis familiaris",NA,"31-May-2022",NA,"Panggulayan","Pinamalayan","Oriental Mindoro","Southwestern Tagalog Region",13.02301767,121.4031803,"phd",NA,NA,NA
+"4B-22-28",NA,NA,"Canis familiaris",NA,"27-Jul-2022",NA,"Mangangan","Baco","Oriental Mindoro","Southwestern Tagalog Region",13.29039427,121.066837,"phd",NA,NA,NA
+"4B-22-30",NA,NA,"Canis familiaris",NA,"12-Aug-2022",NA,"Bangkatan","Baco","Oriental Mindoro","Southwestern Tagalog Region",13.29039427,121.066837,"phd",NA,NA,NA
+"4B-22-31",NA,NA,"Canis familiaris",NA,"18-Aug-2022",NA,"Bayanan","Pola","Oriental Mindoro","Southwestern Tagalog Region",13.13990357,121.4449478,"phd",NA,NA,NA
+"4B-22-35",NA,NA,"Canis familiaris",NA,"25-Oct-2022",NA,"Bagumbayan","Roxas","Oriental Mindoro","Southwestern Tagalog Region",12.61737051,121.4554967,"phd",NA,NA,NA
+"4B-22-37",NA,NA,"Canis familiaris",NA,"01-Oct-2022",NA,"San Isidro","Alcantara","Romblon","Southwestern Tagalog Region",12.29784708,122.054934,"phd",NA,NA,NA
+"4B-22-39",NA,NA,"Canis familiaris",NA,"21-Oct-2022",NA,"San Isidro","Alcantara","Romblon","Southwestern Tagalog Region",12.29784708,122.054934,"phd",NA,NA,NA
+"4B-22-40",NA,NA,"Canis familiaris",NA,"02-Dec-2022",NA,"Balugo","Mansalay","Oriental Mindoro","Southwestern Tagalog Region",12.54836969,121.3482134,"phd",NA,NA,NA
+"4B-22-41",NA,NA,"Canis familiaris",NA,"24-Nov-2022",NA,"Dapawan","Odiongan","Romblon","Southwestern Tagalog Region",12.39865996,122.0177701,"phd",NA,NA,NA
+"4B-22-42",NA,NA,"Canis familiaris",NA,"26-Nov-2022",NA,"Bonlao","Alcantara","Romblon","Southwestern Tagalog Region",12.29784708,122.054934,"phd",NA,NA,NA
+"4B-22-44",NA,NA,"Canis familiaris",NA,"11-Dec-2022",NA,"Dapawan","Odiongan","Romblon","Southwestern Tagalog Region",12.39865996,122.0177701,"phd",NA,NA,NA
+"4B-22-45",NA,NA,"Canis familiaris",NA,"12-Dec-2022",NA,"Concepcion Sur","Santa Maria","Romblon","Southwestern Tagalog Region",12.40310216,122.0836566,"phd",NA,NA,NA
+"4B-23-01",NA,NA,"Canis familiaris",NA,"20-Jan-2023",NA,"Concepcion Norte","Santa Maria","Romblon","Southwestern Tagalog Region",12.40310216,122.0836566,"phd",NA,NA,NA
+"4B-23-02",NA,NA,"Canis familiaris",NA,"13-Jan-2023",NA,"Dapawan","Odiongan","Romblon","Southwestern Tagalog Region",12.39865996,122.0177701,"phd",NA,NA,NA
+"4B-23-03",NA,NA,"Canis familiaris",NA,"22-Jan-2023",NA,"Sugod","San Agustin","Romblon","Southwestern Tagalog Region",12.55403552,122.1124048,"phd",NA,NA,NA
+"4B-23-04",NA,NA,"Canis familiaris",NA,"31-Jan-2023",NA,"Carmen","San Agustin","Romblon","Southwestern Tagalog Region",12.55403552,122.1124048,"phd",NA,NA,NA
+"4B-23-05",NA,NA,"Canis familiaris",NA,"20-Jan-2023",NA,"Sugod","San Agustin","Romblon","Southwestern Tagalog Region",12.55403552,122.1124048,"phd",NA,NA,NA
+"4B-23-06",NA,NA,"Canis familiaris",NA,"02-Feb-2023",NA,"Concepcion Norte","Santa Maria","Romblon","Southwestern Tagalog Region",12.40310216,122.0836566,"phd",NA,NA,NA
+"4B-23-07",NA,NA,"Canis familiaris",NA,"07-Feb-2023",NA,"Concepcion Sur","Santa Maria","Romblon","Southwestern Tagalog Region",12.40310216,122.0836566,"phd",NA,NA,NA
+"4B-23-11",NA,NA,"Canis familiaris",NA,"07-Feb-2023",NA,"Jun Carlo","San Andres","Romblon","Southwestern Tagalog Region",12.53642104,122.0469478,"phd",NA,NA,NA
+"4B-23-12",NA,NA,"Canis familiaris",NA,"14-Feb-2023",NA,"Concepcion Norte","Santa Maria","Romblon","Southwestern Tagalog Region",12.40310216,122.0836566,"phd",NA,NA,NA
+"4B-23-13",NA,NA,"Canis familiaris",NA,"09-Feb-2023",NA,"Rizal","Odiongan","Romblon","Southwestern Tagalog Region",12.39865996,122.0177701,"phd",NA,NA,NA
+"4B-23-15",NA,NA,"Canis familiaris",NA,"16-Feb-2023",NA,"Poctoy","Odiongan","Romblon","Southwestern Tagalog Region",12.39865996,122.0177701,"phd",NA,NA,NA
+"4B-23-16",NA,NA,"Canis familiaris",NA,"28-Feb-2023",NA,"Dapawan","Odiongan","Romblon","Southwestern Tagalog Region",12.39865996,122.0177701,"phd",NA,NA,NA
+"4B-23-17",NA,NA,"Canis familiaris",NA,"01-Mar-2023",NA,"Poctoy","Odiongan","Romblon","Southwestern Tagalog Region",12.39865996,122.0177701,"phd",NA,NA,NA
+"4B-23-19",NA,NA,"Canis familiaris",NA,"01-Mar-2023",NA,"Mahabang Baybay","San Agustin","Romblon","Southwestern Tagalog Region",12.55403552,122.1124048,"phd",NA,NA,NA
+"4B-2422",NA,NA,"Canis familiaris",NA,"04-Feb-2022",NA,"Concepcion","Calintaan","Occidental Mindoro","Southwestern Tagalog Region",12.59217706,121.082659,"phd",NA,NA,NA
+"4B-2922HM",NA,NA,"Canis familiaris",NA,"09-Feb-2022",NA,"Mangangan","Baco","Oriental Mindoro","Southwestern Tagalog Region",13.29039427,121.066837,"phd",NA,NA,NA
+"4B-2922JG",NA,NA,"Canis familiaris",NA,"09-Feb-2022",NA,"Anilao","Bongabong","Oriental Mindoro","Southwestern Tagalog Region",12.71623574,121.3862303,"phd",NA,NA,NA
+"H-23-011Sk_12",NA,NA,"Homo sapiens",NA,"02-Feb-2023",NA,"Concepcion Sur","Santa Maria","Romblon","Southwestern Tagalog Region",12.40310216,122.0836566,"phd",NA,NA,NA
+"Z-14-033",NA,NA,"Canis familiaris",NA,"07-Feb-2014",NA,"Bagumbayan, Zone 4","Atimonan","Quezon","Calabarzon",13.98301338,121.8863992,"phd",NA,NA,NA
+"Z-13-032",NA,NA,"Canis familiaris",NA,"14-Feb-2013",NA,"Lower Bicutan","Taguig","Metropolitan Manila","National Capital Region",14.51469695,121.0660524,"phd",NA,NA,NA
+"R1-21-148",NA,NA,"Canis familiaris",NA,"10-Apr-2021",NA,"Malibong","Urbiztondo","Pangasinan","Ilocos Region",15.82353439,120.3636915,"phd",NA,NA,NA
+"R10-688",NA,NA,"Canis familiaris",NA,"02-Jul-2021",NA,"","Malaybalay City","Bukidnon","Northern Mindanao",8.160681669,125.1787735,"phd",NA,NA,NA
+"R10-711",NA,NA,"Canis familiaris",NA,"12-Jul-2021",NA,"Balulang","Cagayan de Oro City","Misamis Oriental","Northern Mindanao",8.409218588,124.6235169,"phd",NA,NA,NA
+"R10-714",NA,NA,"Canis familiaris",NA,"11-Jul-2021",NA,"Bonbon","Opol","Misamis Oriental","Northern Mindanao",8.42897072,124.502868,"phd",NA,NA,NA
+"R10-824",NA,NA,"Canis familiaris",NA,"09-Sep-2021",NA,"Bulua","Cagayan de Oro City","Misamis Oriental","Northern Mindanao",8.409218588,124.6235169,"phd",NA,NA,NA
+"R10-856",NA,NA,"Canis familiaris",NA,"27-Sep-2021",NA,"-","Manticao","Misamis Oriental","Northern Mindanao",8.374138099,124.3486702,"phd",NA,NA,NA
+"R10-907",NA,NA,"Canis familiaris",NA,"25-Oct-2021",NA,"Gango","Libona","Bukidnon","Northern Mindanao",8.327601426,124.7570432,"phd",NA,NA,NA
+"R10-920",NA,NA,"Canis familiaris",NA,"26-Oct-2021",NA,"Agusan","Cagayan de Oro City","Misamis Oriental","Northern Mindanao",8.409218588,124.6235169,"phd",NA,NA,NA
+"R10-989",NA,NA,"Canis familiaris",NA,"25-Nov-2021",NA,"Barangay 1","Gingoog  City","Misamis Oriental","Northern Mindanao",8.776382452,125.0898786,"phd",NA,NA,NA
+"R10-990",NA,NA,"Canis familiaris",NA,"25-Nov-2021",NA,"Agay-Ayan","Gingoog  City","Misamis Oriental","Northern Mindanao",8.776382452,125.0898786,"phd",NA,NA,NA
+"R11-21-61",NA,NA,"Canis familiaris",NA,"11-Aug-2021",NA,"","Midsayap","Cotabato","Bangsamoro",7.136249451,124.5166062,"phd",NA,NA,NA
+"R11-21-63",NA,NA,"Canis familiaris",NA,"04-Oct-2021",NA,"","Tagum","Davao Del Norte","Davao Region",7.434951203,125.7990149,"phd",NA,NA,NA
+"R11-22-002",NA,NA,"Canis familiaris",NA,"05-Jan-2022",NA,"Talomo","Davao City","Davao Del Sur","Davao Region",7.254430625,125.4144871,"phd",NA,NA,NA
+"R2-081",NA,NA,"Canis familiaris",NA,"31-Aug-2020",NA,"Ugac Norte","Tuguegarao  City","Cagayan","Cagayan Valley",17.60612446,121.7593619,"phd",NA,NA,NA
+"R3-731",NA,NA,"Canis familiaris",NA,"09-Dec-2021",NA,"Sangitan","Cabanatuan City","Nueva Ecija","Central Luzon",15.49243695,120.9899426,"phd",NA,NA,NA
+"R5-22-09",NA,NA,"Felis catus",NA,"07-Feb-2022",NA,"Bauud","Malilipot","Albay","Bicol Region",13.30206264,123.724162,"phd",NA,NA,NA
+"R5-21-115",NA,NA,"Canis familiaris",NA,"28-Sep-2021",NA,"Pob. III","Vinzons","Camarines Norte","Bicol Region",14.19277209,122.8889974,"phd",NA,NA,NA
+"R5-21-119",NA,NA,"Canis familiaris",NA,"15-Oct-2021",NA,"San Pedro","Irosin","Sorsogon","Bicol Region",12.71458793,124.0300037,"phd",NA,NA,NA
+"R5-21-128",NA,NA,"Canis familiaris",NA,"09-Nov-2021",NA,"Cararayan","Naga City","Camarines Sur","Bicol Region",13.64368803,123.2594656,"phd",NA,NA,NA
+"R5-21-132",NA,NA,"Canis familiaris",NA,"15-Nov-2021",NA,"Labnig","Malinao","Albay","Bicol Region",13.3845747,123.6522757,"phd",NA,NA,NA
+"R5-21-136",NA,NA,"Canis familiaris",NA,"02-Dec-2021",NA,"-","Libon","Albay","Bicol Region",13.24707931,123.3705704,"phd",NA,NA,NA
+"R5-21-140",NA,NA,"Canis familiaris",NA,"10-Dec-2021",NA,"Calang Calawan","Vinzons","Camarines Norte","Bicol Region",14.19277209,122.8889974,"phd",NA,NA,NA
+"R5-22-008",NA,NA,"Canis familiaris",NA,"02-Feb-2022",NA,"Sto. Cristo","Tabaco","Albay","Bicol Region",13.32537797,123.668741,"phd",NA,NA,NA
+"R6-21-4375",NA,NA,"Canis familiaris",NA,"01-Oct-2021",NA,"Labigan","Sara","Iloilo","Western Visayas",11.29863894,122.9983924,"phd",NA,NA,NA
+"R6-21-4511",NA,NA,"Canis familiaris",NA,"08-Oct-2021",NA,"San Isidro","Tibiao","Antique","Western Visayas",11.31177392,122.0839795,"phd",NA,NA,NA
+"R6-21-4600",NA,NA,"Canis familiaris",NA,"14-Oct-2021",NA,"Jibao-An","Pavia","Iloilo","Western Visayas",10.76834195,122.5361294,"phd",NA,NA,NA
+"R6-4342",NA,NA,"Bos taurus",NA,"30-Sep-2021",NA,"Cabanban","Oton","Iloilo","Western Visayas",10.72535873,122.4673796,"phd",NA,NA,NA
+"R6-4568",NA,NA,"Canis familiaris",NA,"13-Oct-2021",NA,"Avila","Buenavista","Guimaras","Western Visayas",10.69136331,122.6621626,"phd",NA,NA,NA
+"R7-21-161",NA,NA,"Canis familiaris",NA,"18-Oct-2021",NA,"Pusok","Lapu-Lapu City","Cebu","Central Visayas",10.29788925,123.9784138,"phd",NA,NA,NA
+"R9-010",NA,NA,"Felis catus",NA,"27-Jan-2020",NA,"San Roque","Zamboanga City","Zamboanga Del Sur","Zamboanga Peninsula",7.154200895,122.139348,"phd",NA,NA,NA
+"R9-074",NA,NA,"Canis familiaris",NA,"20-Aug-2021",NA,"Cogon","Vincenzo A. Sagun","Zamboanga Del Sur","Zamboanga Peninsula",7.519657705,123.1738437,"phd",NA,NA,NA
+"R9-089",NA,NA,"Canis familiaris",NA,"07-Oct-2021",NA,"Pangi","Ipil","Zamboanga Sibugay","Zamboanga Peninsula",7.780235248,122.5765115,"phd",NA,NA,NA
+"R9-105",NA,NA,"Canis familiaris",NA,"09-Dec-2021",NA,"Lopoc","Labason","Zamboanga Del Norte","Zamboanga Peninsula",8.030135135,122.5303567,"phd",NA,NA,NA
+"RADDL1-16-153",NA,NA,"Canis familiaris",NA,"18-Jul-2016",NA,"Real","Urbiztondo","Pangasinan","Ilocos Region",15.82353439,120.3636915,"phd",NA,NA,NA
+"RADDL1-16-166",NA,NA,"Canis familiaris",NA,"09-Aug-2016",NA,"West","unknown","Pangasinan","Ilocos Region",15.99415023,120.3184423,"phd",NA,NA,NA
+"RADDL3-1045",NA,NA,"Canis familiaris",NA,"23-Oct-2015",NA,"St. Francis","Limay","Bataan","Central Luzon",14.53878982,120.5544428,"phd",NA,NA,NA
+"RADDL3-15-172",NA,NA,"Canis familiaris",NA,"12-Feb-2015",NA,"Cvo","San Jose  City","Nueva Ecija","Central Luzon",15.78462183,120.9975839,"phd",NA,NA,NA
+"RADDL3-16-1008",NA,NA,"Canis familiaris",NA,"27-Oct-2016",NA,"Pamaldan","Cabanatuan City","Nueva Ecija","Central Luzon",15.49243695,120.9899426,"phd",NA,NA,NA
+"RADDL3-16-468",NA,NA,"Canis familiaris",NA,"01-Jun-2016",NA,"Sta Teresita","Angeles  City","Pampanga","Central Luzon",15.14555779,120.5862479,"phd",NA,NA,NA
+"RADDL3-16-521",NA,NA,"Canis familiaris",NA,"15-Jun-2016",NA,"Bulihan","Malolos City","Bulacan","Central Luzon",14.82958643,120.8367451,"phd",NA,NA,NA
+"RADDL3-16-627",NA,NA,"Canis familiaris",NA,"27-Jul-2016",NA,"Ligas","Malolos City","Bulacan","Central Luzon",14.82958643,120.8367451,"phd",NA,NA,NA
+"RADDL3-845",NA,NA,"Canis familiaris",NA,"02-Sep-2015",NA,"San Jose","Floridablanca","Pampanga","Central Luzon",14.98771276,120.4868625,"phd",NA,NA,NA
+"RADDL5-005",NA,NA,"Canis familiaris",NA,"30-Jan-2015",NA,"San Nicolas","Iriga  City","Camarines Sur","Bicol Region",13.44838237,123.4332975,"phd",NA,NA,NA
+"Z-04-664",NA,NA,"Canis familiaris",NA,"15-Dec-2004",NA,"Lower Bicutan","Taguig","Metropolitan Manila","National Capital Region",14.51469695,121.0660524,"phd",NA,NA,NA
+"Z-05-102",NA,NA,"Canis familiaris",NA,"21-Feb-2005",NA,"","Muntinlupa","Metropolitan Manila","National Capital Region",14.40197636,121.0327847,"phd",NA,NA,NA
+"Z-05-191",NA,NA,"Canis familiaris",NA,"10-Apr-2005",NA,"Lower Bicutan","Taguig","Metropolitan Manila","National Capital Region",14.51469695,121.0660524,"phd",NA,NA,NA
+"Z-05-557",NA,NA,"Canis familiaris",NA,"03-Dec-2005",NA,"Rizal","Makati City","Metropolitan Manila","National Capital Region",14.54943127,121.0335906,"phd",NA,NA,NA
+"Z-05-96",NA,NA,"Canis familiaris",NA,"17-Feb-2005",NA,"Maywood Sucat","Parañaque","Metropolitan Manila","National Capital Region",14.48357034,121.0147858,"phd",NA,NA,NA
+"Z-06-150",NA,NA,"Canis familiaris",NA,"24-Apr-2006",NA,"Balete","Batangas  City","Batangas","Calabarzon",13.7207195,121.103796,"phd",NA,NA,NA
+"Z-06-295",NA,NA,"Canis familiaris",NA,"22-Jul-2006",NA,"Lucsuhin","Calatagan","Batangas","Calabarzon",13.86384068,120.6585868,"phd",NA,NA,NA
+"Z-06-39",NA,NA,"Canis familiaris",NA,"26-Jan-2006",NA,"Ambulong","Tanauan","Batangas","Calabarzon",14.09625533,121.0970452,"phd",NA,NA,NA
+"Z-07-07",NA,NA,"Canis familiaris",NA,"08-Jan-2007",NA,"Molino 6","General Trias","Cavite","Calabarzon",14.32966619,120.8999068,"phd",NA,NA,NA
+"Z-07-22",NA,NA,"Canis familiaris",NA,"23-Jan-2007",NA,"Tierra Nevada","Amadeo","Cavite","Calabarzon",14.187281,120.9251442,"phd",NA,NA,NA
+"Z-07-222",NA,NA,"Canis familiaris",NA,"30-Jun-2007",NA,"Dagatan","General Trias","Cavite","Calabarzon",14.32966619,120.8999068,"phd",NA,NA,NA
+"Z-07-351",NA,NA,"Canis familiaris",NA,"25-Oct-2007",NA,"-","Taguig","Metropolitan Manila","National Capital Region",14.51469695,121.0660524,"phd",NA,NA,NA
+"Z-07-366",NA,NA,"Canis familiaris",NA,"12-Nov-2007",NA,"Wawa","Lipa City","Batangas","Calabarzon",13.94086577,121.1746864,"phd",NA,NA,NA
+"Z-07-38",NA,NA,"Canis familiaris",NA,"02-May-2007",NA,"Timbol","Bacoor","Cavite","Calabarzon",14.41614393,120.9704734,"phd",NA,NA,NA
+"Z-07-387",NA,NA,"Canis familiaris",NA,"07-Dec-2007",NA,"Bagong Liing","San Antonio","Quezon","Calabarzon",13.89985141,121.2980234,"phd",NA,NA,NA
+"Z-07-398",NA,NA,"Canis familiaris",NA,"19-Dec-2007",NA,"Paciano Rizal","Calamba City","Laguna","Calabarzon",14.18862277,121.1242055,"phd",NA,NA,NA
+"Z-07-403",NA,NA,"Canis familiaris",NA,"22-Dec-2007",NA,"Sampagutia Exit","Lucena","Quezon","Calabarzon",13.93834754,121.6153593,"phd",NA,NA,NA
+"Z-07-407",NA,NA,"Canis familiaris",NA,"26-Dec-2007",NA,"Southland Talon 1","Las Piñas","Metropolitan Manila","National Capital Region",14.4423825,120.9940879,"phd",NA,NA,NA
+"Z-08-351",NA,NA,"Canis familiaris",NA,"12-Dec-2008",NA,"-","General Mariano Alvarez","Cavite","Calabarzon",14.30698662,121.0184177,"phd",NA,NA,NA
+"Z-08-359",NA,NA,"Canis familiaris",NA,"25-Dec-2008",NA,"San Lucas II","San Pablo City","Laguna","Calabarzon",14.05146733,121.3315598,"phd",NA,NA,NA
+"Z-09-94",NA,NA,"Canis familiaris",NA,"08-Apr-2009",NA,"Brgy 191","Pasay  City","Metropolitan Manila","National Capital Region",14.53080944,121.0041508,"phd",NA,NA,NA
+"Z-12-012",NA,NA,"Canis familiaris",NA,"16-Jan-2012",NA,"Sulpoc","Tanauan","Batangas","Calabarzon",14.09625533,121.0970452,"phd",NA,NA,NA
+"Z-12-029",NA,NA,"Canis familiaris",NA,"03-Feb-2012",NA,"Sss Village","Marikina","Metropolitan Manila","National Capital Region",14.64718362,121.1030131,"phd",NA,NA,NA
+"Z-12-034",NA,NA,"Canis familiaris",NA,"06-Feb-2012",NA,"Bgy. Santo Anghel","San Pablo City","Laguna","Calabarzon",14.05146733,121.3315598,"phd",NA,NA,NA
+"Z-12-060",NA,NA,"Canis familiaris",NA,"25-Feb-2012",NA,"F.De Castro","General Mariano Alvarez","Cavite","Calabarzon",14.30698662,121.0184177,"phd",NA,NA,NA
+"Z-12-149",NA,NA,"Canis familiaris",NA,"28-Jun-2012",NA,"Palayan","Pinamalayan","Oriental Mindoro","Southwestern Tagalog Region",13.02301767,121.4031803,"phd",NA,NA,NA
+"Z-12-208",NA,NA,"Canis familiaris",NA,"02-Oct-2012",NA,"De Paro St.","Kalookan  City","Metropolitan Manila","National Capital Region",14.74647256,121.0486805,"phd",NA,NA,NA
+"Z-13-020",NA,NA,"Canis familiaris",NA,"02-Feb-2013",NA,"Sucat","Muntinlupa","Metropolitan Manila","National Capital Region",14.40197636,121.0327847,"phd",NA,NA,NA
+"Z-13-036",NA,NA,"Canis familiaris",NA,"25-Feb-2013",NA,"Upper Bicutan","Taguig","Metropolitan Manila","National Capital Region",14.51469695,121.0660524,"phd",NA,NA,NA
+"Z-13-037",NA,NA,"Canis familiaris",NA,"25-Feb-2013",NA,"-","Cavinti","Laguna","Calabarzon",14.24291032,121.5551642,"phd",NA,NA,NA
+"Z-13-065",NA,NA,"Canis familiaris",NA,"04-Apr-2013",NA,"Dumuclay North","Batangas  City","Batangas","Calabarzon",13.7207195,121.103796,"phd",NA,NA,NA
+"Z-13-066",NA,NA,"Canis familiaris",NA,"05-Apr-2013",NA,"Bayan Luma","Imus","Cavite","Calabarzon",14.39822975,120.9319992,"phd",NA,NA,NA
+"Z-13-071",NA,NA,"Canis familiaris",NA,"10-Apr-2013",NA,"Golden Acres","Las Piñas","Metropolitan Manila","National Capital Region",14.4423825,120.9940879,"phd",NA,NA,NA
+"Z-13-073",NA,NA,"Canis familiaris",NA,"12-Apr-2013",NA,"Bf Homes","Parañaque","Metropolitan Manila","National Capital Region",14.48357034,121.0147858,"phd",NA,NA,NA
+"Z-13-081",NA,NA,"Canis familiaris",NA,"25-Apr-2013",NA,"Sto. Angel Norte","Santa Cruz","Laguna","Calabarzon",14.26443013,121.4040122,"phd",NA,NA,NA
+"Z-13-086",NA,NA,"Canis familiaris",NA,"03-May-2013",NA,"San Carlos","Binangonan","Rizal","Calabarzon",14.49353136,121.1932147,"phd",NA,NA,NA
+"Z-13-089",NA,NA,"Canis familiaris",NA,"04-May-2013",NA,"Malainen Luma","Naic","Cavite","Calabarzon",14.29182513,120.7960137,"phd",NA,NA,NA
+"Z-13-094",NA,NA,"Canis familiaris",NA,"10-May-2013",NA,"Palico II","Imus","Cavite","Calabarzon",14.39822975,120.9319992,"phd",NA,NA,NA
+"Z-13-096",NA,NA,"Felis catus",NA,"12-May-2013",NA,"Bf International","Las Piñas","Metropolitan Manila","National Capital Region",14.4423825,120.9940879,"phd",NA,NA,NA
+"Z-13-098",NA,NA,"Canis familiaris",NA,"13-May-2013",NA,"-","San Juan","Metropolitan Manila","National Capital Region",14.60295528,121.0338172,"phd",NA,NA,NA
+"Z-13-134",NA,NA,"Canis familiaris",NA,"10-Jun-2013",NA,"Sto. Nino Vill.,Tunasan","Muntinlupa","Metropolitan Manila","National Capital Region",14.40197636,121.0327847,"phd",NA,NA,NA
+"Z-13-135",NA,NA,"Canis familiaris",NA,"12-Jun-2013",NA,"Alulod","Indang","Cavite","Calabarzon",14.18917642,120.8713283,"phd",NA,NA,NA
+"Z-13-161",NA,NA,"Canis familiaris",NA,"20-Jul-2013",NA,"Pansol","Calamba City","Laguna","Calabarzon",14.18862277,121.1242055,"phd",NA,NA,NA
+"Z-13-171",NA,NA,"Canis familiaris",NA,"05-Aug-2013",NA,"Pinamocan Silangan","Batangas  City","Batangas","Calabarzon",13.7207195,121.103796,"phd",NA,NA,NA
+"Z-13-184",NA,NA,"Canis familiaris",NA,"29-Aug-2013",NA,"Tabangaw","Batangas  City","Batangas","Calabarzon",13.7207195,121.103796,"phd",NA,NA,NA
+"Z-13-204",NA,NA,"Canis familiaris",NA,"26-Sep-2013",NA,"Dayap","Calauan","Laguna","Calabarzon",14.13318557,121.2951683,"phd",NA,NA,NA
+"Z-13-216",NA,NA,"Canis familiaris",NA,"25-Oct-2013",NA,"Bgy. 2","Mamburao","Occidental Mindoro","Southwestern Tagalog Region",13.25401504,120.6612766,"phd",NA,NA,NA
+"Z-13-234",NA,NA,"Canis familiaris",NA,"15-Nov-2013",NA,"Mayapa","Calamba City","Laguna","Calabarzon",14.18862277,121.1242055,"phd",NA,NA,NA
+"Z-13-259",NA,NA,"Canis familiaris",NA,"18-Dec-2013",NA,"Pound","Cavite  City","Cavite","Calabarzon",14.48021461,120.8978023,"phd",NA,NA,NA
+"Z-14-023",NA,NA,"Canis familiaris",NA,"31-Jan-2014",NA,"Poblacion I","Santa Cruz","Laguna","Calabarzon",14.26443013,121.4040122,"phd",NA,NA,NA
+"Z-14-05",NA,NA,"Canis familiaris",NA,"05-Jan-2014",NA,"Pasong Camachile","General Trias","Cavite","Calabarzon",14.32966619,120.8999068,"phd",NA,NA,NA
+"Z-14-058",NA,NA,"Canis familiaris",NA,"14-Mar-2014",NA,"-","Taytay","Rizal","Calabarzon",14.56080116,121.1315174,"phd",NA,NA,NA
+"Z-14-098",NA,NA,"Canis familiaris",NA,"29-Apr-2014",NA,"Dita","Cuenca","Batangas","Calabarzon",13.90952328,121.0537657,"phd",NA,NA,NA
+"Z-14-101",NA,NA,"Canis familiaris",NA,"04-May-2014",NA,"Upper Bicutan","Taguig","Metropolitan Manila","National Capital Region",14.51469695,121.0660524,"phd",NA,NA,NA
+"Z-14-106",NA,NA,"Felis catus",NA,"08-May-2014",NA,"Sta. Cruz","Cavite  City","Cavite","Calabarzon",14.48021461,120.8978023,"phd",NA,NA,NA
+"Z-14-126",NA,NA,"Canis familiaris",NA,"31-May-2014",NA,"Talon 5","Las Piñas","Metropolitan Manila","National Capital Region",14.4423825,120.9940879,"phd",NA,NA,NA
+"Z-14-136",NA,NA,"Canis familiaris",NA,"11-Jun-2014",NA,"Parklane,San Francisco","General Trias","Cavite","Calabarzon",14.32966619,120.8999068,"phd",NA,NA,NA
+"Z-14-142",NA,NA,"Canis familiaris",NA,"21-Jun-2014",NA,"Mercedes Homes 3","Binan","Laguna","Calabarzon",14.30526494,121.0647852,"phd",NA,NA,NA
+"Z-14-182",NA,NA,"Canis familiaris",NA,"20-Aug-2014",NA,"San Francisco","Pulilan","Bulacan","Central Luzon",14.91386664,120.8556301,"phd",NA,NA,NA
+"Z-14-243",NA,NA,"Canis familiaris",NA,"13-Nov-2014",NA,"Bubukal St.","Santa Cruz","Laguna","Calabarzon",14.26443013,121.4040122,"phd",NA,NA,NA
+"Z-15-001",NA,NA,"Canis familiaris",NA,"01-Jan-2015",NA,"Bagumbayan","Pililla","Rizal","Calabarzon",14.4548703,121.3449535,"phd",NA,NA,NA
+"Z-15-009",NA,NA,"Canis familiaris",NA,"16-Jan-2015",NA,"South Triangle","Quezon City","Metropolitan Manila","National Capital Region",14.67428047,121.0574986,"phd",NA,NA,NA
+"Z-15-163",NA,NA,"Canis familiaris",NA,"05-Sep-2015",NA,"Panapaan 8","Bacoor","Cavite","Calabarzon",14.41614393,120.9704734,"phd",NA,NA,NA
+"Z-16-082",NA,NA,"Canis familiaris",NA,"24-May-2016",NA,"Caingin","Santa Rosa City","Laguna","Calabarzon",14.27260264,121.0895167,"phd",NA,NA,NA
+"Z-16-150",NA,NA,"Canis familiaris",NA,"05-Sep-2016",NA,"Putatan","Muntinlupa","Metropolitan Manila","National Capital Region",14.40197636,121.0327847,"phd",NA,NA,NA
+"Z-16-151",NA,NA,"Canis familiaris",NA,"05-Sep-2016",NA,"-","Carmona","Cavite","Calabarzon",14.29896527,121.0371349,"phd",NA,NA,NA
+"Z-16-196",NA,NA,"Canis familiaris",NA,"23-Nov-2016",NA,"Sampaloc","Dasmariñas","Cavite","Calabarzon",14.31850325,120.9657797,"phd",NA,NA,NA
+"Z-16-209",NA,NA,"Canis familiaris",NA,"14-Dec-2016",NA,"Pahinga Sur","Candelaria","Quezon","Calabarzon",13.94085961,121.4302409,"phd",NA,NA,NA
+"Z-16-210",NA,NA,"Canis familiaris",NA,"16-Dec-2016",NA,"Almanza 2","Las Piñas","Metropolitan Manila","National Capital Region",14.4423825,120.9940879,"phd",NA,NA,NA
+"Z-16-211",NA,NA,"Canis familiaris",NA,"19-Dec-2016",NA,"Las Villas De Manila","Binan","Laguna","Calabarzon",14.30526494,121.0647852,"phd",NA,NA,NA
+"Z-17-046",NA,NA,"Canis familiaris",NA,"06-Mar-2017",NA,"Bgy. San Fernando","Santo Tomas","Batangas","Calabarzon",14.07637376,121.1824598,"phd",NA,NA,NA
+"Z-17-174",NA,NA,"Canis familiaris",NA,"23-Sep-2017",NA,"Poblacion","Muntinlupa","Metropolitan Manila","National Capital Region",14.40197636,121.0327847,"phd",NA,NA,NA
+"Z-17-177",NA,NA,"Canis familiaris",NA,"25-Sep-2017",NA,"Bgy. Navarro","General Trias","Cavite","Calabarzon",14.32966619,120.8999068,"phd",NA,NA,NA
+"Z-17-193",NA,NA,"Canis familiaris",NA,"13-Oct-2017",NA,"Binonoan","Infanta","Quezon","Calabarzon",14.71657136,121.650984,"phd",NA,NA,NA
+"Z-17-200",NA,NA,"Canis familiaris",NA,"31-Oct-2017",NA,"Mamatid","Cabuyao","Laguna","Calabarzon",14.24922952,121.121079,"phd",NA,NA,NA
+"Z-17-217",NA,NA,"Canis familiaris",NA,"16-Nov-2017",NA,"Paliko 4","Imus","Cavite","Calabarzon",14.39822975,120.9319992,"phd",NA,NA,NA
+"Z-17-221",NA,NA,"Canis familiaris",NA,"28-Nov-2017",NA,"Bgy. Nawasa","Noveleta","Cavite","Calabarzon",14.43119105,120.8796209,"phd",NA,NA,NA
+"Z-17-57",NA,NA,"Canis familiaris",NA,"29-Mar-2017",NA,"Magbag","San Jose","Occidental Mindoro","Southwestern Tagalog Region",12.45581677,121.1219622,"phd",NA,NA,NA
+"Z-18-001",NA,NA,"Felis catus",NA,"02-Jan-2018",NA,"Andrea Vill. I, Panapaan Vi","Bacoor","Cavite","Calabarzon",14.41614393,120.9704734,"phd",NA,NA,NA
+"Z-18-114",NA,NA,"Canis familiaris",NA,"28-May-2018",NA,"Banay-Banay 1St","San Jose","Batangas","Calabarzon",13.87787315,121.0901132,"phd",NA,NA,NA
+"Z-18-159",NA,NA,"Canis familiaris",NA,"19-Jul-2018",NA,"Sta. Cruz","Guiginto","Bulacan","Central Luzon",14.83746463,120.8923363,"phd",NA,NA,NA
+"Z-18-224",NA,NA,"Canis familiaris",NA,"28-Oct-2018",NA,"Camarin Rd.","Kalookan  City","Metropolitan Manila","National Capital Region",14.74647256,121.0486805,"phd",NA,NA,NA
+"Z-18-251",NA,NA,"Canis familiaris",NA,"07-Dec-2018",NA,"Rpa Enterprises, Don Jose","Santa Rosa City","Laguna","Calabarzon",14.27260264,121.0895167,"phd",NA,NA,NA
+"Z-19-029",NA,NA,"Canis familiaris",NA,"26-Feb-2019",NA,"Antipolo Del Sur","Lipa City","Batangas","Calabarzon",13.94086577,121.1746864,"phd",NA,NA,NA
+"Z-19-123",NA,NA,"Canis familiaris",NA,"11-Aug-2019",NA,"Anabu 2F","Imus","Cavite","Calabarzon",14.39822975,120.9319992,"phd",NA,NA,NA
+"Z-19-136",NA,NA,"Canis familiaris",NA,"05-Sep-2019",NA,"Canlubang","Calamba City","Laguna","Calabarzon",14.18862277,121.1242055,"phd",NA,NA,NA
+"Z-19-88",NA,NA,"Canis familiaris",NA,"31-May-2019",NA,"San Isidro","Angono","Rizal","Calabarzon",14.54362773,121.165434,"phd",NA,NA,NA
+"Z-20-01",NA,NA,"Canis familiaris",NA,"03-Jan-2020",NA,"Meadowood Subd.,Panapaan 8","Bacoor","Cavite","Calabarzon",14.41614393,120.9704734,"phd",NA,NA,NA
+"Z-20-110",NA,NA,"Canis familiaris",NA,"23-Oct-2020",NA,"Pacita Complex 1, San Vicente","San Pedro","Laguna","Calabarzon",14.34936983,121.0384844,"phd",NA,NA,NA
+"Z-20-24",NA,NA,"Canis familiaris",NA,"14-Feb-2020",NA,"Bayanan","Muntinlupa","Metropolitan Manila","National Capital Region",14.40197636,121.0327847,"phd",NA,NA,NA
+"Z-20-33",NA,NA,"Canis familiaris",NA,"18-Feb-2020",NA,"F.B. Harizon Edsa","Pasay  City","Metropolitan Manila","National Capital Region",14.53080944,121.0041508,"phd",NA,NA,NA
+"Z-20-51",NA,NA,"Canis familiaris",NA,"02-Mar-2020",NA,"Herald Village Subd.","Angono","Rizal","Calabarzon",14.54362773,121.165434,"phd",NA,NA,NA
+"Z-22-103",NA,NA,"Canis familiaris",NA,"21-Nov-2022",NA,"Paroyhog","Santa Maria","Romblon","Southwestern Tagalog Region",12.40310216,122.0836566,"phd",NA,NA,NA
+"Z-22-119",NA,NA,"Canis familiaris",NA,"28-Dec-2022",NA,"Tulay","Odiongan","Romblon","Southwestern Tagalog Region",12.39865996,122.0177701,"phd",NA,NA,NA
+"Z-22-121",NA,NA,"Canis familiaris",NA,"19-Dec-2022",NA,"Carmen","San Agustin","Romblon","Southwestern Tagalog Region",12.55403552,122.1124048,"phd",NA,NA,NA
+"Z-23-01",NA,NA,"Canis familiaris",NA,"03-Jan-2023",NA,"Balibago","Santa Rosa City","Laguna","Calabarzon",14.27260264,121.0895167,"phd",NA,NA,NA
+"Z-23-01Sa",NA,NA,"Canis familiaris",NA,"03-Jan-2023",NA,"Balibago","Santa Rosa City","Laguna","Calabarzon",14.27260264,121.0895167,"phd",NA,NA,NA
+"Z-98-1061",NA,NA,"Canis familiaris",NA,"05-Aug-1998",NA,"Tejero","General Trias","Cavite","Calabarzon",14.32966619,120.8999068,"phd",NA,NA,NA
+"Z-98-134",NA,NA,"Canis familiaris",NA,"09-Feb-1998",NA,"Sampaloc   Homes","Dasmariñas","Cavite","Calabarzon",14.31850325,120.9657797,"phd",NA,NA,NA
+"Z-98-206",NA,NA,"Canis familiaris",NA,"02-Mar-1998",NA,"Bagongbayan","Santa Cruz","Laguna","Calabarzon",14.26443013,121.4040122,"phd",NA,NA,NA
+"Z-98-285",NA,NA,"Canis familiaris",NA,"18-Mar-1998",NA,"-","San Pablo City","Laguna","Calabarzon",14.05146733,121.3315598,"phd",NA,NA,NA
+"Z-98-286",NA,NA,"Canis familiaris",NA,"19-Mar-1998",NA,"Tayuman","Mulanay","Quezon","Calabarzon",13.52552491,122.4578973,"phd",NA,NA,NA
+"Z-98-335",NA,NA,"Canis familiaris",NA,"01-Apr-1998",NA,"-","Nagcarlan","Laguna","Calabarzon",14.14027602,121.4032743,"phd",NA,NA,NA
+"Z-98-433",NA,NA,"Canis familiaris",NA,"30-Apr-1998",NA,"Palamitan","Kawit","Cavite","Calabarzon",14.44475736,120.9012276,"phd",NA,NA,NA
+"Z-98-454",NA,NA,"Canis familiaris",NA,"04-May-1998",NA,"Betterliving Subd","Parañaque","Metropolitan Manila","National Capital Region",14.48357034,121.0147858,"phd",NA,NA,NA
+"Z-98-515",NA,NA,"Canis familiaris",NA,"20-May-1998",NA,"Cupang","Muntinlupa","Metropolitan Manila","National Capital Region",14.40197636,121.0327847,"phd",NA,NA,NA
+"Z-98-616",NA,NA,"Canis familiaris",NA,"18-Jun-1998",NA,"-","San Miguel","Bulacan","Central Luzon",15.17310142,121.0401182,"phd",NA,NA,NA
+"Z-98-667",NA,NA,"Canis familiaris",NA,"29-Jun-1998",NA,"Mayapa","Calamba City","Laguna","Calabarzon",14.18862277,121.1242055,"phd",NA,NA,NA
+"Z-98-712",NA,NA,"Canis familiaris",NA,"11-Jul-1998",NA,"Macantod","Siniloan","Laguna","Calabarzon",14.43714914,121.4867785,"phd",NA,NA,NA
+"Z-98-718",NA,NA,"Canis familiaris",NA,"13-Jul-1998",NA,"Maraykid","San Juan","Batangas","Calabarzon",13.75727426,121.3908944,"phd",NA,NA,NA
+"Z-98-780",NA,NA,"Canis familiaris",NA,"25-Jul-1998",NA,"San Miguel","Alaminos","Laguna","Calabarzon",14.04459696,121.2475488,"phd",NA,NA,NA
+"Z-98-823",NA,NA,"Canis familiaris",NA,"05-Aug-1998",NA,"Tejero","General Trias","Cavite","Calabarzon",14.32966619,120.8999068,"phd",NA,NA,NA
+"Z-98-838",NA,NA,"Canis familiaris",NA,"09-Aug-1998",NA,"Upper Bicutan","Taguig","Metropolitan Manila","National Capital Region",14.51469695,121.0660524,"phd",NA,NA,NA
+"Z-98-860",NA,NA,"Canis familiaris",NA,"14-Aug-1998",NA,"-","San Francisco","Quezon","Calabarzon",13.29448721,122.5720534,"phd",NA,NA,NA
+"RADDL1-16-154",NA,NA,"Dog",NA,"21-Jul-2016",NA,"Torac, Malay","San Carlos City","Pangasinan","Ilocos Region (I)",NA,NA,"2018_workshop",NA,NA,NA
+"RADDL3-1038",NA,NA,"Dog",NA,"22-Oct-2015",NA,"CM Recto","Angeles City","Pampanga","Central Luzon (III)",NA,NA,"2018_workshop",NA,NA,NA
+"REGION_5_2018-50",NA,NA,"Dog",NA,"20-Dec-2018",NA,"BASAG","LIGAO","ALBAY","Bicol (V)",NA,NA,"2018_workshop",NA,NA,NA
+"REGION_5_2018-100",NA,NA,"Dog",NA,"27-Mar-2018",NA,"ZONE 1","LIBON","ALBAY","Bicol (V)",NA,NA,"2018_workshop",NA,NA,NA
+"REGION_5_2018-304",NA,NA,"Dog",NA,"25-Oct-2018",NA,"SAN ROQUE","DARAGA","ALBAY","Bicol (V)",NA,NA,"2018_workshop",NA,NA,NA
+"REGION_5_2018-311",NA,NA,"Dog",NA,"13-Nov-2018",NA,"BARIIS","TIWI","ALBAY","Bicol (V)",NA,NA,"2018_workshop",NA,NA,NA
+"REGION_5_2019-1",NA,NA,"Dog",NA,"20-Mar-2019",NA,"PANAL","TABACO","ALBAY","Bicol (V)",NA,NA,"2018_workshop",NA,NA,NA
+"REGION_5_2019-13",NA,NA,"Dog",NA,"17-Jan-2019",NA,"BATANG","LIGAO","ALBAY","Bicol (V)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-12-001",NA,NA,"Dog",NA,"20-Jan-2012",NA,"Sinalhan","Sta. Rosa City","Laguna","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-12-088",NA,NA,"Dog",NA,"29-Mar-2012",NA,"TS Cruz Subd.","Las Pinas City","Metro Manila","National Capital Region",NA,NA,"2018_workshop",NA,NA,NA
+"Z-12-118",NA,NA,"Dog",NA,"31-May-2012",NA,"Bacao 2","Gen. Trias","Cavite","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-12-134",NA,NA,"Dog",NA,"18-Jun-2012",NA,"Pag-asa","Imus","Cavite","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-12-180",NA,NA,"Dog",NA,"18-Aug-2012",NA,"San Antonio","Cavite City","Cavite","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-12-212",NA,NA,"Dog",NA,"20-Apr-2012",NA,"-","Bauan","Batangas","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-13-002",NA,NA,"Dog",NA,"20-Feb-2013",NA,"BF International","Las Pinas City","Metro Manila","National Capital Region",NA,NA,"2018_workshop",NA,NA,NA
+"Z-13-009",NA,NA,"Dog",NA,"19-Jan-2013",NA,"Paradahan I","Tanza","Cavite","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-13-011",NA,NA,"Dog",NA,"21-Jan-2013",NA,"Mahabang Parang","Angono","Rizal","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-14-138",NA,NA,"Dog",NA,"16-Jun-2014",NA,"Seacom Compd., Sucat","Paranaque City","Metro Manila","National Capital Region",NA,NA,"2018_workshop",NA,NA,NA
+"Z-14-146",NA,NA,"Dog",NA,"26-Jun-2014",NA,"Sampaga Centro","Batangas City","Batangas","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-14-149",NA,NA,"Dog",NA,"28-Jun-2014",NA,"San Rafael","San Pablo City","Laguna","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-14-152",NA,NA,"Dog",NA,"20-Feb-2014",NA,"Tipas","Taguig City","Metro Manila","National Capital Region",NA,NA,"2018_workshop",NA,NA,NA
+"Z-15-012",NA,NA,"Dog",NA,"22-Jan-2015",NA,"Camella Homes","Bacoor City","Cavite","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-15-019",NA,NA,"Dog",NA,"28-Jan-2015",NA,"Multinational Vill.","Paranaque City","Metro Manila","National Capital Region",NA,NA,"2018_workshop",NA,NA,NA
+"Z-15-116",NA,NA,"Dog",NA,"17-Jun-2015",NA,"Purok 6, Landayan","San Pedro","Laguna","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-15-119",NA,NA,"Dog",NA,"19-Jun-2015",NA,"Villamor Air Base","Pasay City","Metro Manila","National Capital Region",NA,NA,"2018_workshop",NA,NA,NA
+"Z-15-130",NA,NA,"Dog",NA,"20-Jun-2015",NA,"Pinagtipunan","Gen. Trias","Cavite","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-15-148",NA,NA,"Dog",NA,"20-Apr-2015",NA,"Upper Bicutan","Taguig","Metro Manila","National Capital Region",NA,NA,"2018_workshop",NA,NA,NA
+"Z-15-185",NA,NA,"Dog",NA,"18-Oct-2015",NA,"San Dionisio","Paranaque City","Metro Manila","National Capital Region",NA,NA,"2018_workshop",NA,NA,NA
+"Z-16-013",NA,NA,"Dog",NA,"16-Jan-2016",NA,"PEA 2A, Langgam","San Pedro","Laguna","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-16-052",NA,NA,"Dog",NA,"20-Mar-2016",NA,"Pasong Buaya II","Imus City","Cavite","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-16-159",NA,NA,"Dog",NA,"20-Dec-2016",NA,"Capipisa","Tanza","Cavite","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA
+"Z-16-186",NA,NA,"Dog",NA,"20-Mar-2016",NA,"Woodrow Subd.,Bgy. Pasig","Antipolo City","Rizal","Calabarzon (IV-A)",NA,NA,"2018_workshop",NA,NA,NA

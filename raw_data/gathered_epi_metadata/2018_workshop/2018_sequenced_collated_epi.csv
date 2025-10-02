@@ -1,0 +1,53 @@
+﻿sample_id,ngs_runid,street,Barangay,Municipality,Province,Region,Specimen,anml_Sex,Age,Sex,FAT,Date_sorted,Date_tested,lab_date
+RADDL1-16-154,ritm_archive2-nb22,Unknown,"Torac, Malay",San Carlos City,Pangasinan,Ilocos Region (I),Dog,,1yr,M,Positive,,,7/21/16
+RADDL3-15-172,ritm_archive2-nb22,Unknown,CVO,San Jose City,Nueava Ecija,Central Luzon (III),Dog,,3mons,M,Positive,,,12/2/15
+RADDL3-845,ritm_archive2-nb22,Unknown,San Jose,Florida Blanca,Pampanga,Central Luzon (III),Dog,,2yr,M,Positive,,,2/9/15
+RADDL3-1038,ritm_archive2-nb22,P. De Guzman St.,CM Recto,Angeles City,Pampanga,Central Luzon (III),Dog,,2,F,Positive,,,10/22/15
+RADDL3-1045,ritm_archive2-nb22,Unknown,St. Francis ,Limay,Bataan,Central Luzon (III),Dog,,2,F,Positive,,,10/23/15
+RADDL5-005,ritm_archive2-nb22,Unknown,San Nicolas,Iriga City,Camarines Sur,Bicol (V),Dog,,2yrs,M,Positive,,,1/30/15
+REGION_5_2018-50,workshop2,,BASAG,LIGAO,ALBAY,Bicol (V),Dog,,,,,12/2/18,13/02/18,
+REGION_5_2018-100,workshop2,,ZONE 1,LIBON,ALBAY,Bicol (V),Dog,,,,,27/03/18,28/03/18,
+REGION_5_2018-304,ritm_archive2-nb22,,SAN ROQUE,DARAGA,ALBAY,Bicol (V),Dog,,,,,25/10/18,26/10/18,
+REGION_5_2018-311,ritm_archive2-nb22,,BARIIS,TIWI,ALBAY,Bicol (V),Dog,,,,,13/11/18,14/11/18,
+REGION_5_2019-1,workshop2,,PANAL,TABACO,ALBAY,Bicol (V),Dog,,,,,3/1/19,4/1/19,
+REGION_5_2019-13,workshop2,,BATANG,LIGAO,ALBAY,Bicol (V),Dog,,,,,17/01/19,18/01/19,
+Z-12-001,ritm_archive2-nb22,Bayshore Ville,Sinalhan,Sta. Rosa City,Laguna,Calabarzon (IV-A),Dog,Female,.5 yr.,Female,Positive,,,1/1/12
+Z-12-012,workshop2,-,Sulpoc,Tanauan City,Batangas,Calabarzon (IV-A),Dog,Female,0.33 yr.,Female,Positive,,,1/16/12
+Z-12-088,ritm_archive2-nb22,Lotus St. cor. Rosal,TS Cruz Subd.,Las Pinas City,Metro Manila,National Capital Region,Dog,Male,.25 yr.,Male,Positive,,,3/29/12
+Z-12-118,ritm_archive2-nb22,-,Bacao 2,Gen. Trias,Cavite,Calabarzon (IV-A),Dog,Female,8 yrs,Female,Positive,,,5/31/12
+Z-12-134,ritm_archive1_NB24,Pasong Buwaya,Pag-asa,Imus,Cavite,Calabarzon (IV-A),Dog,Female,4 yrs.,Female,Positive,,,6/18/12
+Z-12-149,ritm_archive2-nb22,-,Palayan,Pinamalayan,Oriental  Mindoro,Mimaropa (IV-B),Dog,Male,.16 yr.,Male,Positive,,,6/28/12
+Z-12-180,ritm_archive1_NB24,35,San Antonio,Cavite City,Cavite,Calabarzon (IV-A),Dog,Unknown,.16 yr.,Male,Positive,,,8/18/12
+Z-12-212,ritm_archive2-nb22,Aplaya .,-,Bauan,Batangas,Calabarzon (IV-A),Dog,Male,7 yrs.,Male,Positive,,,10/4/12
+Z-13-002,ritm_archive1_NB24,Lagoon St.. Tropical Palace,BF International,Las Pinas City,Metro Manila,National Capital Region,Dog,Female,3 yrs.,Female,Positive,,,1/2/13
+Z-13-009,ritm_archive1_NB24,"Anthony St., Belvedere Subd.",Paradahan I,Tanza,Cavite,Calabarzon (IV-A),Dog,Male,Unknown,Male,Positive,,,1/19/13
+Z-13-011,ritm_archive1_NB24,YCM Compd.,Mahabang Parang,Angono,Rizal,Calabarzon (IV-A),Dog,Unknown,Unknown,Unknown,Positive,,,1/21/13
+Z-13-032,ritm_archive1_NB24,"MLQ St., Ph2",Lower Bicutan,Taguig City,Metro Manila,National Capital Region,Dog,Male,.50 yr.,Male,Positive,,,2/14/13
+Z-13-066,ritm_archive1_NB24,Camella Homes,Bayan Luma,Imus City,Cavite,Calabarzon (IV-A),Dog,,Unknown,Unknown,Positive,,,4/5/18
+Z-13-071,ritm_archive1_NB24,Guyabano St.,Golden Acres,Las Pinas City,Metro Manila,National Capital Region,Dog,,.50 yr.,Male,Positive,,,4/10/13
+Z-13-094,ritm_archive1_NB24,-,Palico II,Imus,Cavite,Calabarzon (IV-A),Dog,Male,.41 yr.,Male,Positive,,,5/10/13
+Z-13-096,ritm_archive1_NB24,800 Palace St.,BF International,Las Pinas City,Metro Manila,National Capital Region,Cat,Unknown,Unknown,Unknown,Positive,,,5/12/13
+Z-14-033,ritm_archive2-nb22,-,"Bagumbayan, Zone 4",Atimonan,Quezon,Calabarzon (IV-A),Dog,Male,2 yrs.,Male,Positive,,,2/7/14
+Z-14-136,ritm_archive1_NB24,-,"Parklane,San Francisco",Gen. Trias,Cavite,Calabarzon (IV-A),Dog,Male,1.5 yr.,Male,Positive,,,6/11/14
+Z-14-138,ritm_archive1_NB24,-,"Seacom Compd., Sucat",Paranaque City,Metro Manila,National Capital Region,Dog,Female,.16 yr.,Female,Positive,,,6/16/14
+Z-14-142,workshop2,Porsche street,Mercedes Homes 3,Binan City,Laguna,Calabarzon (IV-A),Dog,Female,4 yrs.,Female,Positive,,,6/21/14
+Z-14-146,ritm_archive1_NB24,-,Sampaga Centro,Batangas City,Batangas,Calabarzon (IV-A),Dog,Unknown,Unknown,Unknown,Positive,,,6/26/14
+Z-14-149,ritm_archive2-nb22,Maharlika Highway,San Rafael,San Pablo City,Laguna,Calabarzon (IV-A),Dog,Male,5 yrs.,Male,Positive,,,6/28/14
+Z-14-152,workshop2,Palingon,Tipas,Taguig City,Metro Manila,National Capital Region,Dog,Female,.50 yr.,Female,Positive,,,7/2/14
+Z-14-182,ritm_archive1_NB24,-,San francisco,Pulilan,Bulacan,Central Luzon (III),Dog,Male,.16 yr.,Male,Positive,,,8/20/14
+Z-15-001,ritm_archive1_NB24,"Lakeview Homes, ",Bagumbayan,Pililla,Rizal,Calabarzon (IV-A),Dog,Male,.16 yr.,Male,Positive,,,1/1/15
+Z-15-012,ritm_archive1_NB24,Springville South 2,Camella Homes,Bacoor City,Cavite,Calabarzon (IV-A),Dog,Male,1.25 yr.,Male,Positive,,,1/22/15
+Z-15-019,ritm_archive1_NB24,Jerusalem St.,Multinational Vill.,Paranaque City,Metro Manila,National Capital Region,Dog,Female,3 yrs.,Female,Positive,,,1/28/15
+Z-15-116,ritm_archive1_NB24,-,"Purok 6, Landayan",San Pedro,Laguna,Calabarzon (IV-A),Dog,Male,.25 yr.,Male,Positive,,,6/17/15
+Z-15-119,ritm_archive1_NB24,1029 st.,Villamor Air Base,Pasay City,Metro Manila,National Capital Region,Dog,Female,.25 yr.,Female,Positive,,,6/19/15
+Z-15-130,ritm_archive1_NB24,Tozawa Mura ,Pinagtipunan,Gen. Trias,Cavite,Calabarzon (IV-A),Dog,Male,3 yrs.,Male,Positive,,,7/6/15
+Z-15-148,ritm_archive2-nb22,-,Upper Bicutan,Taguig,Metro Manila,National Capital Region,Dog,Female,.16 yr.,Female,Positive,,,8/4/15
+Z-15-185,workshop2,019 Dr. A. Santos Ave.,San Dionisio,Paranaque City,Metro Manila,National Capital Region,Dog,,7 yrs.,Male,Positive,,,10/18/15
+Z-16-013,ritm_archive1_NB24,-,"PEA 2A, Langgam",San Pedro,Laguna,Calabarzon (IV-A),Dog,Male,1 yr.,Male,Positive,,,1/16/16
+Z-16-052,ritm_archive1_NB24,Kamantigue Street,Pasong Buaya II,Imus City,Cavite,Calabarzon (IV-A),Dog,Male,1 yr.,Male,Positive,,,4/3/16
+Z-16-082,ritm_archive2-nb22,PUROK 5,CAINGIN,STA. ROSA CITY,LAGUNA,Calabarzon (IV-A),Dog,Female,.16 yr.,Female,Positive,,,5/24/16
+Z-16-159,ritm_archive2-nb22,Lambingan,Capipisa,Tanza,Cavite,Calabarzon (IV-A),Dog,Male,2 yr.,Male,Positive,,,9/12/16
+Z-16-186,ritm_archive2-nb22,-,"Woodrow Subd.,Bgy. Pasig",Antipolo City,Rizal,Calabarzon (IV-A),Dog,Female,4 yrs.,Female,Positive,,,11/3/16
+Z-16-209,ritm_archive2-nb22,Sitio Sentro,Pahinga Sur,Candelaria,Quezon,Calabarzon (IV-A),Dog,,.50 yr.,Female,Positive,,,12/14/17
+Z-16-210,ritm_archive1_NB24,Gen. Malvar St.,"Soldiers Hills 2, Almanza 2",Las Pinas City,Metro Manila,National Capital Region,Dog,,7 yrs.,Female,Positive,,,12/16/17
+Z-16-211,ritm_archive2-nb22,Intramuros St.,Las Villas de Manila,Binan City,Laguna,Calabarzon (IV-A),Dog,,1 yr.,Male,Positive,,,12/19/19
