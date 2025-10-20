@@ -1,0 +1,7 @@
+"sample_id","redcap_data_access_group","sample_labid","sample_sequenceid","sample_batchid","apha_sub","apha_rv","sample_tissuetype","sample_buffer","country","hmpcr_n405","rtassay","rtqpcr","lateral_flow_test","fat","drit","diagnostic_result","test_centre","diag_notes"
+"NEC_rabv_4b_2025_r10_run7","philippines","NEC","","","","","Brain","Unknown","Philippines","NA","Unknown","","NA","NA","NA","","RITM",""
+"NTC1_rabv_4b_2025_r10_run7","philippines","NTC1","","","","","Brain","Unknown","Philippines","NA","Unknown","","NA","NA","NA","","RITM",""
+"NTC2_rabv_4b_2025_r10_run7","philippines","NTC2","","","","","Brain","Unknown","Philippines","NA","Unknown","","NA","NA","NA","","RITM",""
+"RADDL4B-23-065","philippines","RADDL4B-23-065","","","","","Brain","Unknown","Philippines","NA","Unknown","","NA","NA","NA","","RITM",""
+"RADDL4B-24-162","philippines","RADDL4B-24-162","","","","","Brain","Unknown","Philippines","NA","Unknown","","NA","NA","NA","","RITM",""
+"RADDL4B-24-184","philippines","RADDL4B-24-184","","","","","Brain","Unknown","Philippines","NA","Unknown","","NA","NA","NA","","RITM",""

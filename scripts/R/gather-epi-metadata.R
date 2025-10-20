@@ -6,6 +6,8 @@ library(lubridate)
 library(gsheet)
 library(tibble)
 library(stringr)
+library(purrr)
+
 # -----------------------------
 # Create empty phylo_meta template
 # -----------------------------
@@ -364,6 +366,91 @@ dup_ids      # just the duplicated IDs
 dup_rows     # full rows to check
 
 # -----------------------------
+# Clean and apply RADDL corrections (Zhang updates)
+# -----------------------------
+raddl_link <- "https://docs.google.com/spreadsheets/d/1h9fdNvgfcmA02QDT3M9drNqsC2Zr9RlCYnklGqhiR4o/edit?usp=sharing"
+raddl_corrections <- gsheet2tbl(raddl_link)
+
+# Clean column names and trim whitespace
+raddl_corrections <- raddl_corrections %>%
+  rename_with(~ str_trim(.x)) %>%
+  mutate(across(everything(), ~ str_trim(as.character(.x)))) %>%
+  rename(
+    Sample_ID = "Sample_id",
+    Accession = "Accession No.",
+    Barangay = "raddl_Brgy",
+    Municipality = "raddl_Municipality",
+    Province = "raddl_location",
+    Preferred_date = "raddl_date",
+    Host = "Host"
+  )
+
+# Standardize date format
+raddl_corrections <- raddl_corrections %>%
+  mutate(
+    Preferred_date = parse_date_time(Preferred_date, orders = c("d-b-y","d-B-y"), quiet = TRUE),
+    Preferred_date = format(Preferred_date, "%d-%b-%Y")
+  )
+
+# -----------------------------
+# Columns to update
+# -----------------------------
+key_cols <- c("Preferred_date", "Barangay", "Municipality", "Province", "Host", "Accession")
+
+# Make a copy of original
+phylo_meta_corrected <- phylo_meta
+
+# -----------------------------
+# Apply corrections safely column by column
+# -----------------------------
+for(col in key_cols){
+  # Get matching new values
+  new_vals <- raddl_corrections[[col]][match(phylo_meta_corrected$Sample_ID, raddl_corrections$Sample_ID)]
+  
+  # Replace only if new value is not NA or blank
+  phylo_meta_corrected[[col]] <- ifelse(
+    !is.na(new_vals) & new_vals != "",
+    new_vals,
+    phylo_meta_corrected[[col]]
+  )
+}
+
+# -----------------------------
+# Update Source ONLY for rows where at least one key column changed
+# -----------------------------
+changed_rows <- sapply(seq_len(nrow(phylo_meta)), function(i){
+  sid <- phylo_meta$Sample_ID[i]
+  if(sid %in% raddl_corrections$Sample_ID){
+    orig_vals <- phylo_meta[i, key_cols]
+    new_vals  <- phylo_meta_corrected[i, key_cols]
+    
+    any(mapply(function(ov, nv){
+      # Treat NA/blank → value as a change
+      is.na(ov) && !is.na(nv) ||
+        ov == "" && nv != "" ||
+        (!is.na(ov) && ov != "" && ov != nv)
+    }, orig_vals, new_vals))
+    
+  } else {
+    FALSE
+  }
+})
+
+phylo_meta_corrected$Source[changed_rows] <- "raddl_correction"
+
+# -----------------------------
+# Done
+# -----------------------------
+phylo_meta_corrected
+
+# -----------------------------
+# Done: phylo_meta_corrected now has all RADDL updates applied
+# -----------------------------
+
+
+# -----------------------------
+
+# -----------------------------
 # Write results to file
 # -----------------------------
 # Create timestamp
@@ -372,6 +459,7 @@ records <- nrow(phylo_meta)
 
 # Build filename with timestamp
 outfile <- paste0("processed_data/processed_metadata/gathered_metadata_n", records,"_",timestamp, ".csv")
-
+outfile2 <- paste0("processed_data/processed_metadata/gathered_metadata_n", records,"_raddlCorrected_",timestamp, ".csv")
 # Write file
 write.csv(phylo_meta, outfile, row.names = FALSE)
+write.csv(phylo_meta_corrected, outfile2, row.names = FALSE)
