@@ -53,3 +53,6 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Ignore bulky gis files 
+raw_data/gis_data/
