@@ -436,22 +436,32 @@ changed_rows <- sapply(seq_len(nrow(phylo_meta)), function(i){
   }
 })
 
-phylo_meta_corrected$Source[changed_rows] <- "raddl_correction"
+# Ensure changed_rows is a logical vector with no NAs
+changed_rows_safe <- ifelse(is.na(changed_rows), FALSE, changed_rows)
 
+# Append "raddl_correction" to existing Source where changes occurred
+phylo_meta_corrected$Source[changed_rows_safe] <- phylo_meta_corrected$Source[changed_rows_safe] %>%
+  ifelse(
+    grepl("raddl_correction", ., ignore.case = TRUE),
+    .,  # leave as-is if already marked
+    paste0(., ifelse(. == "" | is.na(.), "", "; "), "raddl_correction")
+  )
 # -----------------------------
 # Clean and apply manual corrections (to Bacus data)
 # -----------------------------
 # manual extraction/standardisation of location data all deposited in province col
 
-manual_corrections <- read.csv("processed_data/processed_metadata/BacusManualCorrections_21Oct25.csv")
+manual_corrections <- read.csv("processed_data/processed_metadata/LocationManualCorrections_21Oct25.csv")
 
 # Make a copy of original
 phylo_meta_corrected2 <- phylo_meta_corrected
 
+key_cols2 <- c("Barangay", "Municipality", "Province")
+
 # -----------------------------
 # Apply corrections safely column by column
 # -----------------------------
-for(col in key_cols){
+for(col in key_cols2){
   # Get matching new values
   new_vals <- manual_corrections[[col]][match(phylo_meta_corrected2$Sample_ID, manual_corrections$Sample_ID)]
   
@@ -464,28 +474,37 @@ for(col in key_cols){
 }
 
 # -----------------------------
-# Update Source ONLY for rows where at least one key column changed
+# Update Source ONLY for rows where key_cols2 changed
 # -----------------------------
-changed_rows <- sapply(seq_len(nrow(phylo_meta)), function(i){
-  sid <- phylo_meta$Sample_ID[i]
-  if(sid %in% manual_corrections$Sample_ID){
-    orig_vals <- phylo_meta[i, key_cols]
-    new_vals  <- phylo_meta_corrected2[i, key_cols]
+changed_rows <- sapply(seq_len(nrow(phylo_meta_corrected2)), function(i) {
+  sid <- phylo_meta_corrected2$Sample_ID[i]
+  if (sid %in% manual_corrections$Sample_ID) {
+    # Compare the same row between pre- and post-manual correction for key_cols2 only
+    orig_vals <- phylo_meta_corrected[i, key_cols2, drop = FALSE]
+    new_vals  <- phylo_meta_corrected2[i, key_cols2, drop = FALSE]
     
-    any(mapply(function(ov, nv){
-      # Treat NA/blank → value as a change
-      is.na(ov) && !is.na(nv) ||
-        ov == "" && nv != "" ||
+    # TRUE if any of these three columns actually changed
+    any(mapply(function(ov, nv) {
+      (is.na(ov) && !is.na(nv)) ||
+        (ov == "" && nv != "") ||
         (!is.na(ov) && ov != "" && ov != nv)
     }, orig_vals, new_vals))
-    
   } else {
     FALSE
   }
 })
 
-phylo_meta_corrected2$Source[changed_rows] <- "manual_correction"
 
+# Ensure changed_rows is logical and no NAs
+changed_rows_safe <- ifelse(is.na(changed_rows), FALSE, changed_rows)
+
+# Append "manual_correction" to Source where changes occurred
+phylo_meta_corrected2$Source[changed_rows_safe] <- phylo_meta_corrected2$Source[changed_rows_safe] %>%
+  ifelse(
+    grepl("manual_correction", ., ignore.case = TRUE),
+    .,  # leave as-is if already marked
+    paste0(., ifelse(. == "" | is.na(.), "", "; "), "manual_correction")
+  )
 
 # -----------------------------
 # Done
