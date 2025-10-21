@@ -441,15 +441,6 @@ phylo_meta_corrected$Source[changed_rows] <- "raddl_correction"
 # -----------------------------
 # Done
 # -----------------------------
-phylo_meta_corrected
-
-# -----------------------------
-# Done: phylo_meta_corrected now has all RADDL updates applied
-# -----------------------------
-
-
-# -----------------------------
-
 # -----------------------------
 # Write results to file
 # -----------------------------
