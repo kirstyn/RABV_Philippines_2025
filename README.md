@@ -20,7 +20,7 @@ Gather metadata from different sources into combined, standardised dataset
 Use:
 - scripts/R/gather-epi-metadata.R   
 Will gather various metadata and standardise entries, including parsing multiple date options and removing duplicates   
-Output: 1. Complete standardised metadata for all sequences 2. as before but with additional raddl corrections    
+Output: 1. Complete standardised metadata for all sequences;  2. as before but with additional raddl corrections ; 3.as before but with additional manual corrections 
 (currently producing 2 outputs until raddl correction code is validated)
 - scripts/R/compare_metadata_versions.r   
-Will compare the 2 outputs above, with and without raddl corrections so you can check if raddl corrections have been incorporated correctly    
+Will compare metadata outputs so you can check if corrections have been incorporated correctly    
