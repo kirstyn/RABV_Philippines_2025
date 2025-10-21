@@ -439,8 +439,78 @@ changed_rows <- sapply(seq_len(nrow(phylo_meta)), function(i){
 phylo_meta_corrected$Source[changed_rows] <- "raddl_correction"
 
 # -----------------------------
+# Clean and apply manual corrections (to Bacus data)
+# -----------------------------
+# manual extraction/standardisation of location data all deposited in province col
+
+manual_corrections <- read.csv("processed_data/processed_metadata/BacusManualCorrections_21Oct25.csv")
+
+# Make a copy of original
+phylo_meta_corrected2 <- phylo_meta_corrected
+
+# -----------------------------
+# Apply corrections safely column by column
+# -----------------------------
+for(col in key_cols){
+  # Get matching new values
+  new_vals <- manual_corrections[[col]][match(phylo_meta_corrected2$Sample_ID, manual_corrections$Sample_ID)]
+  
+  # Replace only if new value is not NA or blank
+  phylo_meta_corrected2[[col]] <- ifelse(
+    !is.na(new_vals) & new_vals != "",
+    new_vals,
+    phylo_meta_corrected2[[col]]
+  )
+}
+
+# -----------------------------
+# Update Source ONLY for rows where at least one key column changed
+# -----------------------------
+changed_rows <- sapply(seq_len(nrow(phylo_meta)), function(i){
+  sid <- phylo_meta$Sample_ID[i]
+  if(sid %in% manual_corrections$Sample_ID){
+    orig_vals <- phylo_meta[i, key_cols]
+    new_vals  <- phylo_meta_corrected2[i, key_cols]
+    
+    any(mapply(function(ov, nv){
+      # Treat NA/blank → value as a change
+      is.na(ov) && !is.na(nv) ||
+        ov == "" && nv != "" ||
+        (!is.na(ov) && ov != "" && ov != nv)
+    }, orig_vals, new_vals))
+    
+  } else {
+    FALSE
+  }
+})
+
+phylo_meta_corrected2$Source[changed_rows] <- "manual_correction"
+
+
+# -----------------------------
 # Done
 # -----------------------------
+
+
+# -----------------------------
+# Convert Preferred_date to Excel-safe text (no visible tick)
+# -----------------------------
+for (df_name in c("phylo_meta", "phylo_meta_corrected", "phylo_meta_corrected2")) {
+  df <- get(df_name)
+  
+  if ("Preferred_date" %in% names(df)) {
+    df <- df %>%
+      mutate(
+        Preferred_date = ifelse(
+          !is.na(Preferred_date) & Preferred_date != "",
+          paste0("=\"", Preferred_date, "\""),
+          Preferred_date
+        )
+      )
+  }
+  
+  assign(df_name, df)
+}
 # -----------------------------
 # Write results to file
 # -----------------------------
@@ -451,6 +521,8 @@ records <- nrow(phylo_meta)
 # Build filename with timestamp
 outfile <- paste0("processed_data/processed_metadata/gathered_metadata_n", records,"_",timestamp, ".csv")
 outfile2 <- paste0("processed_data/processed_metadata/gathered_metadata_n", records,"_raddlCorrected_",timestamp, ".csv")
+outfile3 <- paste0("processed_data/processed_metadata/gathered_metadata_n", records,"_raddl_and_manual_Corrected_",timestamp, ".csv")
 # Write file
 write.csv(phylo_meta, outfile, row.names = FALSE)
 write.csv(phylo_meta_corrected, outfile2, row.names = FALSE)
+write.csv(phylo_meta_corrected2, outfile3, row.names = FALSE)
