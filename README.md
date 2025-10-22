@@ -16,11 +16,44 @@ cat raw_data/redcap_sequences_and_metadata/redcap_download_20250917_1441/*fasta 
 
 
 # Preparing metadata   
-Gather metadata from different sources into combined, standardised dataset
-Use:
-- scripts/R/gather-epi-metadata.R   
-Will gather various metadata and standardise entries, including parsing multiple date options and removing duplicates   
-Output: 1. Complete standardised metadata for all sequences;  2. as before but with additional raddl corrections ; 3.as before but with additional manual corrections 
-(currently producing 2 outputs until raddl correction code is validated)
-- scripts/R/compare_metadata_versions.r   
-Will compare metadata outputs so you can check if corrections have been incorporated correctly    
+This workflow gathers and standardises metadata from multiple sources into a unified dataset.
+
+Step 1 – Gather and Standardise Metadata
+
+Script: scripts/R/gather-epi-metadata.R
+Purpose:
+    •    Combine metadata from various sources.
+    •    Standardise entries (e.g., parsing multiple date formats, trimming whitespace).
+    •    Remove duplicate entries.
+
+Outputs:
+    1.    Complete, standardised metadata for all sequences.
+    2.    Metadata with additional RADDL corrections applied.
+    3.    Metadata with manual corrections applied (currently pending full validation).
+
+⸻
+
+Step 2 – Compare Metadata Versions
+
+Script: scripts/R/compare_metadata_versions.R
+Purpose:
+    •    Compare successive metadata outputs to verify that corrections have been incorporated correctly.
+    •    Identify additions, deletions, or changes between versions.
+
+⸻
+
+Step 3 – Standardise Administrative Levels
+
+Script: scripts/R/standardise_adm_levels.R
+Purpose:
+    •    Populate missing Region values for VGTK sequences using the Province column.
+    •    Standardise Municipality and Province entries to match the ADM levels defined in the shapefiles.
+    •    Apply string-distance matching to correct typos or variant spellings.
+    
+Outputs:
+     1.    Updated CSV file with both original and std columns, placing standardised columns next to their original counterparts for traceability.
+    Standardised columns include:
+    •    Region_std → Standardised Region names
+    •    Province_std → Corrected Province names
+    •    Municipality_std → Corrected Municipality names
+
