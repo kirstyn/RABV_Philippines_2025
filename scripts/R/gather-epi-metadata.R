@@ -276,6 +276,7 @@ speedier_col_map <- c(
   "Longitude" = "Longitude",
   "Host" = "Host",
   "Date_collected" = "Preferred_date",
+  "Date_source" = "Date_source",
   "Source" = "Source",
   "% coverage (nonMasked)" = "Genome_coverage"
 )
@@ -517,6 +518,10 @@ phylo_meta_corrected2$Source[changed_rows_safe] <- phylo_meta_corrected2$Source[
 
 
 # -----------------------------
+# Final fixes
+# -----------------------------
+
+# -----------------------------
 # Convert Preferred_date to Excel-safe text (no visible tick)
 # -----------------------------
 for (df_name in c("phylo_meta", "phylo_meta_corrected", "phylo_meta_corrected2")) {
@@ -535,6 +540,16 @@ for (df_name in c("phylo_meta", "phylo_meta_corrected", "phylo_meta_corrected2")
   
   assign(df_name, df)
 }
+
+# -----------------------------
+# Fill in date source col
+# -----------------------------
+# Assume date collected for all non-speedier sequences
+phylo_meta_corrected2 <- phylo_meta_corrected2 %>%
+  mutate(
+    Date_source = if_else(is.na(Date_source), "date_collected", Date_source)
+  )
+
 # -----------------------------
 # Write results to file
 # -----------------------------
