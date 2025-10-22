@@ -25,11 +25,15 @@ Purpose:
     •    Combine metadata from various sources.
     •    Standardise entries (e.g., parsing multiple date formats, trimming whitespace).
     •    Remove duplicate entries.
+    •    Apply host standardisation (sourced from standalone function):
+            - Convert host entries to standard scientific names.
+            - Generate corresponding common names.
+            - Categorise hosts as Domestic, Wildlife, or Human.
 
 Outputs:
-    1.    Complete, standardised metadata for all sequences.
-    2.    Metadata with additional RADDL corrections applied.
-    3.    Metadata with manual corrections applied (currently pending full validation).
+    1.    Complete, standardised metadata for all sequences, including host standardisations.
+    2.    As above but with additional RADDL corrections applied.
+    3.    As above but with manual corrections applied (currently pending full validation).
 
 ⸻
 
@@ -39,6 +43,7 @@ Script: scripts/R/compare_metadata_versions.R
 Purpose:
     •    Compare successive metadata outputs to verify that corrections have been incorporated correctly.
     •    Identify additions, deletions, or changes between versions.
+
 
 ⸻
 
