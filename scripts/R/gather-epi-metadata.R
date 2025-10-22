@@ -33,6 +33,11 @@ phylo_meta <- data.frame(
 )
 
 # -----------------------------
+# Create directory (if doesn't already exist) for outputs
+# -----------------------------
+dir.create("processed_data/processed_metadata/gathered_metadata", showWarnings = FALSE, recursive = TRUE)
+
+# -----------------------------
 # Helper function: map, clean, align
 # -----------------------------
 map_and_clean <- function(df, col_map, template = phylo_meta) {
@@ -389,13 +394,13 @@ raddl_corrections <- raddl_corrections %>%
 raddl_corrections <- raddl_corrections %>%
   mutate(
     Preferred_date = parse_date_time(Preferred_date, orders = c("d-b-y","d-B-y"), quiet = TRUE),
-    Preferred_date = format(Preferred_date, "%d-%b-%Y")
-  )
+    Preferred_date = format(Preferred_date, "%d-%b-%Y")) %>%
+      mutate(across(where(is.character), ~ str_to_sentence(.x)))
 
 # -----------------------------
 # Columns to update
 # -----------------------------
-key_cols <- c("Preferred_date", "Barangay", "Municipality", "Province", "Host", "Accession")
+key_cols <- c("Preferred_date", "Barangay", "Municipality", "Province", "Host")
 
 # Make a copy of original
 phylo_meta_corrected <- phylo_meta
@@ -456,7 +461,7 @@ manual_corrections <- read.csv("processed_data/processed_metadata/LocationManual
 # Make a copy of original
 phylo_meta_corrected2 <- phylo_meta_corrected
 
-key_cols2 <- c("Barangay", "Municipality", "Province")
+key_cols2 <- c("Barangay", "Municipality", "Province", "Region")
 
 # -----------------------------
 # Apply corrections safely column by column
@@ -534,13 +539,13 @@ for (df_name in c("phylo_meta", "phylo_meta_corrected", "phylo_meta_corrected2")
 # Write results to file
 # -----------------------------
 # Create timestamp
-timestamp <- format(Sys.time(), "%Y%m%d_%H%M%S")
+timestamp <- format(Sys.time(), "%d%b%y")
 records <- nrow(phylo_meta)
 
 # Build filename with timestamp
-outfile <- paste0("processed_data/processed_metadata/gathered_metadata_n", records,"_",timestamp, ".csv")
-outfile2 <- paste0("processed_data/processed_metadata/gathered_metadata_n", records,"_raddlCorrected_",timestamp, ".csv")
-outfile3 <- paste0("processed_data/processed_metadata/gathered_metadata_n", records,"_raddl_and_manual_Corrected_",timestamp, ".csv")
+outfile <- paste0("processed_data/processed_metadata/gathered_metadata/",timestamp,"_gathered_metadata_n", records, ".csv")
+outfile2 <- paste0("processed_data/processed_metadata/gathered_metadata/",timestamp,"_gathered_metadata_n",records,"_raddlCorrected.csv")
+outfile3 <- paste0("processed_data/processed_metadata/gathered_metadata/",timestamp,"_gathered_metadata_n", records,"_raddl_and_manual_Corrected.csv")
 # Write file
 write.csv(phylo_meta, outfile, row.names = FALSE)
 write.csv(phylo_meta_corrected, outfile2, row.names = FALSE)
