@@ -551,6 +551,12 @@ phylo_meta_corrected2 <- phylo_meta_corrected2 %>%
   )
 
 # -----------------------------
+# Standardise host column - add cols for scientific, common and type host
+# -----------------------------
+# Standardise host data
+source("scripts/R/standardise_hosts.R")
+
+# -----------------------------
 # Write results to file
 # -----------------------------
 # Create timestamp
