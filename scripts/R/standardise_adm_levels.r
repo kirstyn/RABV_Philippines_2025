@@ -4,9 +4,6 @@ library(stringdist)
 library(stringr)
 library(tidyr)
 
-# -----------------------------
-# Create directory (if doesn't already exist) for outputs
-# -----------------------------
 
 # Pull in adm centroids (generated prev by speedier, with adm1 added by kb) and use as reference table
 adm <- read.csv("raw_data/gis_data/PHL_all_centroids.csv")
