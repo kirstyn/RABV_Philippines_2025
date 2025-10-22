@@ -4,6 +4,10 @@ library(stringdist)
 library(stringr)
 library(tidyr)
 
+# -----------------------------
+# Create directory (if doesn't already exist) for outputs
+# -----------------------------
+
 # Pull in adm centroids (generated prev by speedier, with adm1 added by kb) and use as reference table
 adm <- read.csv("raw_data/gis_data/PHL_all_centroids.csv")
 head(adm)
@@ -48,11 +52,11 @@ standardise_region <- function(region_col, adm) {
   })
 }
 
-# Apply to data
-data1 <- read.csv("/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/raw_data/gathered_epi_metadata/2018_workshop/2018_sequenced_collated_epi.csv") # subset of data to test
-data1$Region_std <- standardise_region(data1$Region, adm)
-table(is.na(data1$Region_std))  # check unmatched
-data1$Region_std[1:50]          # inspect results
+# # Apply to test data
+# data1 <- read.csv("/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/raw_data/gathered_epi_metadata/2018_workshop/2018_sequenced_collated_epi.csv") # subset of data to test
+# data1$Region_std <- standardise_region(data1$Region, adm)
+# table(is.na(data1$Region_std))  # check unmatched
+# data1$Region_std[1:50]          # inspect results
 
 # function for the other adm levels, which have hierarchical structure
 
@@ -99,18 +103,45 @@ hierarchical_standardise_adm_simple <- function(df, adm, max_dist = 2) {
   return(df_std)
 }
 
-## Apply to data
-data_std <- hierarchical_standardise_adm_simple(data1, adm)
-head(data_std[, c("Province","Province_std","Municipality","Municipality_std")])
-## seems to work pretty well! 
+# ## Apply to test  data
+# data_std <- hierarchical_standardise_adm_simple(data1, adm)
+# head(data_std[, c("Province","Province_std","Municipality","Municipality_std")])
+# ## seems to work pretty well! 
 
-## Try with larger dataset
-# load the map region to provine data
+## Try with real dataset
+# load the map region to province data
 map_province=read.csv("raw_data/gis_data/PHL_provinceTo_region_mapping.csv")
-data_all=read.csv("processed_data/processed_metadata/gathered_metadata_n794_20250922_155050_manuallyCorrected.csv")
+input_file="processed_data/processed_metadata/gathered_metadata/22Oct25_gathered_metadata_n797_raddl_and_manual_Corrected.csv"
+data_all=read.csv(input_file)
+
+# First, make corrections related to Metro Manila/NCR
+# Technically metro manila has no provinces, but keeping Metropolitan Manila as province label 
+data_all <- data_all %>%
+  mutate(
+    # Standardise Manila variants
+    Province = if_else(
+      Province %in% c("Metro Manila", "Metropolitan Manila"),
+      "Metropolitan Manila",
+      Province
+    ),
+    # Fix case for specific provinces
+    Province = if_else(
+      Province %in% c("Sultan kudarat", "South cotabato","Misamis oriental","La union","Ilocos sur"),
+      str_to_title(Province),
+      Province
+    ),
+    # Add NCR region label for Metropolitan Manila
+    Region = if_else(
+      Province == "Metropolitan Manila",
+      "National Capital Region (NCR)",
+      Region
+    )
+  )
+
+
 
 # Identify rows to update: Source == "vgtk" and author contains Bacus or Cruz
-rows_to_update <- which(data_all$Source == "vgtk" & grepl("Bacus|Cruz", data_all$Author, ignore.case = TRUE))
+rows_to_update <- which(grepl("Bacus|Cruz", data_all$Author, ignore.case = TRUE))
 
 # Update Region from map_province
 na_region_idx <- rows_to_update[is.na(data_all$Region[rows_to_update])]
@@ -135,12 +166,33 @@ unmatched_regions <- data_all %>%
   filter(is.na(Region_std)) %>%
   select(Province, Region, Region_std, everything()) 
 # Optional: get unique unmatched regions
-unique_unmatched_regions <- unique(unmatched_regions$Region)
+# Check what Province is unmatched - all that is left should be "", which are for old ncbi sequences (Troupin paper)
+ unique(unmatched_regions$Province)
+ # Extract all unmatched rows
+ unmatched_regions <- data_all %>%
+   filter(is.na(Region_std)) %>%
+   select(everything()); unmatched_regions
+ 
 
 data_all$Region_std[1:50]          # inspect results
+
+# now apply function to standardise provinces and municipality
 data_std <- hierarchical_standardise_adm_simple(data_all, adm)
-head(data_std[, c("Province","Province_std","Municipality","Municipality_std")])
+
+# Reorder columns so that *_std columns come next to originals
+cols_order <- unlist(lapply(names(data_std), function(col) {
+  if(grepl("_std$", col)) return(NULL)  # skip for now
+  c(col, paste0(col, "_std")[paste0(col, "_std") %in% names(data_std)])  # add original then std if exists
+}))
+
+# Ensure we don’t lose any columns
+cols_order <- unique(c(cols_order, names(data_std)[!names(data_std) %in% cols_order]))
+
+data_std <- data_std[, cols_order]
+
+# Inspect
+head(data_std[, grep("Province|Municipality", names(data_std))])
 
 ## write the standardised data to file. 
 ## Note this is just a stepping stone code, will still need manually checked and enhanced
-write.csv(data_std, "processed_data/processed_metadata/gathered_metadata_n794_20250922_155050_manuallyCorrected_Rstd.csv", row.names=F)
+write.csv(data_std, paste0(gsub(".csv","",input_file),"_stdGeo.csv"), row.names=F)
