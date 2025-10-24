@@ -108,7 +108,7 @@ hierarchical_standardise_adm_simple <- function(df, adm, max_dist = 2) {
 ## Try with real dataset
 # load the map region to province data
 map_province=read.csv("raw_data/gis_data/PHL_provinceTo_region_mapping.csv")
-input_file="processed_data/processed_metadata/gathered_metadata/22Oct25_gathered_metadata_n797_raddl_and_manual_Corrected.csv"
+input_file="processed_data/processed_metadata/gathered_metadata/23Oct25_gathered_metadata_n797_raddl_and_manual_Corrected.csv"
 data_all=read.csv(input_file)
 
 # First, make corrections related to Metro Manila/NCR
@@ -186,6 +186,42 @@ cols_order <- unlist(lapply(names(data_std), function(col) {
 cols_order <- unique(c(cols_order, names(data_std)[!names(data_std) %in% cols_order]))
 
 data_std <- data_std[, cols_order]
+
+# ---- Assign Major Island Group (Adjusted for your Region_std entries) ----
+data_std <- data_std %>%
+  mutate(
+    Major_Island = case_when(
+      Region_std %in% c(
+        "Region I (Ilocos Region)",
+        "Region II (Cagayan Valley)",
+        "Region III (Central Luzon)",
+        "Region IV-A (Calabarzon)",
+        "Calabarzon (IV-A)",
+        "Mimaropa Region",
+        "Southwestern Tagalog Region",
+        "National Capital Region (NCR)",
+        "Cordillera Administrative Region (CAR)",
+        "Region V (Bicol Region)"
+      ) ~ "Luzon",
+      
+      Region_std %in% c(
+        "Region VI (Western Visayas)",
+        "Region VII (Central Visayas)",
+        "Region VIII (Eastern Visayas)"
+      ) ~ "Visayas",
+      
+      Region_std %in% c(
+        "Region IX (Zamboanga Peninsula)",
+        "Region X (Northern Mindanao)",
+        "Region XI (Davao Region)",
+        "Region XII (Soccsksargen)",
+        "Region XIII (Caraga)",
+        "Bangsamoro Autonomous Region In Muslim Mindanao (BARMM)"
+      ) ~ "Mindanao",
+      
+      TRUE ~ NA_character_
+    )
+  )
 
 # Inspect
 head(data_std[, grep("Province|Municipality", names(data_std))])
