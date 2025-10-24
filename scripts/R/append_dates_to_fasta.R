@@ -4,7 +4,7 @@ library(stringr)
 library(lubridate)
 
 # ---- 1. Load sequences and metadata ----
-seq <- read.fasta("processed_data/processed_sequences/20251023_PHL_all.aln.fasta", as.string = TRUE)
+seq <- read.fasta("processed_data/processed_sequences/241025_PHL_all_n794.fasta", as.string = TRUE)
 meta <- read.csv("processed_data/processed_metadata/gathered_metadata/23Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo.csv")
 
 seq_names <- names(seq)
@@ -72,6 +72,12 @@ has_date <- !is.na(matched_df$Preferred_date) & matched_df$Preferred_date != "NA
 
 seq_filtered <- seq[has_date]
 matched_filtered <- matched_df[has_date, ]
+
+write.fasta(
+  sequences = seq_filtered,
+  names = names(seq_filtered),
+  file.out = "processed_data/processed_sequences/20251023_PHL_all_filtered.fasta"
+)
 
 # ---- 7. Append dates only ----
 new_names_date <- paste0(matched_filtered$seq_name, "_", matched_filtered$Preferred_date)
