@@ -1,76 +1,59 @@
-## Compare public data with in-house data to:
-#- identify any missing records in redcap
-#- filter the ncbi data to only additional data (i.e not ours)
+# ============================================================
+# Compare public NCBI data with in-house REDCap data
+# ============================================================
+
+# ---- Load packages ----
 library(dplyr)
 library(stringr)
+library(seqinr)
 
-## ncbi data
-ncbi=read.csv("raw_data/vgtk_ncbi_data/150725_metadata_coverage_90_country_Philippines.csv")
+# ---- 1. Input files ----
+ncbi_file <- "raw_data/vgtk_ncbi_data/150725_metadata_coverage_90_country_Philippines.csv"
+redcap_file <- "raw_data/redcap_sequences_and_metadata/redcap_download_20251023_134520251023_1345redcap_meta_phl.csv"
+fasta_file <- "raw_data/vgtk_ncbi_data/150725_metadata_coverage_90_country_Philippines_sequences.fa"
 
-# latest redcap data
-redcap_seq=read.csv("raw_data/redcap_sequences_and_metadata/redcap_download_20251023_134520251023_1345redcap_meta_phl.csv")
+# ---- 2. Output directories ----
+meta_out_dir <- "processed_data/processed_metadata"
+seq_out_dir  <- "processed_data/processed_sequences"
 
-head(redcap_seq)
-head(ncbi)
+# ---- 3. Read data ----
+ncbi <- read.csv(ncbi_file, stringsAsFactors = FALSE)
+redcap <- read.csv(redcap_file, stringsAsFactors = FALSE)
 
-# filter based on author contains brunker to get all records submitted by team
-ncbi.team=ncbi %>%
-  filter(str_detect(authors, regex("brunker", ignore_case = TRUE)))
+# ============================================================
+# PART A: Filter NCBI metadata (exclude team & exclusion_status)
+# ============================================================
 
-# samples in ncbi that have a match in redcap
-ncbi.redcap.matches=redcap_seq %>%
-  filter(sample_id %in% ncbi.team$isolate)
+ncbi_additional <- ncbi %>%
+  filter(
+    !str_detect(authors, regex("brunker", ignore_case = TRUE)),
+    is.na(exclusion_status) | exclusion_status != 1
+  )
 
-# check to see if all have accession numbers
-ncbi.redcap.matches$genbank_accession
+# ---- Write filtered NCBI metadata ----
+ncbi_output <- file.path(meta_out_dir, "150725_metadata_coverage_90_country_Philippines_filtered.csv")
+write.csv(ncbi_additional, ncbi_output, row.names = FALSE)
 
-# what ones don't
-no.accession.redcap=ncbi.redcap.matches %>%
-  filter(is.na(genbank_accession) | genbank_accession == "")
+# ============================================================
+# PART B: Filter NCBI FASTA sequences
+# ============================================================
 
-which(redcap_seq$sample_id %in% ncbi.team$isolate)
-# Join redcap with ncbi.team accessions
-redcap_updated <- redcap_seq %>%
-  left_join(
-    ncbi.team %>%
-      select(sample_id = isolate, primary_accession),  # match names for join
-    by = "sample_id"
-  ) %>%
-  mutate(
-    genbank_accession = if_else(
-      is.na(genbank_accession) | genbank_accession == "",
-      primary_accession,  # fill from ncbi.team
-      genbank_accession
-    )
-  ) %>%
-  select(-primary_accession)  # remove helper column
-write.csv(redcap_updated, "redcap_imports/130825_genbankAccessionUpdates.csv" ,row.names=F)
+# ---- Read full FASTA ----
+ncbi_seq <- read.fasta(fasta_file, seqtype = "DNA", as.string = TRUE)
 
+# ---- Keep only sequences present in filtered metadata ----
+seq_names_to_keep <- ncbi_additional$locus
+ncbi_seq_filtered <- ncbi_seq[names(ncbi_seq) %in% seq_names_to_keep]
 
-
-# samples in ncbi that have no match in redcap:
-ncbi.only=ncbi.team %>%
-  filter(!isolate %in% redcap$sample_id)
-ncbi.only$isolate
-#[1] "Z15-185" "Z14-142" "Z14-152" "Z12-012" : problem related to sample id typos (missing hypen)
-
-
-# Filter out all records submitted by your team
-ncbi.additional <- ncbi %>%
-  filter(!str_detect(authors, regex("brunker", ignore_case = TRUE)))
-
-# Write to CSV
-write.csv(ncbi.additional, "redcap_imports/ncbi_additional_data_excl_brunker.csv", row.names = FALSE)
-
-# Read the NCBI sequences
-ncbi.seq <- read.fasta("raw_data/vgtk_ncbi_data/150725_metadata_coverage_90_country_Philippines_sequences.fa", seqtype = "DNA", as.string = TRUE)
-
-# Keep only sequences that are in ncbi.additional
-# Assuming sequence names in FASTA match `isolate` column
-seq.names.to.keep <- ncbi.additional$isolate
-ncbi.seq.filtered <- ncbi.seq[names(ncbi.seq) %in% seq.names.to.keep]
-
-# Write filtered sequences to new FASTA
-write.fasta(sequences = ncbi.seq.filtered, 
-            names = names(ncbi.seq.filtered), 
-            file.out = "redcap_imports/ncbi_additional_sequences_excl_brunker.fa")
+# ---- Write filtered FASTA ----
+fasta_output <- file.path(seq_out_dir, "150725_metadata_coverage_90_country_Philippines_sequences_filtered.fa")
+write.fasta(
+  sequences = ncbi_seq_filtered,
+  names = names(ncbi_seq_filtered),
+  file.out = fasta_output
+)
+# ============================================================
+# Optional summaries
+# ============================================================
+message("Filtered NCBI metadata records: ", nrow(ncbi_additional))
+message("Filtered sequences: ", length(ncbi_seq_filtered))
