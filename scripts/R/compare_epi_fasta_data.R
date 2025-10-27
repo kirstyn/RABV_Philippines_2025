@@ -2,7 +2,8 @@ library(seqinr)
 
 # Load files
 seq <- read.fasta("processed_data/processed_sequences/20251023_PHL_all.aln.fasta")
-meta <- read.csv("processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo.csv")
+meta <- read.csv("processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n812_raddl_and_manual_Corrected.csv")
+
 
 # Extract sequence names
 seq_names <- names(seq)
@@ -27,3 +28,10 @@ cat("Unmatched metadata entries:", nrow(unmatched_meta), "\n")
 unmatched_seqs        # names of sequences missing metadata
 unmatched_meta        # metadata rows missing sequences #these are all low coverage sequences
 
+# Remove the unmatched meta that is confirmed to be low cov
+# Keep only metadata rows that have a matching sequence
+meta_filtered <- meta[matched_to_seq, ]
+
+# Optional: check
+nrow(meta_filtered)  # should be 795
+write.csv(meta_filtered,"processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n812_raddl_and_manual_Corrected_filteredTon795.csv")
