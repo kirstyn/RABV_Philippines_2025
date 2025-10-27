@@ -108,7 +108,7 @@ hierarchical_standardise_adm_simple <- function(df, adm, max_dist = 2) {
 ## Try with real dataset
 # load the map region to province data
 map_province=read.csv("raw_data/gis_data/PHL_provinceTo_region_mapping.csv")
-input_file="processed_data/processed_metadata/gathered_metadata/23Oct25_gathered_metadata_n797_raddl_and_manual_Corrected.csv"
+input_file="processed_data/processed_metadata/gathered_metadata/24Oct25_gathered_metadata_n797_raddl_and_manual_Corrected.csv"
 data_all=read.csv(input_file)
 
 # First, make corrections related to Metro Manila/NCR
@@ -135,6 +135,28 @@ data_all <- data_all %>%
     )
   )
 
+# ---- Manual fixes for unusual data instances ----
+data_all <- data_all %>%
+  mutate(
+    Province = as.character(Province),  # ensure character (prevents factor/NA coercion)
+    Municipality = as.character(Municipality),
+    
+    # Fix specific sample
+    Province = if_else(
+      Sample_ID == "R11-21-61",
+      "North Cotabato",
+      Province,
+      missing = Province  # keep existing values if NA encountered
+    ),
+    
+    # Fix province when municipality is Zamboanga City
+    Province = if_else(
+      str_to_lower(Municipality) == "zamboanga city",
+      "Zamboanga del Sur",
+      Province,
+      missing = Province
+    )
+  )
 
 
 # Identify rows to update: Source == "vgtk" and author contains Bacus or Cruz
@@ -186,6 +208,18 @@ cols_order <- unlist(lapply(names(data_std), function(col) {
 cols_order <- unique(c(cols_order, names(data_std)[!names(data_std) %in% cols_order]))
 
 data_std <- data_std[, cols_order]
+
+# ---- Correct specific Region_std entries ----
+data_std <- data_std %>%
+  mutate(
+    Region_std = case_when(
+      Region_std == "Southwestern Tagalog Region" ~ "Mimaropa Region",
+      Region_std == "Calabarzon (IV-A)" ~ "Region IV-A (Calabarzon)",
+      TRUE ~ Region_std
+    )
+  )
+
+length(unique(data_std$Region_std))
 
 # ---- Assign Major Island Group (Adjusted for your Region_std entries) ----
 data_std <- data_std %>%
