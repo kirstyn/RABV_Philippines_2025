@@ -98,7 +98,7 @@ hierarchical_standardise_adm_simple <- function(df, adm, max_dist = 2) {
 ## Try with real dataset
 # load the map region to province data
 map_province=read.csv("raw_data/gis_data/PHL_provinceTo_region_mapping.csv")
-input_file="processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n797_raddl_and_manual_Corrected.csv"
+input_file="processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n812_raddl_and_manual_Corrected_filteredTon795.csv"
 data_all=read.csv(input_file)
 
 # First, make corrections related to Metro Manila/NCR
