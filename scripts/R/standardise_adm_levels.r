@@ -49,11 +49,6 @@ standardise_region <- function(region_col, adm) {
   })
 }
 
-# # Apply to test data
-# data1 <- read.csv("/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/raw_data/gathered_epi_metadata/2018_workshop/2018_sequenced_collated_epi.csv") # subset of data to test
-# data1$Region_std <- standardise_region(data1$Region, adm)
-# table(is.na(data1$Region_std))  # check unmatched
-# data1$Region_std[1:50]          # inspect results
 
 # function for the other adm levels, which have hierarchical structure
 
@@ -100,15 +95,10 @@ hierarchical_standardise_adm_simple <- function(df, adm, max_dist = 2) {
   return(df_std)
 }
 
-# ## Apply to test  data
-# data_std <- hierarchical_standardise_adm_simple(data1, adm)
-# head(data_std[, c("Province","Province_std","Municipality","Municipality_std")])
-# ## seems to work pretty well! 
-
 ## Try with real dataset
 # load the map region to province data
 map_province=read.csv("raw_data/gis_data/PHL_provinceTo_region_mapping.csv")
-input_file="processed_data/processed_metadata/gathered_metadata/24Oct25_gathered_metadata_n797_raddl_and_manual_Corrected.csv"
+input_file="processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n797_raddl_and_manual_Corrected.csv"
 data_all=read.csv(input_file)
 
 # First, make corrections related to Metro Manila/NCR
