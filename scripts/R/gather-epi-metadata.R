@@ -99,12 +99,6 @@ speedier <- gsheet2tbl(genomics_link) %>%
   mutate(`% coverage (nonMasked)` = `% coverage (nonMasked)`/ 100) %>%
   filter(`% coverage (nonMasked)` >= 0.9) %>%
   mutate(Date_source = "date_collected") 
-  
-speedier$Preferred_Date <- ifelse(
-  speedier$Preferred_Date == "7 Dec 2023",
-  as.Date("2023-12-07"),
-  parse_date_time(speedier$Preferred_Date, orders = c("d b Y","d B Y","d-m-Y","d/m/Y","Y-m-d"), locale = "C")
-)
 
 # vgtk (NCBI metadata)
 vgtk <- read.csv("processed_data/processed_metadata/20250917_filtered_ncbi.csv") %>%
@@ -529,6 +523,8 @@ phylo_meta_corrected2$Source[changed_rows_safe] <- phylo_meta_corrected2$Source[
 # -----------------------------
 # Convert Preferred_date to Excel-safe text (no visible tick)
 # -----------------------------
+# Manually fix Preferred_date for a single sample
+phylo_meta_corrected2$Preferred_date[phylo_meta_corrected2$Sample_ID == "RADDL4B-23-092"] <- "07-Dec-2023"
 for (df_name in c("phylo_meta", "phylo_meta_corrected", "phylo_meta_corrected2")) {
   df <- get(df_name)
   
@@ -549,11 +545,14 @@ for (df_name in c("phylo_meta", "phylo_meta_corrected", "phylo_meta_corrected2")
 # -----------------------------
 # Fill in date source col
 # -----------------------------
+
 # Assume date collected for all non-speedier sequences
 phylo_meta_corrected2 <- phylo_meta_corrected2 %>%
   mutate(
     Date_source = if_else(is.na(Date_source), "date_collected", Date_source)
   )
+
+
 
 # -----------------------------
 # Standardise host column - add cols for scientific, common and type host
