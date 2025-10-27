@@ -211,13 +211,16 @@ Z-98-838,1998,Upper Bicutan,Taguig,Metropolitan Manila,National Capital Region,1
 Z-98-860,1998,-,San Francisco,Quezon,Calabarzon,13.29448721,122.5720534,Canis familiaris,N,Asian SEA4_A1,Asian SEA4_A1,Asian SEA4_A1,Asian SEA4_A1,14-Aug-98,
 19-30,2019,Cabagnan,Camalig,Albay,Bicol Region,,,Canis familiaris,,,,,,2-Nov-19,details traced from region5 2019 sheets (workshop)
 19-40,2019,,Santo Domingo,Albay,Bicol Region,,,Canis familiaris,,,,,,27-Feb-19,details traced from region5 2019 sheets (workshop)
-COW,,,,,,,,,,,,,,,details unknown
-GOAT,,,,,,,,,,,,,,,details unknown
-R11-22-001,,,,,,,,,,,,,,1-Jan-22,"details unknown, placeholder dates based on numbering"
-R2-22-5302,,,,,,,,,,,,,,1-Jan-22,"details unknown, placeholder dates based on numbering"
-R2-22-5814,,,,,,,,,,,,,,1-Jan-22,"details unknown, placeholder dates based on numbering"
-R2-22-84711,,,,,,,,,,,,,,1-Jan-22,"details unknown, placeholder dates based on numbering"
-R2-22-8924,,,,,,,,,,,,,,1-Jan-22,"details unknown, placeholder dates based on numbering"
-R3-0483,,,,,,,,,,,,,,1-Jan-22,"details unknown, placeholder dates based on numbering"
-R6-21-4343,,,,,,,,,,,,,,1-Jan-21,"details unknown, placeholder dates based on numbering"
-R7-21-149,,,,,,,,,,,,,,1-Jan-21,"details unknown, placeholder dates based on numbering"
+COW,,,,,,,,Bos taurus,,,,,,,details unknown
+GOAT,,,,,,,,Capra hircus,,,,,,,details unknown
+R11-22-001,,,,,,,,Canis familiaris,,,,,,1-Jan-22,"details unknown, placeholder dates based on numbering"
+R2-22-5302,,,,,,,,Canis familiaris,,,,,,1-Jan-22,"details unknown, placeholder dates based on numbering"
+R2-22-5814,,,,,,,,Canis familiaris,,,,,,1-Jan-22,"details unknown, placeholder dates based on numbering"
+R2-22-84711,,,,,,,,Canis familiaris,,,,,,1-Jan-22,"details unknown, placeholder dates based on numbering"
+R2-22-8924,,,,,,,,Canis familiaris,,,,,,1-Jan-22,"details unknown, placeholder dates based on numbering"
+R3-0483,,,,,,,,Canis familiaris,,,,,,1-Jan-22,"details unknown, placeholder dates based on numbering"
+R6-21-4343,,,,,,,,Canis familiaris,,,,,,1-Jan-21,"details unknown, placeholder dates based on numbering"
+R7-21-149,,,,,,,,Canis familiaris,,,,,,1-Jan-21,"details unknown, placeholder dates based on numbering"
+14,,Bocolod,Libon,Albay,Bicol Region,,,Canis familiaris,,,,,,28-Jan-19,details traced from region5 2019 sheets (workshop)
+CAR-22-018,,,,,,,,,,,,,,1-Jan-22,"details unknown, placeholder dates based on numbering"
+CAR-22-020,,,,,,,,,,,,,,1-Jan-22,"details unknown, placeholder dates based on numbering"
