@@ -57,7 +57,8 @@ map_and_clean <- function(df, col_map, template = phylo_meta) {
       mutate(
         Preferred_date = parse_date_time(
           Preferred_date,
-          orders = c("dmy", "d-b-y", "d-B-y", "mdy", "ymd", "Y"), 
+          orders = c("d-b-y", "d b Y", "d-b-Y", "mdy", "ymd", "Y"), 
+          locale = "C",
           quiet = TRUE
         ),
         Preferred_date = format(Preferred_date, "%d-%b-%Y")
@@ -99,7 +100,11 @@ speedier <- gsheet2tbl(genomics_link) %>%
   filter(`% coverage (nonMasked)` >= 0.9) %>%
   mutate(Date_source = "date_collected") 
   
-
+speedier$Preferred_Date <- ifelse(
+  speedier$Preferred_Date == "7 Dec 2023",
+  as.Date("2023-12-07"),
+  parse_date_time(speedier$Preferred_Date, orders = c("d b Y","d B Y","d-m-Y","d/m/Y","Y-m-d"), locale = "C")
+)
 
 # vgtk (NCBI metadata)
 vgtk <- read.csv("processed_data/processed_metadata/20250917_filtered_ncbi.csv") %>%
