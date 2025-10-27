@@ -1,0 +1,9 @@
+sample_id,sample_labid,sample_sequenceid,sample_batchid,apha_sub,apha_rv,sample_tissuetype,sample_buffer,country,hmpcr_n405,rtassay,rtqpcr,lateral_flow_test,fat,drit,diagnostic_result,test_centre,diag_notes
+RADDL4B-25-022,,,,,,Brain,Unknown,Philippines,NA,Unknown,,NA,NA,NA,,,
+RADDL4B-25-023,,,,,,Brain,Unknown,Philippines,NA,Unknown,,NA,NA,NA,,,
+RADDL4B-25-026,,,,,,Brain,Unknown,Philippines,NA,Unknown,,NA,NA,NA,,,
+RADDL4B-25-032,,,,,,Brain,Unknown,Philippines,NA,Unknown,,NA,NA,NA,,,
+RADDL4B-25-035,,,,,,Brain,Unknown,Philippines,NA,Unknown,,NA,NA,NA,,,
+RADDL4B-25-036,,,,,,Brain,Unknown,Philippines,NA,Unknown,,NA,NA,NA,,,
+RADDL4B-25-039,,,,,,Brain,Unknown,Philippines,NA,Unknown,,NA,NA,NA,,,
+RADDL4B-25-044,,,,,,Brain,Unknown,Philippines,NA,Unknown,,NA,NA,NA,,,

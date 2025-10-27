@@ -93,5 +93,6 @@ print(p)
 write.tree(tree_rooted, file = "analysis/Temporal_signal/20251023_PHL_all_filtered_withSEA2outgroups.OutgpRooted.ft.newick")
 ggsave("analysis/Temporal_signal/20251023_PHL_all_filtered_withSEA2outgroups_RTTplot.png", p, width = 8, height = 6, dpi = 300)
 write.csv(rtt_meta, "analysis/Temporal_signal/27Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo_RTTmetadata.csv", row.names = FALSE)
+write.csv(meta,  "processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo_seqNames.csv", row.names = FALSE)
 
 

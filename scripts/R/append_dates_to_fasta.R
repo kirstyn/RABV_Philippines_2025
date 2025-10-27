@@ -5,7 +5,7 @@ library(lubridate)
 
 # ---- 1. Load sequences and metadata ----
 seq <- read.fasta("processed_data/processed_sequences/241025_PHL_all_n794.fasta", as.string = TRUE)
-meta <- read.csv("processed_data/processed_metadata/gathered_metadata/23Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo.csv")
+meta <- read.csv("processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo_seqNames.csv")
 
 seq_names <- names(seq)
 
@@ -14,8 +14,8 @@ manual_dates <- tribble(
   ~Sample_ID,       ~Preferred_date,
   "19-30",          "2019/01/01",
   "19-40",          "2019/01/01",
-  "CAR-22-018",     "2018/01/01",
-  "CAR-22-020",     "2020/01/01",
+  "CAR-22-018",     "2022/01/01",
+  "CAR-22-020",     "2022/01/01",
   "COW",            "2020/01/01",
   "GOAT",           "2020/01/01",
   "R11-22-001",     "2022/01/01",
@@ -106,4 +106,6 @@ write.fasta(
   names = names(seq_filtered),
   file.out = "processed_data/processed_sequences/20251023_PHL_all_withDates_Region_filtered.aln.fasta"
 )
-)
+
+
+write.csv(meta_combined,"processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo_seqNames_tempDates.csv")
