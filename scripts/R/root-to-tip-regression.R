@@ -9,7 +9,7 @@ library(ggtree)
 
 # ---- 1. Input files ----
 tree_file <- "analysis/ML_trees/20251023_PHL_all_filtered_withSEA2outgroups.ft.newick"
-meta_file <- "processed_data/processed_metadata/gathered_metadata/23Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo.csv"
+meta_file <- "processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo.csv"
 
 # ---- 2. Read in tree and metadata ----
 tree <- read.tree(tree_file)
@@ -90,54 +90,8 @@ p <- ggplot(rtt_meta, aes(x = decimal_date, y = distance)) +
 print(p)
 
 # ---- 10. Save outputs ----
-write.tree(tree_rooted, file = "processed_data/trees/rooted_midpoint_tree.nwk")
-ggsave("processed_data/plots/root_to_tip_regression.png", p, width = 8, height = 6, dpi = 300)
-write.csv(meta, "processed_data/processed_metadata/metadata_with_seqname.csv", row.names = FALSE)
+write.tree(tree_rooted, file = "analysis/Temporal_signal/20251023_PHL_all_filtered_withSEA2outgroups.OutgpRooted.ft.newick")
+ggsave("analysis/Temporal_signal/20251023_PHL_all_filtered_withSEA2outgroups_RTTplot.png", p, width = 8, height = 6, dpi = 300)
+write.csv(rtt_meta, "analysis/Temporal_signal/27Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo_RTTmetadata.csv", row.names = FALSE)
 
 
-
-library(ape)
-library(lubridate)
-library(dplyr)
-
-library(ape)
-library(dplyr)
-library(lubridate)
-
-# assuming `tree` and `meta` (with `seq_name` and `decimal_date`) are already loaded
-
-n_tips <- Ntip(tree)
-n_nodes <- Nnode(tree)
-
-best_rsq <- -Inf
-best_root_node <- NULL
-
-for (i in seq_len(n_nodes)) {
-  node_num <- n_tips + i  # internal node numbers start after the tips
-  
-  # try rooting at this node, skip if invalid
-  t2 <- try(root(tree, node = node_num, resolve.root = TRUE), silent = TRUE)
-  if (inherits(t2, "try-error")) next
-  
-  dist <- distRoot(t2)
-  
-  df <- data.frame(tip = t2$tip.label, distance = dist) %>%
-    left_join(meta, by = c("tip" = "seq_name")) %>%
-    filter(!is.na(decimal_date))
-  
-  if (nrow(df) < 3) next  # skip if not enough data
-  
-  fit <- lm(distance ~ decimal_date, data = df)
-  r2 <- summary(fit)$r.squared
-  
-  if (!is.na(r2) && r2 > best_rsq) {
-    best_rsq <- r2
-    best_root_node <- node_num
-  }
-}
-
-cat("✅ Best-fitting root found at node", best_root_node,
-    "with R² =", round(best_rsq, 3), "\n")
-
-# re-root the tree at that node
-tree_rooted <- root(tree, node = best_root_node, resolve.root = TRUE)
