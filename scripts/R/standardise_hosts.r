@@ -28,11 +28,12 @@ standardise_hosts <- function(df) {
         TRUE                                        ~ Host_scientific
       ),
       Host_type = case_when(
-        Host_scientific %in% c("Canis lupus familiaris", "Felis catus") ~ "Domestic",   # pets
-        Host_scientific %in% c("Sus scrofa domesticus", "Capra hircus", "Bos taurus") ~ "Livestock", # farm animals
+        Host_scientific %in% c("Canis lupus familiaris", "Felis catus") ~ "Domestic",
+        Host_scientific %in% c("Sus scrofa domesticus", "Capra hircus", "Bos taurus") ~ "Livestock",
         Host_scientific == "Homo sapiens" ~ "Human",
+        is.na(Host_scientific) | Host_scientific == "" ~ NA_character_,
         TRUE ~ "Wildlife"
-      )
+    )
     )
   
   return(df)
