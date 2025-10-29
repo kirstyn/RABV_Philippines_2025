@@ -4,6 +4,13 @@ library(stringdist)
 library(stringr)
 library(tidyr)
 
+# Input data files
+# Province to region mapping data:
+map_province=read.csv("raw_data/gis_data/PHL_provinceTo_region_mapping.csv")
+# Gathered metadata file to add geo standardisations to
+input_file="processed_data/processed_metadata/gathered_metadata/final/29Oct25_gathered_metadata_n811_raddl_and_manual_Corrected.csv"
+data_all=read.csv(input_file)
+
 
 # Pull in adm centroids (generated prev by speedier, with adm1 added by kb) and use as reference table
 adm <- read.csv("raw_data/gis_data/PHL_all_centroids.csv")
@@ -15,7 +22,10 @@ head(adm)
 
 standardise_region <- function(region_col, adm) {
   # Reference regions
-  adm_regions <- adm %>% filter(Type == "Region") %>% pull(Loc_ID)
+  adm_regions <- adm %>% 
+    filter(Type == "Region") %>%
+    mutate(Loc_ID = str_squish(Loc_ID)) %>%
+    pull(Loc_ID)
   
   # Map known special cases (normalized lowercase)
   special_cases <- c(
@@ -27,7 +37,7 @@ standardise_region <- function(region_col, adm) {
   )
   
   sapply(region_col, function(x) {
-    if(is.na(x) || x == "") return(NA)
+    if (is.na(x) || x == "") return(NA_character_)
     
     x_lower <- tolower(str_squish(x))
     
@@ -38,13 +48,16 @@ standardise_region <- function(region_col, adm) {
     x_clean <- str_remove_all(x_lower, "\\([ivxlcdm]+\\)") %>% str_squish()
     
     # Try partial match anywhere in adm_regions
-    matches <- adm_regions[str_detect(tolower(adm_regions), fixed(x_clean))]
+    match_idx <- which(
+      str_detect(tolower(adm_regions), fixed(x_clean)) |
+        str_detect(x_clean, fixed(tolower(adm_regions)))
+    )
     
-    if(length(matches) > 0) {
-      return(matches[1])
+    if (length(match_idx) > 0) {
+      return(adm_regions[match_idx[1]])
     } else {
-      # fallback: return original
-      return(x)
+      # Fallback: return cleaned input (capitalised)
+      return(stringr::str_to_title(x_clean))
     }
   })
 }
@@ -95,11 +108,6 @@ hierarchical_standardise_adm_simple <- function(df, adm, max_dist = 2) {
   return(df_std)
 }
 
-## Try with real dataset
-# load the map region to province data
-map_province=read.csv("raw_data/gis_data/PHL_provinceTo_region_mapping.csv")
-input_file="processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n812_raddl_and_manual_Corrected_filteredTon795.csv"
-data_all=read.csv(input_file)
 
 # First, make corrections related to Metro Manila/NCR
 # Technically metro manila has no provinces, but keeping Metropolitan Manila as province label 
@@ -150,13 +158,16 @@ data_all <- data_all %>%
 
 
 # Identify rows to update: Source == "vgtk" and author contains Bacus or Cruz
-rows_to_update <- which(grepl("Bacus|Cruz", data_all$Author, ignore.case = TRUE))
+rows_to_update <- which(is.na(data_all$Region))
 
 # Update Region from map_province
 na_region_idx <- rows_to_update[is.na(data_all$Region[rows_to_update])]
 
 data_all$Region[na_region_idx] <- map_province$ADM1_EN[
-  match(data_all$Province[na_region_idx], map_province$ADM2_EN)
+  match(
+    tolower(trimws(data_all$Province[na_region_idx])),
+    tolower(trimws(map_province$ADM2_EN))
+  )
 ]
 
 # Optional: check which provinces still have NA Region
