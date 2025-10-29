@@ -35,7 +35,8 @@ phylo_meta <- data.frame(
 # -----------------------------
 # Create directory (if doesn't already exist) for outputs
 # -----------------------------
-dir.create("processed_data/processed_metadata/gathered_metadata", showWarnings = FALSE, recursive = TRUE)
+dir.create("processed_data/processed_metadata/gathered_metadata/intermediate", showWarnings = FALSE, recursive = TRUE)
+dir.create("processed_data/processed_metadata/gathered_metadata/final", showWarnings = FALSE, recursive = TRUE)
 
 # -----------------------------
 # Helper function: map, clean, align
@@ -101,7 +102,7 @@ speedier <- gsheet2tbl(genomics_link) %>%
   mutate(Date_source = "date_collected") 
 
 # vgtk (NCBI metadata)
-vgtk <- read.csv("processed_data/processed_metadata/20250917_filtered_ncbi.csv") %>%
+vgtk <- read.csv("processed_data/processed_metadata/150725_metadata_coverage_90_country_Philippines_filtered.csv") %>%
   mutate(Source = "vgtk")%>%
   mutate(Date_source = "date_collected")
 
@@ -568,9 +569,9 @@ timestamp <- format(Sys.time(), "%d%b%y")
 records <- nrow(phylo_meta)
 
 # Build filename with timestamp
-outfile <- paste0("processed_data/processed_metadata/gathered_metadata/",timestamp,"_gathered_metadata_n", records, ".csv")
-outfile2 <- paste0("processed_data/processed_metadata/gathered_metadata/",timestamp,"_gathered_metadata_n",records,"_raddlCorrected.csv")
-outfile3 <- paste0("processed_data/processed_metadata/gathered_metadata/",timestamp,"_gathered_metadata_n", records,"_raddl_and_manual_Corrected.csv")
+outfile <- paste0("processed_data/processed_metadata/gathered_metadata/intermediate/",timestamp,"_gathered_metadata_n", records, ".csv")
+outfile2 <- paste0("processed_data/processed_metadata/gathered_metadata/intermediate/",timestamp,"_gathered_metadata_n",records,"_raddlCorrected.csv")
+outfile3 <- paste0("processed_data/processed_metadata/gathered_metadata/final/",timestamp,"_gathered_metadata_n", records,"_raddl_and_manual_Corrected.csv")
 # Write file
 write.csv(phylo_meta, outfile, row.names = FALSE)
 write.csv(phylo_meta_corrected, outfile2, row.names = FALSE)
