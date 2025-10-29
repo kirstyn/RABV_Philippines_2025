@@ -513,13 +513,27 @@ phylo_meta_corrected2$Source[changed_rows_safe] <- phylo_meta_corrected2$Source[
   )
 
 # -----------------------------
-# Done
-# -----------------------------
-
-
-# -----------------------------
 # Final fixes
 # -----------------------------
+
+# -----------------------------
+# Manual date entries for Zhang paper (raddl cases) based on sample ids 
+# -----------------------------
+
+# Update Preferred_date values
+phylo_meta_corrected2$Preferred_date[phylo_meta_corrected2$Sample_ID == "R2-2019-7465"] <- "01-Jan-2019"
+phylo_meta_corrected2$Preferred_date[phylo_meta_corrected2$Sample_ID == "R4B-2022-00011"] <- "01-Jan-2022"
+
+# Identify rows you just changed
+changed_rows <- phylo_meta_corrected2$Sample_ID %in% c("R2-2019-7465", "R4B-2022-00011")
+
+# Append "manual_correction" to Source for those rows
+phylo_meta_corrected2$Source[changed_rows] <- phylo_meta_corrected2$Source[changed_rows] %>%
+  ifelse(
+    grepl("manual_correction", ., ignore.case = TRUE),
+    .,  # leave as-is if already marked
+    paste0(., ifelse(. == "" | is.na(.), "", "; "), "manual_correction")
+  )
 
 # -----------------------------
 # Convert Preferred_date to Excel-safe text (no visible tick)
