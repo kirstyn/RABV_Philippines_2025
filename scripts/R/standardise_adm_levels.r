@@ -39,29 +39,32 @@ standardise_region <- function(region_col, adm) {
   sapply(region_col, function(x) {
     if (is.na(x) || x == "") return(NA_character_)
     
-    x_lower <- tolower(str_squish(x))
+    x_clean <- str_squish(x)
+    x_lower <- tolower(x_clean)
     
     # Check special cases
     if(x_lower %in% names(special_cases)) return(special_cases[[x_lower]])
     
-    # Remove Roman numerals in brackets and extra spaces for matching
-    x_clean <- str_remove_all(x_lower, "\\([ivxlcdm]+\\)") %>% str_squish()
-    
-    # Try partial match anywhere in adm_regions
-    match_idx <- which(
-      str_detect(tolower(adm_regions), fixed(x_clean)) |
-        str_detect(x_clean, fixed(tolower(adm_regions)))
-    )
+    # Try exact match ignoring case
+    match_idx <- which(tolower(adm_regions) == x_lower)
     
     if (length(match_idx) > 0) {
       return(adm_regions[match_idx[1]])
     } else {
-      # Fallback: return cleaned input (capitalised)
-      return(stringr::str_to_title(x_clean))
+      # Try partial match ignoring case
+      match_idx <- which(
+        str_detect(tolower(adm_regions), fixed(x_lower)) |
+          str_detect(x_lower, fixed(tolower(adm_regions)))
+      )
+      if (length(match_idx) > 0) {
+        return(adm_regions[match_idx[1]])
+      } else {
+        # Fallback: keep original capitalization but remove extra spaces
+        return(x_clean)
+      }
     }
   })
 }
-
 
 # function for the other adm levels, which have hierarchical structure
 
@@ -157,7 +160,7 @@ data_all <- data_all %>%
   )
 
 
-# Identify rows to update: Source == "vgtk" and author contains Bacus or Cruz
+# Identify rows to update: 
 rows_to_update <- which(is.na(data_all$Region))
 
 # Update Region from map_province
