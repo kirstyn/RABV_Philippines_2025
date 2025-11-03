@@ -51,7 +51,7 @@ region_levels <- sort(unique(full_data$Region_short))
 n <- length(region_levels)
 
 # palette for regions (Kelly)
-region_cols <- kelly(n + 3)[-c(1,2,9)]
+region_cols <- kelly(n + 2)[-c(1,2)]
 names(region_cols) <- region_levels
 
 # -----------------------------
