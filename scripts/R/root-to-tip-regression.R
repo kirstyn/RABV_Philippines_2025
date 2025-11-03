@@ -8,32 +8,43 @@ library(adephylo)
 library(ggtree)
 
 # ---- 1. Input files ----
-tree_file <- "analysis/ML_trees/20251023_PHL_all_filtered_withSEA2outgroups.ft.newick"
-meta_file <- "processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo.csv"
+tree_file <- "analysis/ML_trees/20251023_PHL_all_filtered_withSEA2outgroups.OutgpRooted.ft.newick"
+meta_file <- "processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n811_raddl_and_manual_Corrected_filteredTon794_stdGeo.csv"
 
 # ---- 2. Read in tree and metadata ----
 tree <- read.tree(tree_file)
 meta <- read.csv(meta_file, stringsAsFactors = FALSE)
 
+# Trim whitespace from tree tip labels
+tree$tip.label <- str_trim(tree$tip.label)
+
+# Trim whitespace from key metadata columns
+meta <- meta %>%
+  mutate(
+    Sample_ID = str_trim(Sample_ID),
+    Accession = str_trim(Accession),
+    Source = str_trim(Source)
+  )
 # ---- 3. Parse dates ----
 meta <- meta %>%
   mutate(
-    Preferred_date = parse_date_time(Preferred_date, orders = c("Y-m-d", "Y/m/d", "d-B-Y")),
+    Preferred_date = parse_date_time(Preferred_date, orders ="%d-%b-%Y"),
     decimal_date = decimal_date(Preferred_date)
   )
 
-# ---- 4. Create 'seq_name' column for matching to tree ----
-meta <- meta %>%
-  mutate(
-    seq_name = case_when(
-      Sample_ID %in% tree$tip.label ~ Sample_ID,
-      Accession %in% tree$tip.label ~ Accession,
-      TRUE ~ NA_character_
-    )
-  )
 
 # Optional: check how many have matches
 cat(sum(!is.na(meta$seq_name)), "metadata entries matched to tree tips\n")
+# ---- Check which metadata entries didn't match tree tips ----
+unmatched_meta_tree <- meta %>%
+  filter(is.na(seq_name)) %>%
+  select(Sample_ID, seq_name,Accession, Source)
+
+# View summary
+cat(nrow(unmatched_meta_tree), "metadata entries not matched to tree tips\n")
+
+# Optional: inspect them
+unmatched_meta_tree
 
 # ---- 5. Root tree ----
 # Root using outgroup (specify tip labels of outgroup)
@@ -48,10 +59,12 @@ tree_rooted <- root(tree, outgroup = outgroup_tips, resolve.root = TRUE)
 # tree_rooted <- midpoint.root(tree)
 # Drop the outgroup tips from the tree
 tree_final <- drop.tip(tree_rooted, outgroup_tips)
+
 ggtree(tree_final) +
-  geom_tiplab(size = 3) +  # tip labels coloured by label
+  geom_tiplab(size = 3) +
   theme_tree2() +
   ggtitle("Rooted Phylogenetic Tree (Outgroup Removed)")
+
 
 # ---- 6. Calculate root-to-tip distances ----
 rtt_data <- data.frame(
@@ -63,6 +76,16 @@ rtt_data <- data.frame(
 rtt_meta <- rtt_data %>%
   left_join(meta, by = c("tip" = "seq_name")) %>%
   filter(!is.na(decimal_date))
+rtt_missing_dates <- rtt_data %>%
+  left_join(meta, by = c("tip" = "seq_name")) %>%
+  filter(is.na(decimal_date)) %>%
+  select(tip, Sample_ID, Accession, Preferred_date, Source, Region_std)
+
+# Summary
+cat(nrow(rtt_missing_dates), "tips have no associated date\n")
+
+# View them
+rtt_missing_dates
 
 # ---- 8. Root-to-tip regression ----
 fit <- lm(distance ~ decimal_date, data = rtt_meta)
@@ -93,6 +116,6 @@ print(p)
 write.tree(tree_rooted, file = "analysis/Temporal_signal/20251023_PHL_all_filtered_withSEA2outgroups.OutgpRooted.ft.newick")
 ggsave("analysis/Temporal_signal/20251023_PHL_all_filtered_withSEA2outgroups_RTTplot.png", p, width = 8, height = 6, dpi = 300)
 write.csv(rtt_meta, "analysis/Temporal_signal/27Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo_RTTmetadata.csv", row.names = FALSE)
-write.csv(meta,  "processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo_seqNames.csv", row.names = FALSE)
+write.csv(meta,  "processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n782_raddl_and_manual_Corrected_stdGeo_seqNames.csv", row.names = FALSE)
 
 

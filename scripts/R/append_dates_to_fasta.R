@@ -5,31 +5,12 @@ library(lubridate)
 
 # ---- 1. Load sequences and metadata ----
 seq <- read.fasta("processed_data/processed_sequences/241025_PHL_all_n794.fasta", as.string = TRUE)
-meta <- read.csv("processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo_seqNames.csv")
+meta <- read.csv("processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n811_raddl_and_manual_Corrected_filteredTon794.csv")
 
 seq_names <- names(seq)
 
-# ---- 2. Manual date fixes ----
-manual_dates <- tribble(
-  ~Sample_ID,       ~Preferred_date,
-  "19-30",          "2019/01/01",
-  "19-40",          "2019/01/01",
-  "CAR-22-018",     "2022/01/01",
-  "CAR-22-020",     "2022/01/01",
-  "COW",            "2020/01/01",
-  "GOAT",           "2020/01/01",
-  "R11-22-001",     "2022/01/01",
-  "R2-22-5302",     "2022/01/01",
-  "R2-22-5814",     "2022/01/01",
-  "R2-22-84711",    "2022/01/01",
-  "R2-22-8924",     "2022/01/01",
-  "R3-0483",        "2022/01/01",
-  "R6-21-4343",     "2021/01/01",
-  "R7-21-149",      "2021/01/01"
-)
-
 # ---- 3. Clean and standardize Preferred_date ----
-meta_lookup <- meta %>%
+meta_combined <- meta %>%
   select(Sample_ID, Accession, Preferred_date, Region_std) %>%
   mutate(
     across(c(Sample_ID, Accession, Region_std), as.character),
@@ -41,15 +22,6 @@ meta_lookup <- meta %>%
       format("%Y-%m-%d")
   )
 
-# ---- 4. Add manual cases ----
-meta_combined <- meta_lookup %>%
-  bind_rows(manual_dates %>%
-              mutate(
-                Preferred_date = parse_date_time(Preferred_date, orders = "Y/m/d") %>%
-                  format("%Y-%m-%d"),
-                Region_std = NA_character_
-              )
-  )
 
 # ---- 5. Match sequences to metadata ----
 matched_df <- data.frame(seq_name = seq_names, stringsAsFactors = FALSE) %>%
@@ -76,7 +48,7 @@ matched_filtered <- matched_df[has_date, ]
 write.fasta(
   sequences = seq_filtered,
   names = names(seq_filtered),
-  file.out = "processed_data/processed_sequences/20251023_PHL_all_filtered.fasta"
+  file.out = "processed_data/processed_sequences/20251027_PHL_all_filtered.fasta"
 )
 
 # ---- 7. Append dates only ----
