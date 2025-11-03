@@ -77,7 +77,7 @@ cat(nrow(meta_unmatched), "metadata entries still didn’t match after filtering
 # Save sequence-epi matched metadata
 matched_meta_path <- file.path(
   out_meta_dir,
-  paste0("PHL_metadata_matchedToSeq_", Sys.Date(), "_n", nrow(matched_df), ".csv")
+  paste0("PHL_metadata_matchedToSeq_", Sys.Date(), "_n", nrow(meta_filtered), ".csv")
 )
 write.csv(meta_filtered, matched_meta_path, row.names = FALSE)
 cat("Matched metadata saved to:\n", matched_meta_path, "\n\n")
@@ -85,7 +85,7 @@ cat("Matched metadata saved to:\n", matched_meta_path, "\n\n")
 # ---- Filter for sequences with valid dates ----
 has_date <- !is.na(meta_filtered$Preferred_date) & meta_filtered$Preferred_date != "NA"
 seq_filtered <- seq[has_date]
-matched_filtered <- matched_df[has_date, ]
+matched_filtered <- meta_filtered[has_date, ]
 
 cat("Sequences retained with valid dates:", length(seq_filtered), "\n\n")
 
