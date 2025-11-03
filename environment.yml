@@ -1,4 +1,4 @@
-name: rage-redcap
+name: rabv-phl
 channels:
   - conda-forge
   - defaults
