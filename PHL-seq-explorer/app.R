@@ -150,15 +150,15 @@ server <- function(input, output, session) {
   # Host summary
   # -----------------------------
   output$host_table <- renderTable({
-    filtered_data() %>% tabyl(Host_type) %>% adorn_pct_formatting(digits = 1)
+    filtered_data() %>% tabyl(Host_common) %>% adorn_pct_formatting(digits = 1)
   })
   
   output$host_plot <- renderPlotly({
     df <- filtered_data()
-    p <- ggplot(df, aes(x = Host_type, fill = Host_type)) +
+    p <- ggplot(df, aes(x = Host_common, fill = Host_common)) +
       geom_bar() +
       theme_minimal() +
-      labs(title = "Sequences by Host Type", x = "Host Type", y = "Count") +
+      labs(title = "Sequences by Host", x = "Host", y = "Count") +
       scale_fill_brewer(palette = "Set2")
     ggplotly(p)
   })
