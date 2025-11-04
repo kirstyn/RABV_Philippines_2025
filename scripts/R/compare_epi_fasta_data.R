@@ -80,6 +80,7 @@ matched_meta_path <- file.path(
   paste0("PHL_metadata_matchedToSeq_", Sys.Date(), "_n", nrow(meta_filtered), ".csv")
 )
 write.csv(meta_filtered, matched_meta_path, row.names = FALSE)
+write.table(meta_filtered, matched_meta_path, row.names = FALSE, sep="\t")
 cat("Matched metadata saved to:\n", matched_meta_path, "\n\n")
 
 # ---- Filter for sequences with valid dates ----

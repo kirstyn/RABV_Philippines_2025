@@ -99,7 +99,6 @@ ui <- fluidPage(
                  tableOutput("host_table")
         ),
         tabPanel("Temporal Coverage",
-                 plotlyOutput("temporal_plot"),
                  plotlyOutput("temporal_region_plot")
         ),
         tabPanel("Geographic Coverage",
