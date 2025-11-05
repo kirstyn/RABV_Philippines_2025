@@ -11,6 +11,10 @@ library(stringr)
 library(pals)
 library(plotly)
 library(forcats)
+library(ape)
+library(ggtree)
+library(treeio)
+library(ggiraph)
 
 # -----------------------------
 # Load data once
@@ -25,6 +29,9 @@ phl_region_simp <- readRDS("../processed_data/gis_data/phl_region_simp.rds")
 # Load all sequences
 all_seqs_fasta <- "../processed_data/processed_sequences/241025_PHL_all_n794.fasta"
 fasta_seqs <- readDNAStringSet(all_seqs_fasta)
+
+# Source your tree plotting script
+source("../scripts/R/plot-timetree.R")  
 
 # -----------------------------
 # Mapping of full region names to abbreviations
@@ -103,14 +110,19 @@ ui <- fluidPage(
         ),
         tabPanel("Geographic Coverage",
                  plotlyOutput("region_plot"),
-                 plotlyOutput("province_plot"),
-                 leafletOutput("map_points_leaflet", height = 500)
+                 plotlyOutput("province_plot")
         ),
         tabPanel("Region Map",
                  leafletOutput("region_map_leaflet", height = 500)
         ),
         tabPanel("Province Map",
                  leafletOutput("province_map_leaflet", height = 500)
+        ),
+        tabPanel("Phylogenetic tree",
+                 fluidRow(
+                   column(width = 6, plotOutput("timetree_plot", height = "800px")),
+                   column(width = 6, leafletOutput("map_points_leaflet", height = "800px"))
+                 )
         )
       )
     )
@@ -261,6 +273,16 @@ server <- function(input, output, session) {
     ggplotly(p)
   })
   
+  # -----------------------------
+  # Phylogenies
+  # -----------------------------
+
+  # -----------------------------
+  # Interactive Time-Scaled Tree
+  # -----------------------------
+  output$timetree_plot <- renderPlot({
+    plot_timetree(filtered_data(), region_cols)
+  })
   # -----------------------------
   # Leaflet maps
   # -----------------------------
