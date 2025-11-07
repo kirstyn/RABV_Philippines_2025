@@ -1,12 +1,20 @@
 plot_timetree <- function(metadata, region_palette) {
-  library(ggtree)
-  library(treeio)
-  library(ggplot2)
-  library(dplyr)
-  library(here)
-  
+    library(pacman)
+   pacman::p_load(
+      ggplot2,
+      dplyr,
+      here
+    )
+
+    # Then handle Bioconductor packages separately
+    for (pkg in c("ggtree", "treeio")) {
+      if (!requireNamespace(pkg, quietly = TRUE)) {
+        BiocManager::install(pkg, ask = FALSE, update = TRUE)
+      }
+      library(pkg, character.only = TRUE)
+    }
   # Load tree
-  timetree_path <- here("analysis", "Timetree", "PHL_n786", "timetree.nexus")
+  timetree_path <- here("processed_data", "trees", "timetree.nexus")
   timetree <- read.nexus(timetree_path)
   
   # Ensure seq_name is first column

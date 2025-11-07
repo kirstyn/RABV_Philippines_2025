@@ -1,21 +1,3 @@
-library(pacman)
-# Ensure pacman is installed
-p_load(
-  shiny, dplyr, ggplot2, janitor, lubridate,
-  viridis, sf, leaflet, stringr, pals, plotly,
-  forcats, ape, here
-)
-
-#Install/load Bioconductor packages (and ggiraph, which is CRAN but tricky)
-if (!requireNamespace("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
-
-#Install Bioconductor packages safely
-BiocManager::install(c("Biostrings", "ggtree", "treeio"), ask = FALSE, update = TRUE)
-
-if (!require("ggiraph")) install.packages("ggiraph")
-
-# Load all
 library(shiny)
 library(dplyr)
 library(ggplot2)
@@ -33,22 +15,23 @@ library(ape)
 library(ggtree)
 library(treeio)
 library(ggiraph)
+
 # -----------------------------
 # Load data once
 # -----------------------------
-full_data <- read.csv("processed_data/metadata/PHL_metadata_matchedToSeq_2025-11-03_n794.csv",stringsAsFactors = FALSE)
+full_data <- read.csv("../processed_data/processed_metadata/gathered_metadata/final/PHL_metadata_matchedToSeq_2025-11-03_n794.csv",stringsAsFactors = FALSE)
 full_data$Preferred_date <- lubridate::dmy(full_data$Preferred_date)
 
 # Load simplified shapefiles 
-phl_prov_simp <- readRDS("processed_data/gis/phl_prov_simp.rds")
-phl_region_simp <- readRDS("processed_data/gis/phl_region_simp.rds")
+phl_prov_simp <- readRDS("../processed_data/gis_data/phl_prov_simp.rds")
+phl_region_simp <- readRDS("../processed_data/gis_data/phl_region_simp.rds")
 
 # Load all sequences
-all_seqs_fasta <- "processed_data/sequences/241025_PHL_all_n794.fasta"
+all_seqs_fasta <- "../processed_data/processed_sequences/241025_PHL_all_n794.fasta"
 fasta_seqs <- readDNAStringSet(all_seqs_fasta)
 
 # Source your tree plotting script
-source("functions/plot-timetree.R")  
+source("../scripts/R/plot-timetree.R")  
 
 # -----------------------------
 # Mapping of full region names to abbreviations
