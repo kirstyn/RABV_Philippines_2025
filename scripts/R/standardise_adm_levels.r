@@ -8,7 +8,7 @@ library(tidyr)
 # Province to region mapping data:
 map_province=read.csv("raw_data/gis_data/PHL_provinceTo_region_mapping.csv")
 # Gathered metadata file to add geo standardisations to
-input_file="processed_data/processed_metadata/gathered_metadata/final/29Oct25_gathered_metadata_n811_raddl_and_manual_Corrected.csv"
+input_file="processed_data/processed_metadata/gathered_metadata/final/11Nov25_gathered_metadata_n811_raddl_and_manual_Corrected.csv"
 data_all=read.csv(input_file)
 
 
@@ -20,14 +20,17 @@ head(adm)
 
 ## Function to standardise Region information. Considers the different names used like Region I and Illocus. 
 
-standardise_region <- function(region_col, adm) {
-  # Reference regions
-  adm_regions <- adm %>% 
+# improved standardise_region: handles "Central Luzon (III)", "Region III", "III (Central Luzon)", etc.
+standardise_region <- function(region_col, adm, max_dist = 6) {
+  library(stringr)
+  library(stringdist)
+  
+  adm_regions <- adm %>%
     filter(Type == "Region") %>%
     mutate(Loc_ID = str_squish(Loc_ID)) %>%
     pull(Loc_ID)
+  adm_regions_lower <- tolower(adm_regions)
   
-  # Map known special cases (normalized lowercase)
   special_cases <- c(
     "mimiropa" = "Mimaropa Region",
     "mimaropa" = "Mimaropa Region",
@@ -36,36 +39,63 @@ standardise_region <- function(region_col, adm) {
     "barmm" = "Bangsamoro Autonomous Region In Muslim Mindanao (BARMM)"
   )
   
+  extract_roman <- function(s) {
+    s2 <- gsub("[\\(\\)\\.]"," ", s) %>% str_squish()
+    m <- str_match(s2, "\\b([IVXLCDM]+(?:-[A-Z])?)\\b")
+    if (!is.na(m[1,2])) return(m[1,2]) else return(NA_character_)
+  }
+  
   sapply(region_col, function(x) {
     if (is.na(x) || x == "") return(NA_character_)
-    
-    x_clean <- str_squish(x)
+    x_clean <- str_squish(as.character(x))
     x_lower <- tolower(x_clean)
     
-    # Check special cases
-    if(x_lower %in% names(special_cases)) return(special_cases[[x_lower]])
+    # special cases
+    if (x_lower %in% names(special_cases)) return(special_cases[[x_lower]])
     
-    # Try exact match ignoring case
-    match_idx <- which(tolower(adm_regions) == x_lower)
+    # exact match
+    idx_exact <- which(adm_regions_lower == x_lower)
+    if (length(idx_exact) > 0) return(adm_regions[idx_exact[1]])
     
-    if (length(match_idx) > 0) {
-      return(adm_regions[match_idx[1]])
-    } else {
-      # Try partial match ignoring case
-      match_idx <- which(
-        str_detect(tolower(adm_regions), fixed(x_lower)) |
-          str_detect(x_lower, fixed(tolower(adm_regions)))
+    # --- improved Roman numeral logic ---
+    roman_token <- extract_roman(x_clean)
+    if (!is.na(roman_token)) {
+      idx_roman <- which(
+        str_detect(tolower(adm_regions), paste0("\\(", tolower(roman_token), "\\)")) |
+          str_detect(tolower(adm_regions), paste0("\\bregion\\s+", tolower(roman_token), "\\b"))
       )
-      if (length(match_idx) > 0) {
-        return(adm_regions[match_idx[1]])
-      } else {
-        # Fallback: keep original capitalization but remove extra spaces
-        return(x_clean)
-      }
+      if (length(idx_roman) > 0) return(adm_regions[idx_roman[1]])
     }
-  })
+    
+    # partial substring matches (non-roman)
+    idx_partial <- which(
+      str_detect(adm_regions_lower, fixed(x_lower)) |
+        str_detect(x_lower, fixed(adm_regions_lower))
+    )
+    if (length(idx_partial) > 0) return(adm_regions[idx_partial[1]])
+    
+    # fuzzy fallback (skip if string has Roman numeral — prevents Bicol(V)→II)
+    if (is.na(roman_token)) {
+      dists <- stringdist(tolower(x_clean), adm_regions_lower, method = "lv")
+      best_idx <- which.min(dists)
+      if (!is.infinite(dists[best_idx]) && dists[best_idx] <= max_dist)
+        return(adm_regions[best_idx])
+    }
+    
+    # remove roman token and retry partial
+    if (!is.na(roman_token)) {
+      no_roman <- gsub(roman_token, "", x_clean, ignore.case = TRUE)
+      no_roman <- gsub("[\\(\\)\\-]", " ", no_roman) %>% str_squish()
+      idx_partial2 <- which(
+        str_detect(adm_regions_lower, fixed(tolower(no_roman))) |
+          str_detect(tolower(no_roman), fixed(adm_regions_lower))
+      )
+      if (length(idx_partial2) > 0) return(adm_regions[idx_partial2[1]])
+    }
+    
+    return(x_clean)
+  }, USE.NAMES = FALSE)
 }
-
 # function for the other adm levels, which have hierarchical structure
 
 hierarchical_standardise_adm_simple <- function(df, adm, max_dist = 2) {

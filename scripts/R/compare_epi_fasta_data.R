@@ -15,7 +15,8 @@ library(stringr)
 
 # ---- Input files ----
 seq_file  <- "processed_data/processed_sequences/241025_PHL_all_n794.fasta"
-meta_file <- "processed_data/processed_metadata/gathered_metadata/final/29Oct25_gathered_metadata_n811_raddl_and_manual_Corrected_stdGeo.csv"
+meta_file <- "processed_data/processed_metadata/gathered_metadata/final/11Nov25_gathered_metadata_n811_raddl_and_manual_Corrected_stdGeo.csv"
+clade_file <- "processed_data/processed_metadata/241025_glue_clade_assignment.txt"
 
 # ---- Output directories ----
 out_meta_dir <- "processed_data/processed_metadata/gathered_metadata/final/"
@@ -30,6 +31,9 @@ cat("Loading sequence and metadata files...\n")
 
 seq  <- read.fasta(seq_file)
 meta <- read.csv(meta_file, stringsAsFactors = FALSE)
+clade <- read.table(clade_file, header=T, sep="\t")
+clade <- clade %>%
+  mutate(across(where(is.character), ~ trimws(.)))
 
 # Clean whitespace from names
 seq_names <- trimws(names(seq))
@@ -38,6 +42,7 @@ meta <- meta %>%
 
 cat("Sequences loaded:", length(seq_names), "\n")
 cat("Metadata loaded:", nrow(meta), "\n\n")
+
 
 # ---- Identify matches and mismatches ----
 cat("Identifying sequence–metadata matches...\n")
@@ -68,6 +73,17 @@ meta_filtered <- meta_filtered %>%
     )
   )
 
+# Add clade info to metadata # 
+
+meta_filtered <- meta_filtered %>%
+  left_join(
+    clade %>% 
+      select(queryName, phylogenetic_clade = minor_cladeFinalClade),
+    by = c("seq_name" = "queryName")
+  )
+
+cat("Added clade information for", sum(!is.na(meta_filtered$major_clade)), "records.\n\n")
+
 meta_unmatched <- meta_filtered %>%
   filter(is.na(seq_name)) %>%
   select(Sample_ID, Accession)
@@ -80,7 +96,7 @@ matched_meta_path <- file.path(
   paste0("PHL_metadata_matchedToSeq_", Sys.Date(), "_n", nrow(meta_filtered), ".csv")
 )
 write.csv(meta_filtered, matched_meta_path, row.names = FALSE)
-write.table(meta_filtered, matched_meta_path, row.names = FALSE, sep="\t")
+#write.table(meta_filtered, matched_meta_path, row.names = FALSE, sep="\t")
 cat("Matched metadata saved to:\n", matched_meta_path, "\n\n")
 
 # ---- Filter for sequences with valid dates ----

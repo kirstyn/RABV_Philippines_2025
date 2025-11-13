@@ -5,7 +5,7 @@ library(lubridate)
 
 # ---- 1. Load sequences and metadata ----
 seq <- read.fasta("processed_data/processed_sequences/241025_PHL_all_n794.fasta", as.string = TRUE)
-meta <- read.csv("processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n811_raddl_and_manual_Corrected_filteredTon794.csv")
+meta <- read.csv("processed_data/processed_metadata/gathered_metadata/final/29Oct25_gathered_metadata_n811_raddl_and_manual_Corrected_stdGeo.csv")
 
 seq_names <- names(seq)
 

@@ -1,0 +1,187 @@
+su: ignoring --preserve-environment, it's mutually exclusive with --login
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://cloud.r-project.org
+Bioconductor version 3.22 (BiocManager 1.30.26), R 4.5.1 (2025-06-13)
+Warning: package(s) not installed when version(s) same as or greater than current; use
+  `force = TRUE` to re-install: 'Biostrings' 'ggtree' 'treeio'
+Installation paths not writeable, unable to update packages
+  path: /usr/lib/R/library
+  packages:
+    mgcv
+  path: /usr/lib/R/site-library
+  packages:
+    httr2, nanoarrow, spatstat.data, spatstat.explore, spatstat.geom,
+    spatstat.model, spatstat.random, spatstat.univar, spatstat.utils, tensor
+  path: /usr/local/lib/R/site-library
+  packages:
+    broom, colorspace, covr, curl, data.table, dbplyr, dtplyr, evaluate,
+    forcats, gargle, ggplot2, googledrive, googlesheets4, haven, hms, magrittr,
+    mockery, openssl, pillar, pkgbuild, pkgload, purrr, rmarkdown, rprojroot,
+    RSQLite, rvest, stringr, tibble, utf8, vroom, waldo, xfun, xml2
+Loading required package: BiocGenerics
+Loading required package: generics
+
+Attaching package: ‘generics’
+
+The following object is masked from ‘package:lubridate’:
+
+    as.difftime
+
+The following object is masked from ‘package:dplyr’:
+
+    explain
+
+The following objects are masked from ‘package:base’:
+
+    as.difftime, as.factor, as.ordered, intersect, is.element, setdiff,
+    setequal, union
+
+
+Attaching package: ‘BiocGenerics’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, saveRDS, table, tapply, unique,
+    unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:plotly’:
+
+    rename
+
+The following objects are masked from ‘package:lubridate’:
+
+    second, second<-
+
+The following objects are masked from ‘package:dplyr’:
+
+    first, rename
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:plotly’:
+
+    slice
+
+The following object is masked from ‘package:lubridate’:
+
+    %within%
+
+The following objects are masked from ‘package:dplyr’:
+
+    collapse, desc, slice
+
+Loading required package: XVector
+Loading required package: Seqinfo
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:ape’:
+
+    complement
+
+The following object is masked from ‘package:pals’:
+
+    alphabet
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+ggtree v4.0.1 Learn more at https://yulab-smu.top/contribution-tree-data/
+
+Please cite:
+
+Guangchuang Yu, David Smith, Huachen Zhu, Yi Guan, Tommy Tsan-Yuk Lam.
+ggtree: an R package for visualization and annotation of phylogenetic
+trees with their covariates and other associated data. Methods in
+Ecology and Evolution. 2017, 8(1):28-36. doi:10.1111/2041-210X.12628
+
+Attaching package: ‘ggtree’
+
+The following object is masked from ‘package:Biostrings’:
+
+    collapse
+
+The following object is masked from ‘package:IRanges’:
+
+    collapse
+
+The following object is masked from ‘package:S4Vectors’:
+
+    expand
+
+The following object is masked from ‘package:ape’:
+
+    rotate
+
+treeio v1.34.0 Learn more at https://yulab-smu.top/contribution-tree-data/
+
+Please cite:
+
+LG Wang, TTY Lam, S Xu, Z Dai, L Zhou, T Feng, P Guo, CW Dunn, BR
+Jones, T Bradley, H Zhu, Y Guan, Y Jiang, G Yu. treeio: an R package
+for phylogenetic tree input and output with richly annotated and
+associated data. Molecular Biology and Evolution. 2020, 37(2):599-603.
+doi: 10.1093/molbev/msz240
+
+Attaching package: ‘treeio’
+
+The following object is masked from ‘package:Biostrings’:
+
+    mask
+
+
+Listening on http://127.0.0.1:40401
+Warning in geom_point(data = metat, aes(x = x, y = y, colour = Region_short,  :
+  Ignoring unknown aesthetics: text
+Warning in geom2trace.default(dots[[1L]][[1L]], dots[[2L]][[1L]], dots[[3L]][[1L]]) :
+  geom_GeomInteractiveSegment() has yet to be implemented in plotly.
+  If you'd like to see this geom implemented,
+  Please open an issue with your example code at
+  https://github.com/ropensci/plotly/issues
+Warning in geom2trace.default(dots[[1L]][[1L]], dots[[2L]][[1L]], dots[[3L]][[1L]]) :
+  geom_GeomInteractiveSegment() has yet to be implemented in plotly.
+  If you'd like to see this geom implemented,
+  Please open an issue with your example code at
+  https://github.com/ropensci/plotly/issues
+Warning in geom_point(data = metat, aes(x = x, y = y, colour = Region_short,  :
+  Ignoring unknown aesthetics: text
+Warning in geom2trace.default(dots[[1L]][[1L]], dots[[2L]][[1L]], dots[[3L]][[1L]]) :
+  geom_GeomInteractiveSegment() has yet to be implemented in plotly.
+  If you'd like to see this geom implemented,
+  Please open an issue with your example code at
+  https://github.com/ropensci/plotly/issues
+Warning in geom2trace.default(dots[[1L]][[1L]], dots[[2L]][[1L]], dots[[3L]][[1L]]) :
+  geom_GeomInteractiveSegment() has yet to be implemented in plotly.
+  If you'd like to see this geom implemented,
+  Please open an issue with your example code at
+  https://github.com/ropensci/plotly/issues
