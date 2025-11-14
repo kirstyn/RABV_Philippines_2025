@@ -1,0 +1,8 @@
+#nexus
+begin sets;
+  charset n_p_m_g_l = 71-1423  1515-2408  2495-3103  3317-4891  5411-11794;
+  charset nc = 1-70 1424-1514 2409-2494 3104-3316 4892-5410 11795-11924;
+  charpartition mymodels =
+    GTR+F+I+R4: n_p_m_g_l,
+    TVM+F+R3: nc;
+end;

@@ -84,7 +84,6 @@ names(region_cols) <- region_levels
 # -----------------------------
 ui <- fluidPage(
   titlePanel("Philippines RABV Sequence Explorer"),
-  
   sidebarLayout(
     sidebarPanel(
       selectInput("host_common", "Select Host:", choices = c("All", sort(unique(full_data$Host_common))), selected = "All"),
@@ -140,7 +139,7 @@ ui <- fluidPage(
         ),
         tabPanel("Phylogenetic tree",
                  h3("Time-scaled phylogeny and spatial distribution of sequences"),
-                 p("This view integrates genomic and geographic data..."),
+                 p("This view integrates genomic and geographic data.\n Please note that only sequences with exact coordinates are plotted on the map- representing only a proportion of the samples in the tree."),
                  selectInput("colour_by", "Colour tree tips by:",
                              choices = c("Region" = "Region_short", "Province" = "Province_std", "Municipality" = "Municipality_std", "Host" = "Host_common", "Island group" = "Major_Island", "Phylogenetic_clade" = "phylogenetic_clade"),
                              selected = "Region_short"),

@@ -66,7 +66,18 @@ names(region_cols) <- region_levels
 # -----------------------------
 ui <- fluidPage(
   titlePanel("Philippines RABV Sequence Explorer"),
-  
+    tags$head(
+      tags$style(HTML("
+      .top-right-logo {
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        width: 120px;
+        z-index: 1000;
+      }
+    "))
+    ),
+    tags$img(src = "RAGE.jpg", class = "top-right-logo"),
   sidebarLayout(
     sidebarPanel(
       selectInput("host_common", "Select Host:", choices = c("All", sort(unique(full_data$Host_common))), selected = "All"),
@@ -341,7 +352,7 @@ server <- function(input, output, session) {
     
     pal <- colorNumeric("YlOrRd", domain = region_map$n)
     
-    leaflet(region_map) %>%
+    leaflet(district_map) %>%
       addProviderTiles(providers$CartoDB.Positron) %>%
       addPolygons(
         fillColor = ~pal(n),
@@ -426,7 +437,7 @@ server <- function(input, output, session) {
         lng = ~Longitude, lat = ~Latitude,
         color = ~pal_fun(get(pal$var)),
         radius = 3, fillOpacity = 0.7,
-        label = ~paste0(Sample_ID, " (", Host_type, ")")
+        label = ~paste0(Sample_ID, " (", Host_common, ")")
       ) #%>%
     #  addLegend("bottomright", pal = pal_fun, values = pts[[pal$var]], title = pal$var)
   })

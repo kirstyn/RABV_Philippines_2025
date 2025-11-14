@@ -1,0 +1,947 @@
+IQ-TREE version 3.0.1 for MacOS ARM 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    MVLS-MACLAP381977 (SSE4.2, 36 GB RAM)
+Command: iqtree -s /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned.fasta -p /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned_partitions.txt -m MF+MERGE -rcluster 10
+Seed:    735181 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Nov 14 12:19:56 2025
+Kernel:  SSE2 - 1 threads (11 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 11 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading partition model file /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned_partitions.txt ...
+Reading alignment file /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned.fasta ... Fasta format detected
+Reading fasta file: done in 0.0962949 secs using 89.4% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.029866 secs using 88.03% CPU
+Alignment has 786 sequences with 11924 columns, 5105 distinct patterns
+3572 parsimony-informative, 872 singleton sites, 7480 constant sites
+                   Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00539398 secs using 94.44% CPU
+   1  KX148261             1.04%    passed     99.36%
+   2  KX148262             1.04%    passed     99.86%
+   3  KX148263             1.04%    passed     97.32%
+   4  OQ326754             1.04%    passed     99.99%
+   5  OQ326753             1.04%    passed     99.81%
+   6  OQ326751             1.04%    passed     99.54%
+   7  OQ326752             1.04%    passed     99.27%
+   8  KX148259             1.04%    passed     99.94%
+   9  KX148260             1.04%    passed     99.82%
+  10  OQ326750             1.04%    passed     99.11%
+  11  OQ326748             1.04%    passed     99.32%
+  12  OQ326749             1.04%    passed     99.21%
+  13  OQ326744             1.04%    passed     97.32%
+  14  OQ326743             1.04%    passed     99.67%
+  15  OQ326747             1.04%    passed     99.11%
+  16  OQ326745             1.04%    passed     99.64%
+  17  OQ326740             1.04%    passed     99.42%
+  18  OQ326741             1.04%    passed     98.72%
+  19  OQ326746             1.04%    passed     99.27%
+  20  OR971444             0.00%    passed     99.95%
+  21  OQ326739             1.04%    passed     99.60%
+  22  OQ326737             1.04%    passed     99.08%
+  23  OR971443             0.00%    passed     98.43%
+  24  OQ326742             1.04%    passed     99.77%
+  25  OQ326736             1.04%    passed     99.38%
+  26  OR971440             0.00%    passed     99.86%
+  27  OR971442             0.00%    passed     99.92%
+  28  OQ326738             1.04%    passed     98.17%
+  29  OR971441             0.00%    passed     99.22%
+  30  OR971438             0.00%    passed     99.52%
+  31  OR971435             0.00%    passed     98.99%
+  32  OR971434             0.00%    passed     99.82%
+  33  OR971439             0.00%    passed     98.56%
+  34  OR971432             0.00%    passed     99.59%
+  35  OR971437             0.00%    passed     99.22%
+  36  OR971436             0.00%    passed     99.43%
+  37  OR971433             0.00%    passed     98.17%
+  38  OR971431             0.00%    passed     99.37%
+  39  OR971430             0.00%    passed     98.84%
+  40  OR971428             0.00%    passed     99.49%
+  41  OR971429             0.00%    passed     99.33%
+  42  OR971427             0.00%    passed     99.10%
+  43  OR971422             0.00%    passed     99.64%
+  44  OR971425             0.00%    passed     99.76%
+  45  OR971424             0.00%    passed     99.07%
+  46  OR971421             0.00%    passed     99.49%
+  47  OR971418             0.02%    passed     99.40%
+  48  OR971423             0.00%    passed     99.87%
+  49  OR971426             0.00%    passed     99.54%
+  50  OR971417             0.02%    passed     99.31%
+  51  OR971419             0.00%    passed     98.91%
+  52  OR971420             0.00%    passed     99.80%
+  53  OR971415             0.02%    passed     99.64%
+  54  OR971413             0.02%    passed     99.54%
+  55  OR971414             0.02%    passed     99.32%
+  56  OR971411             0.00%    passed     99.70%
+  57  OR971416             0.02%    passed     99.37%
+  58  OR971412             0.02%    passed     97.78%
+  59  OR971406             0.00%    passed     95.93%
+  60  OR971407             0.00%    passed     98.17%
+  61  OR971409             0.00%    passed     99.73%
+  62  OR971408             0.00%    passed     99.79%
+  63  OR971401             0.00%    passed     98.92%
+  64  OR971403             0.00%    passed     99.46%
+  65  OR971404             0.02%    passed     97.64%
+  66  OR971399             0.00%    passed     99.75%
+  67  OR971395             0.00%    passed     99.19%
+  68  OR971396             0.00%    passed     96.98%
+  69  OR971405             0.00%    passed     99.37%
+  70  OR971400             0.02%    passed     98.94%
+  71  OQ326784             1.04%    passed     99.30%
+  72  OR971398             0.00%    passed     99.36%
+  73  OR971397             0.00%    passed     98.99%
+  74  OR971402             0.02%    passed     98.09%
+  75  OQ326781             1.04%    passed     99.56%
+  76  OQ326780             1.04%    passed     99.42%
+  77  OQ326779             1.04%    passed     98.94%
+  78  OQ326777             1.04%    passed     99.12%
+  79  OQ326778             1.04%    passed     99.85%
+  80  OQ326782             1.04%    passed     99.69%
+  81  OQ326783             1.04%    passed     99.19%
+  82  OQ326776             1.04%    passed     99.48%
+  83  OQ326770             1.04%    passed     99.46%
+  84  OQ326773             1.04%    passed     99.37%
+  85  OQ326769             1.04%    passed     99.34%
+  86  OQ326771             1.04%    passed     99.89%
+  87  OQ326768             1.04%    passed     99.06%
+  88  OQ326767             1.04%    passed     99.98%
+  89  OQ326772             1.04%    passed     99.66%
+  90  OQ326774             1.04%    passed     99.87%
+  91  OQ326764             1.04%    passed     99.60%
+  92  OQ326762             1.04%    passed     99.13%
+  93  OQ326763             1.04%    passed     99.48%
+  94  OQ326760             1.04%    passed     99.62%
+  95  OQ326775             1.04%    passed     99.07%
+  96  OQ326759             1.04%    passed     99.68%
+  97  OQ326766             1.04%    passed     99.31%
+  98  OQ326765             1.04%    passed     98.81%
+  99  OR971543             0.02%    passed     99.69%
+ 100  OR971544             0.02%    passed     98.32%
+ 101  OQ326756             1.04%    passed     98.68%
+ 102  OQ326761             1.04%    passed     98.97%
+ 103  OQ326757             1.04%    passed     99.60%
+ 104  OQ326755             1.04%    passed     99.11%
+ 105  OR971539             0.02%    passed     96.00%
+ 106  OR971540             0.02%    passed     92.72%
+ 107  OR971534             0.02%    passed     99.85%
+ 108  OR971537             0.02%    passed     92.83%
+ 109  OQ326758             1.04%    passed     97.64%
+ 110  OR971541             0.02%    passed     95.72%
+ 111  OR971535             0.02%    passed     95.90%
+ 112  OR971542             0.02%    passed     95.23%
+ 113  OR971532             0.00%    passed     98.94%
+ 114  OR971531             0.00%    passed     99.91%
+ 115  OR971530             0.00%    passed     99.99%
+ 116  OR971526             0.00%    passed     99.77%
+ 117  OR971524             0.00%    passed     99.82%
+ 118  OR971538             0.02%    passed     95.20%
+ 119  OR971523             0.02%    passed     99.94%
+ 120  OR971525             0.00%    passed     98.91%
+ 121  OR971529             0.00%    passed     99.93%
+ 122  OR971522             0.00%    passed     98.85%
+ 123  OR971536             0.02%    passed     96.65%
+ 124  OR971527             0.00%    passed     99.82%
+ 125  OR971528             0.00%    passed     99.83%
+ 126  OR971521             0.00%    passed     99.53%
+ 127  OR971533             0.00%    passed     99.98%
+ 128  OR971517             0.00%    passed     98.95%
+ 129  OR971519             0.00%    passed     95.96%
+ 130  OR971514             0.00%    passed     99.84%
+ 131  OR971518             0.00%    passed     99.91%
+ 132  OR971513             0.00%    passed     99.95%
+ 133  OR971520             0.00%    passed     99.80%
+ 134  OR971512             0.00%    passed     99.99%
+ 135  OR971509             0.00%    passed     98.05%
+ 136  OR971507             0.00%    passed     99.81%
+ 137  OR971516             0.00%    passed     99.94%
+ 138  OR971508             0.00%    passed     99.68%
+ 139  OR971505             0.00%    passed     99.35%
+ 140  OR971515             0.00%    passed     94.45%
+ 141  OR971503             0.00%    passed     99.84%
+ 142  OR971511             0.00%    passed     99.18%
+ 143  OR971501             0.00%    passed     99.79%
+ 144  OR971499             0.00%    passed     99.78%
+ 145  OR971498             0.00%    passed     99.78%
+ 146  OR971504             0.00%    passed     99.57%
+ 147  OR971506             0.00%    passed     95.29%
+ 148  OR971497             0.00%    passed     99.49%
+ 149  OR971510             0.00%    passed     99.04%
+ 150  OR971500             0.00%    passed     99.73%
+ 151  OR971502             0.00%    passed     99.78%
+ 152  OR971496             0.00%    passed     99.93%
+ 153  OR971341             0.00%    passed    100.00%
+ 154  OR971338             0.02%    passed     99.71%
+ 155  OR971339             0.00%    passed    100.00%
+ 156  OR971343             0.00%    passed     99.99%
+ 157  OR971337             0.00%    passed     99.98%
+ 158  OR971340             0.00%    passed    100.00%
+ 159  OR971344             0.00%    passed    100.00%
+ 160  OR971342             0.00%    passed     95.74%
+ 161  OR971495             0.00%    passed     99.88%
+ 162  OR971334             0.00%    passed    100.00%
+ 163  OR971332             0.00%    passed     98.59%
+ 164  OR971329             0.02%    passed     99.23%
+ 165  OR971330             0.00%    passed     99.95%
+ 166  OR971336             0.00%    passed     99.99%
+ 167  OR971331             0.00%    passed    100.00%
+ 168  OR971335             0.02%    passed     98.46%
+ 169  OR971333             0.00%    passed     98.80%
+ 170  OR971325             0.00%    passed     97.93%
+ 171  OR971326             0.00%    passed     99.87%
+ 172  OR971323             0.00%    passed     96.12%
+ 173  OR971328             0.00%    passed     99.80%
+ 174  OR971643             0.00%    passed     99.72%
+ 175  OR971327             0.00%    passed     98.01%
+ 176  OR971642             0.00%    passed     99.06%
+ 177  OR971640             0.00%    passed     99.85%
+ 178  OR971641             0.00%    passed     98.70%
+ 179  OR971324             0.00%    passed     99.86%
+ 180  OR971635             0.00%    passed     98.04%
+ 181  OR971634             0.00%    passed     98.04%
+ 182  OR971633             0.00%    passed     99.57%
+ 183  OR971644             0.00%    passed     98.33%
+ 184  OR971632             0.00%    passed     99.57%
+ 185  OR971631             0.00%    passed     99.22%
+ 186  OR971637             0.00%    passed     99.64%
+ 187  OR971638             0.00%    passed     99.87%
+ 188  OR971639             0.00%    passed     98.34%
+ 189  OR971628             0.00%    passed     98.39%
+ 190  OR971630             0.00%    passed     99.76%
+ 191  OR971627             0.00%    passed     99.97%
+ 192  OR971625             0.00%    passed     99.36%
+ 193  OR971624             0.00%    passed     97.70%
+ 194  OR971626             0.00%    passed     99.63%
+ 195  OR971636             0.00%    passed     99.85%
+ 196  OR971629             0.00%    passed     99.98%
+ 197  OR971623             0.00%    passed     98.30%
+ 198  OR971621             0.00%    passed     99.35%
+ 199  OR971619             0.00%    passed     98.26%
+ 200  OR971620             0.00%    passed     98.51%
+ 201  OR971615             0.00%    passed     99.76%
+ 202  OR971612             0.00%    passed     99.71%
+ 203  OR971611             0.00%    passed     99.75%
+ 204  OR971610             0.00%    passed     98.23%
+ 205  OR971616             0.00%    passed     99.71%
+ 206  OR971609             0.00%    passed     99.77%
+ 207  OR971618             0.00%    passed     98.48%
+ 208  OR971617             0.00%    passed     99.66%
+ 209  OR971608             0.00%    passed     97.60%
+ 210  OR971622             0.00%    passed     97.37%
+ 211  OR971614             0.00%    passed     99.66%
+ 212  OR971613             0.00%    passed     97.82%
+ 213  OR971607             0.00%    passed     98.34%
+ 214  OR971603             0.00%    passed     99.75%
+ 215  OR971606             0.00%    passed     98.41%
+ 216  OR971599             0.00%    passed     98.26%
+ 217  OR971601             0.00%    passed     98.73%
+ 218  OR971604             0.00%    passed     99.95%
+ 219  OR971598             0.00%    passed     99.37%
+ 220  OR971597             0.00%    passed     99.63%
+ 221  OR971605             0.00%    passed     99.05%
+ 222  MN857170             0.02%    passed     99.49%
+ 223  MN857168             0.02%    passed     99.29%
+ 224  MN857169             0.02%    passed     99.60%
+ 225  MN857167             0.02%    passed     99.28%
+ 226  OR971594             0.00%    passed     99.66%
+ 227  OR971600             0.00%    passed     98.15%
+ 228  OR971596             0.00%    passed     99.87%
+ 229  OR971602             0.00%    passed     97.20%
+ 230  MN857171             0.02%    passed     99.69%
+ 231  OR971595             0.00%    passed     99.30%
+ 232  OR971591             0.02%    passed     91.69%
+ 233  OR971593             0.00%    passed     99.82%
+ 234  OR971588             0.00%    passed     98.61%
+ 235  OR971590             0.03%    passed     98.92%
+ 236  OR971585             0.03%    passed     99.53%
+ 237  OR971584             0.03%    passed     99.42%
+ 238  OR971586             0.03%    passed     99.53%
+ 239  OR971592             0.00%    passed     99.95%
+ 240  OR971583             0.02%    passed     97.72%
+ 241  OR971589             0.03%    passed     99.67%
+ 242  OR971581             0.02%    passed     96.83%
+ 243  OR971578             0.02%    passed     96.44%
+ 244  OR971576             0.02%    passed     98.82%
+ 245  OR971582             0.02%    passed     97.05%
+ 246  OR971587             0.00%    passed     98.04%
+ 247  OR971574             0.02%    passed     95.95%
+ 248  OR971573             0.02%    passed     96.28%
+ 249  OR971577             0.02%    passed     95.53%
+ 250  OR971580             0.02%    passed     97.74%
+ 251  OR971575             0.02%    passed     94.70%
+ 252  OR971579             0.02%    passed     96.41%
+ 253  OR971568             0.02%    passed     97.02%
+ 254  OR971570             0.02%    passed     94.61%
+ 255  OR971566             0.02%    passed     96.19%
+ 256  OR971563             0.02%    passed     96.91%
+ 257  OR971564             0.02%    passed     93.12%
+ 258  OR971567             0.02%    passed     94.10%
+ 259  OR971572             0.02%    passed     96.62%
+ 260  OR971562             0.02%    passed     97.13%
+ 261  OR971571             0.02%    passed     94.82%
+ 262  OR971565             0.02%    passed     93.77%
+ 263  OR971561             0.02%    passed     97.15%
+ 264  OR971559             0.02%    passed     95.19%
+ 265  OR971557             0.02%    passed     97.05%
+ 266  OR971558             0.02%    passed     93.88%
+ 267  OR971554             0.02%    passed     94.27%
+ 268  OR971569             0.02%    passed     95.10%
+ 269  OR971552             0.02%    passed     94.30%
+ 270  OR971560             0.02%    passed     96.10%
+ 271  OR971556             0.02%    passed     97.75%
+ 272  OR971555             0.02%    passed     94.36%
+ 273  OR971549             0.02%    passed     92.45%
+ 274  OR971553             0.02%    passed     92.32%
+ 275  OR971550             0.02%    passed     94.26%
+ 276  OR971545             0.02%    passed     95.21%
+ 277  OR971494             0.00%    passed     99.65%
+ 278  OR971493             0.00%    passed     99.83%
+ 279  OR971492             0.00%    passed     99.83%
+ 280  OR971491             0.00%    passed     99.68%
+ 281  OR971548             0.02%    passed     94.96%
+ 282  OR971546             0.02%    passed     92.10%
+ 283  OR971551             0.02%    passed     93.85%
+ 284  OR971488             0.00%    passed     99.64%
+ 285  OR971487             0.00%    passed     99.64%
+ 286  OR971486             0.00%    passed     99.96%
+ 287  OR971547             0.02%    passed     94.68%
+ 288  OR971490             0.00%    passed     99.83%
+ 289  OR971482             0.00%    passed     99.48%
+ 290  OR971481             0.00%    passed     99.34%
+ 291  OR971479             0.00%    passed     97.76%
+ 292  OR971489             0.00%    passed     99.49%
+ 293  OR971476             0.00%    passed     99.44%
+ 294  OR971484             0.00%    passed     99.91%
+ 295  OR971477             0.00%    passed     99.94%
+ 296  OR971483             0.00%    passed     99.71%
+ 297  OR971474             0.00%    passed     99.55%
+ 298  OR971475             0.00%    passed     98.82%
+ 299  OR971485             0.00%    passed     99.98%
+ 300  OR971480             0.00%    passed     99.93%
+ 301  OR971478             0.00%    passed     99.63%
+ 302  OR971471             0.00%    passed     99.70%
+ 303  OR971469             0.00%    passed     99.29%
+ 304  OR971468             0.00%    passed     99.24%
+ 305  OR971467             0.00%    passed     99.10%
+ 306  OR971466             0.00%    passed     99.72%
+ 307  OR971470             0.00%    passed     99.87%
+ 308  OR971462             0.00%    passed     99.11%
+ 309  OR971473             0.00%    passed     97.33%
+ 310  OR971464             0.00%    passed     99.64%
+ 311  OR971461             0.00%    passed     99.69%
+ 312  OR971460             0.00%    passed     99.76%
+ 313  OR971472             0.00%    passed     97.55%
+ 314  OR971465             0.00%    passed     99.26%
+ 315  OR971456             0.02%    passed     99.60%
+ 316  OR971457             0.02%    passed     99.40%
+ 317  OR971463             0.00%    passed     99.88%
+ 318  OR971454             0.00%    passed     99.87%
+ 319  OR971458             0.00%    passed     98.99%
+ 320  OR971452             0.02%    passed     98.24%
+ 321  OR971453             0.00%    passed     99.64%
+ 322  OR971446             0.00%    passed     98.79%
+ 323  OR971459             0.00%    passed     99.97%
+ 324  OR971447             0.00%    passed     99.76%
+ 325  OR971394             0.00%    passed     97.99%
+ 326  OR971448             0.01%    passed     95.88%
+ 327  OR971455             0.02%    passed     99.23%
+ 328  OR971450             0.00%    passed     99.79%
+ 329  OR971451             0.02%    passed     98.42%
+ 330  OR971393             0.00%    passed     98.10%
+ 331  OR971449             0.00%    passed     99.26%
+ 332  OR971391             0.00%    passed     99.71%
+ 333  OR971390             0.00%    passed     99.93%
+ 334  OR971387             0.00%    passed     99.63%
+ 335  OR971445             0.00%    passed     99.23%
+ 336  OR971386             0.00%    passed     99.70%
+ 337  OR971385             0.00%    passed     99.99%
+ 338  OR971392             0.00%    passed     99.82%
+ 339  OR971389             0.02%    passed     99.67%
+ 340  OR971381             0.00%    passed     99.88%
+ 341  OR971388             0.00%    passed     99.86%
+ 342  OR971380             0.00%    passed     99.83%
+ 343  OR971379             0.00%    passed     99.84%
+ 344  OR971378             0.00%    passed     99.02%
+ 345  OR971383             0.00%    passed     99.91%
+ 346  OR971377             0.00%    passed     99.33%
+ 347  OR971384             0.00%    passed     99.23%
+ 348  OR971382             0.00%    passed     99.63%
+ 349  OR971372             0.00%    passed     99.01%
+ 350  OR971371             0.00%    passed     99.44%
+ 351  OR971370             0.00%    passed     98.39%
+ 352  OR971369             0.00%    passed     99.08%
+ 353  OR971375             0.00%    passed     99.79%
+ 354  OR971376             0.00%    passed     99.75%
+ 355  OR971373             0.00%    passed     99.21%
+ 356  OR971374             0.00%    passed     99.79%
+ 357  OR971367             0.00%    passed     98.21%
+ 358  OR971362             0.00%    passed     99.75%
+ 359  OR971361             0.00%    passed     99.02%
+ 360  OR971360             0.00%    passed     99.25%
+ 361  OR971368             0.00%    passed     99.60%
+ 362  OR971359             0.00%    passed     99.64%
+ 363  OR971364             0.00%    passed     99.33%
+ 364  OR971363             0.00%    passed     98.90%
+ 365  OR971366             0.00%    passed     99.74%
+ 366  OR971355             0.00%    passed     99.68%
+ 367  OR971358             0.00%    passed     99.82%
+ 368  OR971354             0.00%    passed     99.04%
+ 369  OR971353             0.00%    passed     99.68%
+ 370  OR971352             0.00%    passed     99.83%
+ 371  OR971365             0.00%    passed     99.53%
+ 372  OR971357             0.00%    passed     98.03%
+ 373  OR971356             0.00%    passed     98.93%
+ 374  OR971346             0.00%    passed    100.00%
+ 375  OR971345             0.00%    passed     99.35%
+ 376  OR971350             0.00%    passed     99.72%
+ 377  OR971674             0.00%    passed     98.26%
+ 378  OR971349             0.02%    passed     99.82%
+ 379  OR971675             0.00%    passed     99.91%
+ 380  OR971347             0.00%    passed     99.85%
+ 381  OR971672             0.00%    passed     98.53%
+ 382  OR971663             0.00%    passed     99.15%
+ 383  OR971664             0.00%    passed     98.50%
+ 384  OR971662             0.00%    passed     98.01%
+ 385  OR971673             0.00%    passed     98.14%
+ 386  OR971660             0.00%    passed     99.31%
+ 387  OR971351             0.00%    passed     99.83%
+ 388  OR971658             0.00%    passed     99.68%
+ 389  OR971348             0.02%    passed     99.16%
+ 390  OR971657             0.00%    passed     98.96%
+ 391  OR971656             0.00%    passed     96.61%
+ 392  OR971661             0.00%    passed     99.06%
+ 393  OR971659             0.00%    passed     99.03%
+ 394  OR971653             0.00%    passed     97.70%
+ 395  OR971665             0.00%    passed     98.66%
+ 396  OR971651             0.00%    passed     98.98%
+ 397  OR971650             0.00%    passed     98.94%
+ 398  OR971648             0.00%    passed     99.30%
+ 399  OR971655             0.00%    passed     99.55%
+ 400  OR971647             0.00%    passed     99.06%
+ 401  OR971645             0.00%    passed     99.73%
+ 402  OR971652             0.00%    passed     99.54%
+ 403  19-30                2.78%    passed     98.62%
+ 404  153                  2.73%    passed     98.66%
+ 405  OR971649             0.00%    passed     99.70%
+ 406  4A-22-171            2.73%    passed     98.83%
+ 407  OR971646             0.00%    passed     99.72%
+ 408  19-40                1.04%    passed     98.62%
+ 409  OR971654             0.00%    passed     99.78%
+ 410  4A-22-203            5.54%    passed     99.52%
+ 411  4A-22-98             1.10%    passed     99.97%
+ 412  14                   2.80%    passed     95.39%
+ 413  4A-22-40             1.16%    passed     99.98%
+ 414  4B-21-126            1.13%    passed     99.89%
+ 415  4A-22-104            2.78%    passed     96.28%
+ 416  4B-21-310            2.78%    passed     99.55%
+ 417  4B-21-29             1.11%    passed     99.71%
+ 418  4B-21-35             2.77%    passed     98.86%
+ 419  4B-21622             1.20%    passed     99.92%
+ 420  4B-22-15             1.04%    passed     99.98%
+ 421  4B-21-423            2.80%    passed     99.43%
+ 422  4B-22-16             3.02%    passed     99.72%
+ 423  4B-21-412            1.04%    passed     99.78%
+ 424  4B-21-421            1.11%    passed     99.91%
+ 425  4B-22-20             3.03%    passed     99.92%
+ 426  4B-22-17             2.83%    passed     99.68%
+ 427  4B-22-114            1.10%    passed     99.92%
+ 428  4B-22-21             3.14%    passed     99.38%
+ 429  4B-21-528            1.02%    passed     99.88%
+ 430  4B-22-28             2.72%    passed     99.62%
+ 431  4B-22-13             2.88%    passed     99.92%
+ 432  4B-22-37             2.77%    passed     97.14%
+ 433  4B-22-40             2.94%    passed     99.86%
+ 434  4B-22-39             2.74%    passed     97.30%
+ 435  4B-22-44             2.74%    passed     97.60%
+ 436  4B-22-42             2.68%    passed     97.20%
+ 437  4B-22-30             3.85%    passed     99.88%
+ 438  4B-22-41             5.43%    passed     93.94%
+ 439  4B-22-45             2.78%    passed     98.01%
+ 440  4B-22-35             2.83%    passed     99.53%
+ 441  4B-23-03             0.97%    passed     99.93%
+ 442  4B-22-31             2.84%    passed     99.09%
+ 443  4B-23-01             2.71%    passed     97.33%
+ 444  4B-23-06             2.73%    passed     96.53%
+ 445  4B-23-07             2.73%    passed     97.48%
+ 446  4B-23-02             2.73%    passed     96.79%
+ 447  4B-23-12             2.76%    passed     97.58%
+ 448  4B-23-15             2.78%    passed     97.13%
+ 449  4B-23-17             2.76%    passed     96.26%
+ 450  4B-23-05             2.80%    passed     97.88%
+ 451  4B-23-04             1.00%    passed     99.92%
+ 452  4B-23-16             2.74%    passed     96.86%
+ 453  4B-2422              2.74%    passed     99.53%
+ 454  4B-23-13             2.72%    passed     96.81%
+ 455  4B-23-11             2.73%    passed     97.22%
+ 456  4B-23-19             2.75%    passed     96.45%
+ 457  CAR-22-020           1.05%    passed     99.51%
+ 458  4B-2922JG            1.18%    passed     99.71%
+ 459  COW                  2.75%    passed     99.94%
+ 460  H24-028              4.33%    passed     97.16%
+ 461  CAR-22-018           2.83%    passed     99.66%
+ 462  R10-688              3.04%    passed     95.06%
+ 463  R10-711              4.96%    passed     99.47%
+ 464  R1-21-148            2.75%    passed     95.91%
+ 465  4B-2922HM            1.16%    passed     99.98%
+ 466  R10-714              3.12%    passed     97.69%
+ 467  R10-856              5.38%    passed     97.96%
+ 468  GOAT                 2.86%    passed     99.96%
+ 469  R10-989              4.91%    passed     99.93%
+ 470  R11-21-63            2.78%    passed     99.55%
+ 471  R10-990              3.02%    passed     99.04%
+ 472  R10-824              3.74%    passed     98.18%
+ 473  R2-081               2.78%    passed     99.33%
+ 474  R10-920              2.94%    passed     97.04%
+ 475  R11-21-61            1.03%    passed     98.20%
+ 476  R10-907              3.05%    passed     97.84%
+ 477  R2-22-5302           2.84%    passed     99.00%
+ 478  R2-22-5814           9.24%    passed     96.87%
+ 479  R2-22-8924           2.78%    passed     99.89%
+ 480  R3-731               2.73%    passed     99.59%
+ 481  R5-21-128            1.05%    passed     99.57%
+ 482  R5-21-132            1.04%    passed     99.53%
+ 483  R11-22-001           3.01%    passed     99.36%
+ 484  R11-22-002           1.61%    passed     97.89%
+ 485  R2-22-84711          5.50%    passed     98.24%
+ 486  R5-21-136            2.69%    passed     99.48%
+ 487  R5-21-119            1.02%    passed     99.87%
+ 488  R5-22-09             1.01%    passed     99.93%
+ 489  R5-21-140            1.03%    passed     99.68%
+ 490  R5-21-115            1.07%    passed     99.09%
+ 491  R6-21-4375           2.93%    passed     87.71%
+ 492  R6-21-4343           2.78%    passed     89.26%
+ 493  R3-0483              2.88%    passed     97.55%
+ 494  R6-21-4511           2.79%    passed     96.94%
+ 495  R6-4342              3.21%    passed     83.64%
+ 496  R5-22-008            2.73%    passed     98.50%
+ 497  R6-4568              2.96%    passed     92.04%
+ 498  R9-074               2.83%    passed     98.23%
+ 499  RADDL1-16-153        2.72%    passed     99.41%
+ 500  R9-105               1.59%    passed     99.77%
+ 501  R7-21-149            3.20%    passed     92.83%
+ 502  RADDL1-16-154        5.31%    passed     98.29%
+ 503  R6-21-4600           2.82%    passed     88.33%
+ 504  R7-21-161            4.77%    passed     85.73%
+ 505  RADDL3-1038         10.31%    passed     75.92%
+ 506  R9-089               5.28%    passed     96.13%
+ 507  RADDL3-15-172        2.77%    passed     96.53%
+ 508  RADDL1-16-166        4.74%    passed     98.67%
+ 509  RADDL3-16-1008       2.87%    passed     99.64%
+ 510  R9-010               2.92%    passed     98.28%
+ 511  RADDL3-16-627        4.67%    passed     99.61%
+ 512  RADDL3-1045          2.73%    passed     98.40%
+ 513  RADDL3-845           2.80%    passed     96.58%
+ 514  RADDL4B-23-042       1.09%    passed     98.74%
+ 515  RADDL4B-23-046       1.08%    passed     99.68%
+ 516  RADDL4B-23-044       1.00%    passed     99.79%
+ 517  RADDL3-16-521        2.75%    passed     97.58%
+ 518  RADDL3-16-468        2.77%    passed     97.45%
+ 519  RADDL4B-23-049       1.03%    passed     99.46%
+ 520  RADDL4B-23-052       1.06%    passed     98.42%
+ 521  RADDL4B-23-047       1.08%    passed     99.91%
+ 522  RADDL4B-23-045       1.09%    passed     99.43%
+ 523  RADDL4B-23-057       1.06%    passed     98.03%
+ 524  RADDL4B-23-060       2.77%    passed     96.03%
+ 525  RADDL4B-23-061       1.07%    passed     97.75%
+ 526  RADDL4B-23-070       1.07%    passed     97.05%
+ 527  RADDL4B-23-085       1.01%    passed     97.36%
+ 528  RADDL4B-23-072       2.80%    passed     97.88%
+ 529  RADDL4B-23-081       2.81%    passed     98.60%
+ 530  RADDL4B-23-065       2.74%    passed     98.85%
+ 531  RADDL4B-23-090       1.09%    passed     99.82%
+ 532  RADDL4B-23-058       5.07%    passed     91.38%
+ 533  RADDL4B-23-092       4.86%    passed     64.88%
+ 534  RADDL4B-23-080       1.18%    passed     99.45%
+ 535  RADDL4B-23-076       2.72%    passed     98.32%
+ 536  RADDL4B-23-056       1.11%    passed     99.08%
+ 537  RADDL4B-23-095       1.05%    passed     97.15%
+ 538  RADDL4B-23-089       4.82%    passed     83.38%
+ 539  RADDL4B-23-098       1.06%    passed     98.34%
+ 540  RADDL4B-23-094       8.46%    passed     76.22%
+ 541  RADDL4B-23-100       1.02%    passed     97.21%
+ 542  RADDL4B-23-101       1.07%    passed     97.07%
+ 543  RADDL4B-23-093       1.05%    passed     97.96%
+ 544  RADDL4B-23-097       1.05%    passed     97.16%
+ 545  RADDL4B-24-001       2.80%    passed     89.12%
+ 546  RADDL4B-23-104       1.07%    passed     98.82%
+ 547  RADDL4B-24-007       2.90%    passed     98.07%
+ 548  RADDL4B-24-003       1.08%    passed     96.45%
+ 549  RADDL4B-23-099       1.03%    passed     97.10%
+ 550  RADDL4B-23-105       1.15%    passed     99.33%
+ 551  RADDL4B-24-011       2.78%    passed     86.17%
+ 552  RADDL4B-24-002       1.10%    passed     95.85%
+ 553  RADDL4B-24-015       8.50%    passed     75.41%
+ 554  RADDL4B-24-012       2.78%    passed     91.10%
+ 555  RADDL4B-24-016       4.98%    passed     76.75%
+ 556  RADDL4B-24-009       1.19%    passed     99.98%
+ 557  RADDL4B-24-019       1.07%    passed     97.14%
+ 558  RADDL4B-24-023       1.11%    passed     99.96%
+ 559  RADDL4B-24-018       2.83%    passed     99.08%
+ 560  RADDL4B-24-026       2.72%    passed     99.39%
+ 561  RADDL4B-24-027       2.76%    passed     98.99%
+ 562  RADDL4B-24-014       1.15%    passed     97.15%
+ 563  RADDL4B-24-021       2.71%    passed     98.93%
+ 564  RADDL4B-24-034       2.78%    passed     98.61%
+ 565  RADDL4B-24-030       1.17%    passed     94.92%
+ 566  RADDL4B-24-017       1.10%    passed     95.51%
+ 567  RADDL4B-24-029       2.76%    passed     99.08%
+ 568  RADDL4B-24-013       4.89%    passed     84.91%
+ 569  RADDL4B-24-035       1.03%    passed     96.91%
+ 570  RADDL4B-24-038       1.12%    passed     98.27%
+ 571  RADDL4B-24-028       1.09%    passed     97.34%
+ 572  RADDL4B-24-042       1.09%    passed     99.72%
+ 573  RADDL4B-24-052       1.09%    passed     99.81%
+ 574  RADDL4B-24-051       1.06%    passed     99.78%
+ 575  RADDL4B-24-053       2.73%    passed     98.90%
+ 576  RADDL4B-24-048       4.95%    passed     61.41%
+ 577  RADDL4B-24-049       1.07%    passed     96.56%
+ 578  RADDL4B-24-037       2.73%    passed     98.45%
+ 579  RADDL4B-24-043       1.15%    passed     98.63%
+ 580  RADDL4B-24-046       1.05%    passed     99.88%
+ 581  RADDL4B-24-055       1.05%    passed     96.47%
+ 582  RADDL4B-24-056       1.01%    passed     97.79%
+ 583  RADDL4B-24-057       1.09%    passed     97.48%
+ 584  RADDL4B-24-058       2.75%    passed     97.28%
+ 585  RADDL4B-24-063       1.12%    passed     99.14%
+ 586  RADDL4B-24-067       1.01%    passed     96.74%
+ 587  RADDL4B-24-070       1.10%    passed     96.77%
+ 588  RADDL4B-24-054       1.08%    passed     96.84%
+ 589  RADDL4B-24-071       2.70%    passed     98.29%
+ 590  RADDL4B-24-062       9.67%    passed     74.96%
+ 591  RADDL4B-24-066       1.13%    passed     99.24%
+ 592  RADDL4B-24-076       1.09%    passed     96.24%
+ 593  RADDL4B-24-059       1.05%    passed     96.74%
+ 594  RADDL4B-24-069       1.07%    passed     98.20%
+ 595  RADDL4B-24-078       1.08%    passed     97.73%
+ 596  RADDL4B-24-077       1.06%    passed     97.30%
+ 597  RADDL4B-24-082       1.09%    passed     96.79%
+ 598  RADDL4B-24-084       1.06%    passed     95.98%
+ 599  RADDL4B-24-074       1.03%    passed     97.55%
+ 600  RADDL4B-24-073       1.07%    passed     95.54%
+ 601  RADDL4B-24-087       3.04%    passed     87.00%
+ 602  RADDL4B-24-093       1.08%    passed     99.60%
+ 603  RADDL4B-24-080       2.88%    passed     98.77%
+ 604  RADDL4B-24-086      12.66%    passed     39.10%
+ 605  RADDL4B-24-095       1.17%    passed     99.35%
+ 606  RADDL4B-24-096       1.18%    passed     99.62%
+ 607  RADDL4B-24-088       8.37%    passed     66.09%
+ 608  RADDL4B-24-081       1.11%    passed     97.50%
+ 609  RADDL4B-24-085       1.07%    passed     97.27%
+ 610  RADDL4B-24-099       1.17%    passed     99.21%
+ 611  RADDL4B-24-098       1.14%    passed     98.00%
+ 612  RADDL4B-24-100       2.84%    passed     88.90%
+ 613  RADDL4B-24-102       1.07%    passed     95.65%
+ 614  RADDL4B-24-107       4.89%    passed     94.98%
+ 615  RADDL4B-24-106       2.82%    passed     88.64%
+ 616  RADDL4B-24-097       1.14%    passed     99.13%
+ 617  RADDL4B-24-113       1.09%    passed     98.31%
+ 618  RADDL4B-24-117       1.13%    passed     99.15%
+ 619  RADDL4B-24-114       1.19%    passed     99.81%
+ 620  RADDL4B-24-121       1.11%    passed     95.47%
+ 621  RADDL4B-24-101       1.04%    passed     96.98%
+ 622  RADDL4B-24-125       1.21%    passed     92.34%
+ 623  RADDL4B-24-112       1.12%    passed     98.76%
+ 624  RADDL4B-24-116       1.21%    passed     98.61%
+ 625  RADDL4B-24-127       2.86%    passed     85.06%
+ 626  RADDL4B-24-138       1.16%    passed     98.31%
+ 627  RADDL4B-24-151       8.48%    passed     73.92%
+ 628  RADDL4B-24-154       1.15%    passed     98.10%
+ 629  RADDL4B-24-155       1.16%    passed     99.51%
+ 630  RADDL4B-24-120       1.05%    passed     97.03%
+ 631  RADDL4B-24-124       1.03%    passed     97.90%
+ 632  RADDL4B-24-122       1.12%    passed     98.11%
+ 633  RADDL4B-24-156       2.82%    passed     99.23%
+ 634  RADDL4B-24-162       1.14%    passed     99.96%
+ 635  RADDL4B-24-153       2.83%    passed     99.76%
+ 636  RADDL4B-24-174       4.52%    passed     98.80%
+ 637  RADDL4B-24-178       1.17%    passed     94.73%
+ 638  RADDL4B-24-180       1.08%    passed     93.91%
+ 639  RADDL4B-24-183       6.68%    passed     82.73%
+ 640  RADDL4B-24-181       1.11%    passed     97.94%
+ 641  RADDL4B-24-185       1.17%    passed     98.90%
+ 642  RADDL4B-24-157       4.61%    passed     97.89%
+ 643  RADDL4B-24-173       7.07%    passed     91.11%
+ 644  RADDL4B-24-184       1.05%    passed     95.66%
+ 645  RADDL4B-24-187       1.07%    passed     97.51%
+ 646  RADDL4B-25-009       6.79%    passed     91.41%
+ 647  RADDL4B-25-008       4.53%    passed     91.98%
+ 648  RADDL4B-24-186       6.34%    passed     99.48%
+ 649  RADDL4B-25-005       4.55%    passed     85.86%
+ 650  RADDL4B-24-188       1.15%    passed     97.49%
+ 651  RADDL4B-25-017       1.23%    passed     99.47%
+ 652  RADDL4B-25-039       6.37%    passed     97.19%
+ 653  RADDL4B-25-006       4.55%    passed     85.98%
+ 654  RADDL5-005           1.03%    passed     99.79%
+ 655  REGION_5_2018-304    2.44%    passed     99.44%
+ 656  REGION_5_2018-100    2.45%    passed     98.97%
+ 657  RADDL4B-25-022       3.30%    passed     99.62%
+ 658  RADDL4B-25-032       3.24%    passed     96.28%
+ 659  Z-05-102             4.79%    passed     98.19%
+ 660  REGION_5_2018-311    2.46%    passed     99.75%
+ 661  REGION_5_2019-13     2.43%    passed     99.37%
+ 662  REGION_5_2019-1      2.43%    passed     99.69%
+ 663  Z-05-557             3.20%    passed     99.27%
+ 664  Z-05-191             6.78%    passed     98.82%
+ 665  REGION_5_2018-50     2.43%    passed     99.63%
+ 666  Z-06-295             2.68%    passed     99.06%
+ 667  Z-05-96              4.86%    passed     99.28%
+ 668  Z-07-351             2.71%    passed     99.66%
+ 669  Z-07-38              1.00%    passed     99.77%
+ 670  Z-07-398             2.73%    passed     99.83%
+ 671  Z-07-387             2.72%    passed     99.67%
+ 672  Z-07-07              2.73%    passed     99.60%
+ 673  Z-07-403             2.74%    passed     99.59%
+ 674  Z-06-39              1.02%    passed     98.93%
+ 675  Z-07-407             2.73%    passed     99.26%
+ 676  Z-06-150             5.98%    passed     85.21%
+ 677  Z-09-94              2.69%    passed     99.78%
+ 678  Z-07-366             6.70%    passed     99.24%
+ 679  Z-08-359             4.95%    passed     92.27%
+ 680  Z-12-001             4.20%    passed     98.56%
+ 681  Z-08-351             7.30%    passed     97.57%
+ 682  Z-12-118             7.52%    passed     93.88%
+ 683  Z-12-208             2.80%    passed     98.19%
+ 684  Z-12-134             5.80%    passed     96.80%
+ 685  Z-12-088             3.16%    passed     99.09%
+ 686  Z-13-009             2.44%    passed     99.95%
+ 687  Z-12-060             2.77%    passed     96.61%
+ 688  Z-12-029             2.72%    passed     99.39%
+ 689  Z-12-149             2.75%    passed     99.25%
+ 690  Z-12-012             2.77%    passed     99.86%
+ 691  Z-13-020             2.88%    passed     99.67%
+ 692  Z-13-002             0.75%    passed     99.55%
+ 693  Z-13-036             2.71%    passed     99.52%
+ 694  Z-13-032             1.48%    passed     99.98%
+ 695  Z-12-212             0.92%    passed     98.04%
+ 696  Z-13-065             3.18%    passed     93.35%
+ 697  Z-13-066             1.02%    passed     99.84%
+ 698  Z-13-086             2.70%    passed     99.73%
+ 699  Z-13-089             1.05%    passed     99.93%
+ 700  Z-13-071             2.73%    passed     99.79%
+ 701  Z-13-096             1.03%    passed     99.29%
+ 702  Z-13-081             3.72%    passed     95.27%
+ 703  Z-13-135             2.73%    passed     99.64%
+ 704  Z-13-073             3.02%    passed     99.15%
+ 705  Z-13-134             2.77%    passed     99.98%
+ 706  Z-13-171             1.30%    passed     99.14%
+ 707  Z-13-094             1.03%    passed     99.80%
+ 708  Z-13-161             2.72%    passed     99.70%
+ 709  Z-13-204             2.13%    passed     99.51%
+ 710  Z-13-098             1.79%    passed     96.81%
+ 711  Z-13-234             1.34%    passed     98.32%
+ 712  Z-14-033             2.78%    passed     96.99%
+ 713  Z-14-023             2.81%    passed     98.38%
+ 714  Z-14-058             4.45%    passed     98.71%
+ 715  Z-14-101             5.46%    passed     93.36%
+ 716  Z-13-184             1.35%    passed     97.73%
+ 717  Z-14-05              1.00%    passed     99.98%
+ 718  Z-13-259             2.71%    passed     98.99%
+ 719  Z-14-126             2.70%    passed     99.79%
+ 720  Z-14-138             1.72%    passed     99.45%
+ 721  Z-13-216             1.47%    passed     99.92%
+ 722  Z-14-136             2.85%    passed     99.21%
+ 723  Z-14-106             7.41%    passed     97.89%
+ 724  Z-14-098             2.81%    passed     99.88%
+ 725  Z-14-142             2.70%    passed     99.92%
+ 726  Z-15-009             5.57%    passed     95.83%
+ 727  Z-14-149             9.08%    passed     98.28%
+ 728  Z-15-019             1.34%    passed     99.38%
+ 729  Z-15-130             4.29%    passed     96.24%
+ 730  Z-15-001             1.04%    passed     99.98%
+ 731  Z-14-146             2.62%    passed     96.98%
+ 732  Z-15-148             4.46%    passed     95.95%
+ 733  Z-14-243             1.34%    passed     96.89%
+ 734  Z-15-116             0.70%    passed     99.97%
+ 735  Z-15-185             1.85%    passed     99.66%
+ 736  Z-15-163             2.69%    passed     99.80%
+ 737  Z-16-013             4.30%    passed     95.70%
+ 738  Z-16-082             1.10%    passed     99.93%
+ 739  Z-16-150             2.79%    passed     97.69%
+ 740  Z-14-152             0.71%    passed     99.88%
+ 741  Z-14-182             2.74%    passed     98.04%
+ 742  Z-16-211             1.05%    passed     99.92%
+ 743  Z-17-177             1.01%    passed     99.88%
+ 744  Z-16-210             1.06%    passed     99.59%
+ 745  Z-17-193             2.93%    passed     99.60%
+ 746  Z-16-186             4.08%    passed     97.56%
+ 747  Z-17-200             2.73%    passed     97.10%
+ 748  Z-16-196             2.96%    passed     99.73%
+ 749  Z-16-151             1.15%    passed     96.23%
+ 750  Z-16-209             1.30%    passed     95.31%
+ 751  Z-18-001             2.73%    passed     99.75%
+ 752  Z-17-57              1.12%    passed     99.42%
+ 753  Z-18-159             2.74%    passed     98.60%
+ 754  Z-18-114             2.69%    passed     99.65%
+ 755  Z-18-224             9.09%    passed     91.69%
+ 756  Z-17-217             2.94%    passed     99.90%
+ 757  Z-17-221             4.64%    passed     99.29%
+ 758  Z-16-159             3.94%    passed     98.10%
+ 759  Z-19-88              2.71%    passed     98.93%
+ 760  Z-19-136             7.46%    passed     98.98%
+ 761  Z-20-01              1.01%    passed     99.90%
+ 762  Z-19-123             9.60%    passed     99.38%
+ 763  Z-22-103             2.73%    passed     97.67%
+ 764  Z-20-33              2.70%    passed     99.85%
+ 765  Z-20-51              2.73%    passed     98.67%
+ 766  Z-22-119             2.85%    passed     97.02%
+ 767  Z-18-251             2.69%    passed     99.68%
+ 768  Z-19-029             3.30%    passed     86.70%
+ 769  Z-20-110             2.72%    passed     97.00%
+ 770  Z-20-24              2.71%    passed     96.56%
+ 771  Z-23-01Sa            4.62%    passed     99.32%
+ 772  Z-23-01              2.71%    passed     97.35%
+ 773  Z-98-1061            3.47%    passed     98.01%
+ 774  Z-98-285             6.13%    passed     90.89%
+ 775  Z-98-454             3.29%    passed     98.65%
+ 776  Z-98-286             7.79%    passed     88.97%
+ 777  Z-24-142             2.76%    passed     98.42%
+ 778  Z-24-141             1.09%    passed     97.79%
+ 779  Z-22-121             9.89%    passed     98.32%
+ 780  Z-98-515             2.80%    passed     99.41%
+ 781  Z-98-433             2.74%    passed     99.31%
+ 782  Z-98-616             2.83%    passed     98.74%
+ 783  Z-98-780             7.83%    passed     95.41%
+ 784  Z-98-838             9.07%    passed     97.14%
+ 785  Z-98-860             9.25%    passed     93.04%
+ 786  Z-98-718             8.69%    passed     81.81%
+****  TOTAL                1.43%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	DNA	786	1353	373	883	GTR+MERGE	n
+2	DNA	786	894	291	531	GTR+MERGE	p
+3	DNA	786	609	160	405	GTR+MERGE	m
+4	DNA	786	1575	469	972	GTR+MERGE	g
+5	DNA	786	6384	1831	4169	GTR+MERGE	l
+6	DNA	786	1109	448	520	GTR+MERGE	nc
+Degree of missing data: 0.000
+
+NOTE: OQ326747 is identical to OQ326750 but kept for subsequent analysis
+NOTE: OR971437 is identical to OR971441 but kept for subsequent analysis
+NOTE: OR971331 is identical to OR971341 but kept for subsequent analysis
+NOTE: OR971634 is identical to OR971635 but kept for subsequent analysis
+NOTE: OR971492 is identical to OR971493 but kept for subsequent analysis
+NOTE: OR971351 is identical to OR971352 but kept for subsequent analysis
+Identifying sites to remove: done in 0.00245404 secs using 93.03% CPU
+Identifying sites to remove: done in 0.00172186 secs using 92.23% CPU
+Identifying sites to remove: done in 0.00110292 secs using 94.11% CPU
+Identifying sites to remove: done in 0.00303006 secs using 92.64% CPU
+Identifying sites to remove: done in 0.0125809 secs using 93.55% CPU
+Identifying sites to remove: done in 0.00236392 secs using 90.53% CPU
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: OQ326755 (identical to OQ326750) is ignored but added at the end
+NOTE: OR971490 (identical to OR971493) is ignored but added at the end
+Alignment was printed to /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned_partitions.txt.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned_partitions.txt.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.249 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -117927.221
+Current log-likelihood at step 1: -111097.985
+Current log-likelihood at step 2: -109895.563
+Current log-likelihood at step 3: -109891.322
+Parameters optimization took 2 rounds (36.674 sec)
+
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 8.78133 secs using 99.81% CPU
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -109831.586
+Current log-likelihood at step 1: -109827.329
+Current log-likelihood at step 2: -109823.288
+Current log-likelihood at step 3: -109819.318
+Current log-likelihood at step 4: -109815.448
+Current log-likelihood at step 5: -109811.668
+Current log-likelihood at step 6: -109807.996
+Current log-likelihood at step 7: -109804.442
+Current log-likelihood at step 8: -109801.031
+Current log-likelihood at step 9: -109797.794
+Current log-likelihood at step 10: -109794.743
+Current log-likelihood at step 11: -109791.895
+Current log-likelihood at step 12: -109789.306
+Current log-likelihood at step 13: -109786.933
+Current log-likelihood at step 14: -109784.826
+Current log-likelihood at step 15: -109782.985
+Current log-likelihood at step 16: -109781.424
+Current log-likelihood at step 17: -109780.107
+Current log-likelihood at step 18: -109779.026
+Current log-likelihood at step 19: -109778.156
+Partition-specific rates:  0.895 0.941 0.809 1.104 0.958 1.377
+Parameters optimization took 18 rounds (78.263 sec)
+
+Time for fast ML tree search: 123.859 seconds
+
+NOTE: ModelFinder requires 693 MB RAM!
+
+PartitionFinder's parameters:
+Relaxed Algorithm
+Percentage: 10.000
+Maximum pairs: 60
+
+Selecting individual models for 6 charsets using BIC...
+ No. Model        Score       TreeLen     Charset
+   1 GTR+I+G4     23206.603   1.034       n
+   2 GTR+I+G4     16854.741   1.090       p
+   3 GTR+I+G4     9703.456    0.937       m
+   4 GTR+I+G4     30431.538   1.274       g
+   5 GTR+F+I+G4   113440.889  1.097       l
+   6 GTR+F+I+G4   26359.881   1.588       nc
+Full partition model BIC score: 234788.416 (LnL: -109800.685  df:1618)
+Merging models to increase model fit (about 12 total partition schemes)...
+   7 GTR+F+I+G4   234741.380  1.093       p+l
+   8 GTR+F+I+G4   234725.364  1.048       n+p
+Merging n+p with BIC score: 234725.364 (LnL: -109792.624  df: 1613)
+   9 GTR+F+I+G4   234660.266  1.083       n+p+l
+Merging n+p+l with BIC score: 234660.266 (LnL: -109811.700  df: 1602)
+  10 GTR+F+I+G4   234586.171  1.071       n+p+m+l	0h:2m:9s (0h:0m:25s left)
+Merging n+p+m+l with BIC score: 234586.171 (LnL: -109812.198  df: 1594)
+  11 GTR+F+I+G4   234540.012  1.096       n+p+m+g+l	0h:2m:57s (0h:0m:16s left)
+Merging n+p+m+g+l with BIC score: 234540.012 (LnL: -109826.663  df: 1586)
+  12 GTR+F+I+G4   234727.192  1.141       n+p+m+g+l+nc	0h:3m:50s (0h:0m:0s left)
+Agglomerative model selection: (((((n,p)1:234725,l)2:234660,m)3:234586,g)4:234540,nc)
+Merging into 2 partitions...
++R6 reinitialized from +R5 with factor 0.500
++R6 reinitialized from +R5 with factor 0.250
+  13 GTR+F+I+R4   192580.133  1.054       n+p+m+g+l	0h:33m:49s (0h:-2m:-37s left)
+  14 TVM+F+R3     26288.350   1.504       nc	0h:35m:24s (0h:-5m:-4s left)
+Best partition model BIC score: 233578.733 (LnL: -109317.865  df:1592)
+Partition information was printed to /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned_partitions.txt.best_scheme.nex
+Partition information in Raxml format was printed to /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned_partitions.txt.best_scheme
+
+All model information printed to /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned_partitions.txt.model.gz
+CPU time for ModelFinder: 2235.437 seconds (0h:37m:15s)
+Wall-clock time for ModelFinder: 2248.453 seconds (0h:37m:28s)
+
+NOTE: 507 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -109317.982
+Current log-likelihood at step 1: -109316.761
+Current log-likelihood at step 2: -109316.729
+Current log-likelihood at step 3: -109316.721
+Partition-specific rates:  0.962 1.374
+Parameters optimization took 2 rounds (9.122 sec)
+
+Wrote distance file to... 
+Partition information was printed to /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned_partitions.txt.best_model.nex
+BEST SCORE FOUND : -109316.721
+Total tree length: 1.097
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 2244.668 sec (0h:37m:24s)
+Total wall-clock time used: 2257.744 sec (0h:37m:37s)
+
+Analysis results written to: 
+  IQ-TREE report:                /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned_partitions.txt.iqtree
+  Tree used for ModelFinder:     /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned_partitions.txt.treefile
+  Best partitioning scheme:      /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned_partitions.txt.best_scheme.nex
+           in RAxML format:      /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned_partitions.txt.best_scheme
+  Screen log file:               /Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/gene_alignments/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned_partitions.txt.log
+
+Date and Time: Fri Nov 14 12:57:35 2025
