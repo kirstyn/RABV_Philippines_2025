@@ -144,6 +144,18 @@ filtered_meta_path <- file.path(
 write.csv(meta_with_dates, filtered_meta_path, row.names = FALSE)
 cat("Filtered metadata (with valid dates) saved to:\n", filtered_meta_path, "\n\n")
 
+meta_with_dates_figtree <- meta_with_dates %>%
+  mutate(beast_name = paste0(
+    gsub("[^A-Za-z0-9_\\-]", "", seq_name), "_",
+    gsub("[^A-Za-z0-9_\\-]", "", as.character(Preferred_date))
+  )) %>%
+  select(beast_name, everything())
+filtered_meta_path_2 <- file.path(
+  out_meta_dir,
+  paste0("PHL_metadata_matchedWithDates_figtree", Sys.Date(), "_n", nrow(meta_with_dates_figtree), ".txt")
+)
+write.table(meta_with_dates_figtree, filtered_meta_path_2, row.names = FALSE, sep="\t")
+
 # ---- Save filtered FASTA (unaltered names) ----
 fasta_no_dates_path <- file.path(
   out_seq_dir,
