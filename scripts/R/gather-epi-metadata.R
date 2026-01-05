@@ -457,7 +457,7 @@ phylo_meta_corrected$Source[changed_rows_safe] <- phylo_meta_corrected$Source[ch
 # -----------------------------
 # manual extraction/standardisation of location data all deposited in province col
 
-manual_corrections <- read.csv("processed_data/processed_metadata/LocationManualCorrections_21Oct25.csv")
+manual_corrections <- read.csv("processed_data/processed_metadata/LocationManualCorrections_05Jan26.csv")
 
 # Make a copy of original
 phylo_meta_corrected2 <- phylo_meta_corrected
