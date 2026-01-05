@@ -8,8 +8,8 @@ library(adephylo)
 library(ggtree)
 
 # ---- 1. Input files ----
-tree_file <- "analysis/ML_trees/20251023_PHL_all_filtered_withSEA2outgroups.OutgpRooted.ft.newick"
-meta_file <- "processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n811_raddl_and_manual_Corrected_filteredTon794_stdGeo.csv"
+tree_file <- "analysis/ML_trees/241025_PHL_all_n794_withSEA2outgroups.ft.newick"
+meta_file <- "processed_data/processed_metadata/gathered_metadata/final/PHL_metadata_matchedToSeq_2025-11-12_n794.csv"
 
 # ---- 2. Read in tree and metadata ----
 tree <- read.tree(tree_file)
@@ -90,6 +90,13 @@ rtt_missing_dates
 # ---- 8. Root-to-tip regression ----
 fit <- lm(distance ~ decimal_date, data = rtt_meta)
 summary(fit)
+
+# ---- Estimate root date ----
+intercept <- coef(fit)[1]
+slope     <- coef(fit)[2]
+
+root_decimal_year <- -intercept / slope
+root_decimal_year
 
 # ---- 9. Plot root-to-tip regression ----
 p <- ggplot(rtt_meta, aes(x = decimal_date, y = distance)) +

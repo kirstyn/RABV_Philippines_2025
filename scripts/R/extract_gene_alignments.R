@@ -13,7 +13,7 @@ library(seqinr)
 library(Biostrings)
 
 #input file
-file="processed_data/processed_sequences/PHL_sequences_withDates_2025-11-03_n786_nextalign/PHL_sequences_withDates_2025-11-03_n786.nextalign.aligned.fasta"
+file="processed_data/processed_sequences/PHL_sequences_withDatesLabeled_2025-12-02_n786_nextalign/PHL_sequences_withDatesLabeled_2025-12-02_n786.nextalign.aligned.fasta"
 
 #output files
 dir.create(file.path(paste(dirname(file), "gene_alignments", sep="/")), showWarnings = FALSE)

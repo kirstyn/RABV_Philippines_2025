@@ -2,9 +2,9 @@ library(dplyr)
 library(stringr)
 
 # ---- SETTINGS ----
-metadata_path <- "/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/raw_data/files_received/metadata_googlesheet_23oct25_rabv_4b_2025_r10_run8/rabv_4b_2025_r10_run8_sequencing_form.csv" # CSV with columns: sampleID, ngs_runid, redcap_repeat_instance
-fasta_dir <- "/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/raw_data/files_received/metadata_googlesheet_23oct25_rabv_4b_2025_r10_run8/rabv_4b_2025_r10_run8_split_fasta/"           # Folder containing your FASTA files
-output_dir <- "/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/raw_data/files_received/metadata_googlesheet_23oct25_rabv_4b_2025_r10_run8/rabv_4b_2025_r10_run8_split_fasta_renamed"  # Output folder for renamed FASTAs
+metadata_path <- "/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/redcap/rabv_4b_2025_r10_run10-11/2025_run10/rabv_4b_2025_r10_run10_sequencing_form.csv" # CSV with columns: sampleID, ngs_runid, redcap_repeat_instance
+fasta_dir <- "/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/redcap/rabv_4b_2025_r10_run10-11/2025_run10/split_fasta/"           # Folder containing your FASTA files
+output_dir <- "/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/redcap/rabv_4b_2025_r10_run10-11/2025_run10/split_fasta_renamed"  # Output folder for renamed FASTAs
 
 # Create output dir if it doesn't exist
 if (!dir.exists(output_dir)) dir.create(output_dir)
@@ -23,30 +23,43 @@ fasta_files <- list.files(fasta_dir, pattern = "\\.fasta$", full.names = TRUE)
 
 for (file_path in fasta_files) {
   
-  # Extract sample ID from filename (before first dot)
-  sample_id <- str_remove(basename(file_path), "\\.fasta$")
+  # Extract sample ID from filename
+  this_sample_id <- str_remove(basename(file_path), "\\.fasta$")
   
-  # Look up metadata for this sample
-  row <- meta %>% filter(sample_id == sample_id)
+  # Look up metadata
+  row <- meta %>% filter(sample_id == this_sample_id)
   
   if (nrow(row) == 0) {
-    message("⚠️ No metadata found for: ", sample_id, " — skipping")
+    message("⚠️ No metadata found for: ", this_sample_id, " — skipping")
     next
   }
   
-  run_id <- row$ngs_runid[1]
+  run_id  <- row$ngs_runid[1]
   instance <- row$redcap_repeat_instance[1]
   
-  # New filename
-  new_name <- sprintf("%s__%s__instance%s.fasta", sample_id, run_id, instance)
+  # New filename (FIXED)
+  new_name <- sprintf(
+    "%s__%s__instance%s.fasta",
+    this_sample_id,
+    run_id,
+    instance
+  )
+  
   new_path <- file.path(output_dir, new_name)
   
-  # Read FASTA content
+  # Read FASTA
   fasta_lines <- readLines(file_path)
   
-  # Update FASTA header (assumes header is the first line starting with '>')
+  # Update FASTA header
   if (length(fasta_lines) > 0 && startsWith(fasta_lines[1], ">")) {
-    fasta_lines[1] <- paste0(">", sample_id, "__", run_id, "__instance", instance)
+    fasta_lines[1] <- paste0(
+      ">",
+      this_sample_id,
+      "__",
+      run_id,
+      "__instance",
+      instance
+    )
   }
   
   # Write renamed FASTA
