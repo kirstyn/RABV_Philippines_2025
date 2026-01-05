@@ -1,0 +1,8 @@
+"lineage","n_singletons","singleton_countries","singleton_years"
+"Africa_A1",1,"-","1987"
+"Africa-2_A1",7,"c(""Burkina Faso"", ""-"", ""Gambia"", ""Guinea"")","c(""2007"", ""1990"", ""2008"", ""1995"", ""2018"", ""1992"")"
+"Africa-2_A1.1.1",1,"Mauritania","1991"
+"Africa-2_A1.2",4,"-","c(""1992"", ""1989"", ""1990"", ""1986"")"
+"Africa-2_A1.2.1",2,"c(""Mauritania"", ""Guinea"")","c(""2007"", ""2018"")"
+"Africa-2_A1.3",1,"-","1988"
+"Asian_A1",2,"Taiwan","2012"

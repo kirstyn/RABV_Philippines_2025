@@ -1,0 +1,7 @@
+"lineage","country","year_first","year_last","n_seqs","parent"
+"Asian SEA4_C1.1.1","c(""Japan"", ""philippines"")","2015","2022",11,"Asian SEA4_C1.1"
+"Asian SEA4_C1.1","c(""Philippines"", ""philippines"")","2014","2021",7,"Asian SEA4_C1"
+"Asian SEA4_C1","c(""Philippines"", ""philippines"")","2021","2022",4,"Asian SEA4_B1.1.1"
+"Asian SEA4_B1.1.1","c(""Philippines"", ""philippines"")","2012","2022",22,"Asian SEA4_B1.1"
+"Asian SEA4_B1.1","philippines","2007","2019",5,"Asian SEA4_B1"
+"Asian SEA4_B1","c(""Philippines"", ""philippines"")","1998","2022",9,"Asian SEA4_A1.1.2"
