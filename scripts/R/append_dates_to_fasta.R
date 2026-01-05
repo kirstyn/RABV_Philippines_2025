@@ -52,20 +52,20 @@ write.fasta(
 )
 
 # ---- 7. Append dates only ----
-new_names_date <- paste0(matched_filtered$seq_name, "_", matched_filtered$Preferred_date)
+new_names_date <- paste0(matched_filtered$seq_name, "__", matched_filtered$Preferred_date)
 names(seq_filtered) <- new_names_date
 
 write.fasta(
   sequences = seq_filtered,
   names = names(seq_filtered),
-  file.out = "processed_data/processed_sequences/20251023_PHL_all_withDates_YYYYMMDD_filtered.aln.fasta"
+  file.out = "processed_data/processed_sequences/20251023_PHL_all_withDates_YYYYMMDD_filtered.fasta"
 )
 
 # ---- 8. Append dates + Region_std ----
 new_names_date_region <- paste0(
   matched_filtered$seq_name, "_", matched_filtered$Preferred_date,
   ifelse(!is.na(matched_filtered$Region_std) & matched_filtered$Region_std != "",
-         paste0("_", matched_filtered$Region_std),
+         paste0("__", matched_filtered$Region_std),
          "")
 )
 
@@ -76,7 +76,7 @@ names(seq_filtered) <- new_names_date_region
 write.fasta(
   sequences = seq_filtered,
   names = names(seq_filtered),
-  file.out = "processed_data/processed_sequences/20251023_PHL_all_withDates_Region_filtered.aln.fasta"
+  file.out = "processed_data/processed_sequences/20251023_PHL_all_withDates_Region_filtered.fasta"
 )
 
 

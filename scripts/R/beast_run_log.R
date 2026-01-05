@@ -3,30 +3,31 @@ library(readr)
 
 # Define run metadata
 run_log <- tibble(
-  Run_ID = "PER_RABV_2024_SS_01",
+  Run_ID = "PHL_explore7",
   Timestamp = format(Sys.time(), "%Y-%m-%d %H:%M:%S"),  # full date-time
   User = Sys.info()[["user"]],           # who ran it
   BEAST_version = "v1.10.5",             # update as needed
-  Alignment = "150825_filt_seq.aln.fasta",
-  XML_file = "peru/xmls/PER_RABV_2024_SS_01.xml",
+  Alignment = "PHL_sequences_withDatesLabeled_2025-12-02_n786.nextalign.aligned_concat/nc",
+  XML_file = "analysis/xml/PHL_explore7.xml",
+  Substitution_model = "coding=GTR+gamma, CP112, noncoding=GTR+gamma",
   Clock_model = "Relaxed Lognormal",
-  Clock_rate_prior = "Lognormal(real space mean=0.000216,sd=0.0000927,initial=0.0001993)",
-  Tree_prior = "Coalescent Exponential",
-  Chain_length = 2e8,
-  Sampling_freq = 10000,
-  Burn_in = "20%",
-  SS_path_steps = 100,
+  Clock_rate_prior = "Lognormal(mean=0.00028113, sd=0.4)",
+  Tree_prior = "Skygrid; 5 points since 86",
+  Chain_length = 5e8,
+  Sampling_freq = 50000,
+  Burn_in = "10%",
+  SS_path_steps = 200,
   SS_chain_length_per_step = 2e6,
-  SS_sampling_freq = 200,
-  Location_trait = "District",
-  Migration_model = "Asymmetric",
-  BSSVS = TRUE,
-  Location_strategy = "High-signal districts",
-  Notes = "First SS run with updated rabies sequences"
+  SS_sampling_freq = 1000,
+  Location_trait = "na",
+  Migration_model = "na",
+  BSSVS = FALSE,
+  Location_strategy = "na",
+  Notes = "Reduced skyline intervals, imposed prior on clock rate"
 )
 
 # File to write log into
-log_file <- "peru/BEAST_runs/BEAST_runs_log.csv"
+log_file <- "analysis/BEAST/BEAST_runs_log.csv"
 
 # If file exists, append without header; otherwise, create with header
 if (!file.exists(log_file)) {
