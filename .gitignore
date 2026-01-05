@@ -59,3 +59,6 @@ raw_data/gis_data/
 
 # Ignore bulky beast output files 
 analysis/BEAST/outputs
+
+# Ignore MADDOG build files
+analysis/MADDOG/*/Report/report_files
