@@ -62,3 +62,6 @@ analysis/BEAST/outputs
 
 # Ignore MADDOG build files
 analysis/MADDOG/*/Report/report_files
+
+# Ignore redcap folder
+redcap
