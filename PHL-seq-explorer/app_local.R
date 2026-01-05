@@ -19,7 +19,7 @@ library(ggraph)
 # -----------------------------
 # Load data once
 # -----------------------------
-full_data <- read.csv("../processed_data/processed_metadata/gathered_metadata/final/PHL_metadata_matchedToSeq_2025-11-12_n794.csv", stringsAsFactors = FALSE)
+full_data <- read.csv("../processed_data/processed_metadata/gathered_metadata/final/PHL_metadata_matchedToSeq_2026-01-05_n794.csv", stringsAsFactors = FALSE)
 full_data$Preferred_date <- lubridate::dmy(full_data$Preferred_date)
 
 # Load simplified shapefiles 
@@ -82,6 +82,7 @@ ui <- fluidPage(
     sidebarPanel(
       selectInput("host_common", "Select Host:", choices = c("All", sort(unique(full_data$Host_common))), selected = "All"),
       selectInput("region", "Select Region:", choices = c("All", region_levels), selected = "All"),
+      selectInput("Major_Island", "Select Island:", choices = c("All", sort(unique(full_data$Major_Island))), selected = "All"),
       sliderInput("year_range", "Year Range:",
                   min = year(min(full_data$Preferred_date, na.rm = TRUE)),
                   max = year(max(full_data$Preferred_date, na.rm = TRUE)),
@@ -135,7 +136,7 @@ ui <- fluidPage(
                  h3("Time-scaled phylogeny and spatial distribution of sequences"),
                  p("This view integrates genomic and geographic data..."),
                  selectInput("colour_by", "Colour tree tips by:",
-                             choices = c("Region" = "Region_short", "Province" = "Province_std", "Municipality" = "Municipality_std", "Host" = "Host_common", "Island group" = "Major_Island", "Phylogenetic_clade" = "phylogenetic_clade"),
+                             choices = c("Region" = "Region_short", "Province" = "Province_std", "Municipality" = "Municipality_std", "Host" = "Host_common", "Island group" = "Major_Island", "Phylogenetic_clade" = "phylogenetic_clade", "Phylogenetic_lineage" = "lineage"),
                              selected = "Region_short"),
                  fluidRow(
                    column(width = 6, leafletOutput("map_points_leaflet", height = "800px")),
@@ -171,6 +172,7 @@ municipality_levels  <- sort(unique(full_data$Municipality_std))
 host_levels          <- sort(unique(full_data$Host_common))
 island_levels        <- sort(unique(full_data$Major_Island))
 clade_levels         <- sort(unique(full_data$major_minor_clade))
+lineage_levels         <- sort(unique(full_data$lineage))
 
 # Assign palettes (named vectors)
 region_cols        <- make_palette(region_levels)
@@ -179,6 +181,7 @@ municipality_cols  <- make_palette(municipality_levels)
 host_cols          <- make_palette(host_levels)
 island_cols        <- make_palette(island_levels)
 clade_cols         <- make_palette(clade_levels)
+lineage_cols         <- make_palette(lineage_levels)
 
 # -----------------------------
 # Server
@@ -192,6 +195,7 @@ server <- function(input, output, session) {
     df <- full_data
     if (input$host_common != "All") df <- df %>% filter(Host_common == input$host_common)
     if (input$region != "All") df <- df %>% filter(Region_short == input$region)
+    if (input$Major_Island != "All") df <- df %>% filter(Major_Island == input$Major_Island)
     df <- df %>%
       filter(year(Preferred_date) >= input$year_range[1],
              year(Preferred_date) <= input$year_range[2])

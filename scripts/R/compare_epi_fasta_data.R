@@ -15,7 +15,7 @@ library(stringr)
 
 # ---- Input files ----
 seq_file  <- "processed_data/processed_sequences/241025_PHL_all_n794.fasta"
-meta_file <- "processed_data/processed_metadata/gathered_metadata/final/11Nov25_gathered_metadata_n811_raddl_and_manual_Corrected_stdGeo.csv"
+meta_file <- "processed_data/processed_metadata/gathered_metadata/final/05Jan26_gathered_metadata_n811_raddl_and_manual_Corrected_stdGeo.csv"
 clade_file <- "processed_data/processed_metadata/241025_glue_clade_assignment.txt"
 lineage_file <- "analysis/MADDOG/Outputs/sequence_data.csv"
 

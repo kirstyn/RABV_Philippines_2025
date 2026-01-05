@@ -88,6 +88,7 @@ ui <- fluidPage(
     sidebarPanel(
       selectInput("host_common", "Select Host:", choices = c("All", sort(unique(full_data$Host_common))), selected = "All"),
       selectInput("region", "Select Region:", choices = c("All", region_levels), selected = "All"),
+selectInput("Major_Island", "Select Island:", choices = c("All", sort(unique(full_data$Major_Island))), selected = "All"),
       sliderInput("year_range", "Year Range:",
                   min = year(min(full_data$Preferred_date, na.rm = TRUE)),
                   max = year(max(full_data$Preferred_date, na.rm = TRUE)),
@@ -141,7 +142,7 @@ ui <- fluidPage(
                  h3("Time-scaled phylogeny and spatial distribution of sequences"),
                  p("This view integrates genomic and geographic data.\n Please note that only sequences with exact coordinates are plotted on the map- representing only a proportion of the samples in the tree."),
                  selectInput("colour_by", "Colour tree tips by:",
-                             choices = c("Region" = "Region_short", "Province" = "Province_std", "Municipality" = "Municipality_std", "Host" = "Host_common", "Island group" = "Major_Island", "Phylogenetic_clade" = "phylogenetic_clade"),
+                             choices = c("Region" = "Region_short", "Province" = "Province_std", "Municipality" = "Municipality_std", "Host" = "Host_common", "Island group" = "Major_Island", "Phylogenetic_clade" = "phylogenetic_clade","Phylogenetic_lineage" = "lineage"),
                              selected = "Region_short"),
                  fluidRow(
                    column(width = 6, leafletOutput("map_points_leaflet", height = "800px")),
@@ -198,6 +199,7 @@ server <- function(input, output, session) {
     df <- full_data
     if (input$host_common != "All") df <- df %>% filter(Host_common == input$host_common)
     if (input$region != "All") df <- df %>% filter(Region_short == input$region)
+    if (input$Major_Island != "All") df <- df %>% filter(Major_Island == input$Major_Island)
     df <- df %>%
       filter(year(Preferred_date) >= input$year_range[1],
              year(Preferred_date) <= input$year_range[2])

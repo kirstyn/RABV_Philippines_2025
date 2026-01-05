@@ -2,9 +2,9 @@ library(dplyr)
 library(stringr)
 
 # ---- SETTINGS ----
-metadata_path <- "/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/redcap/rabv_4b_2025_r10_run10-11/2025_run10/rabv_4b_2025_r10_run10_sequencing_form.csv" # CSV with columns: sampleID, ngs_runid, redcap_repeat_instance
-fasta_dir <- "/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/redcap/rabv_4b_2025_r10_run10-11/2025_run10/split_fasta/"           # Folder containing your FASTA files
-output_dir <- "/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/redcap/rabv_4b_2025_r10_run10-11/2025_run10/split_fasta_renamed"  # Output folder for renamed FASTAs
+metadata_path <- "/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/redcap/rabv_4b_2025_r10_run10-11/2025_run11/rabv_4b_2025_r10_run10_sequencing_form.csv" # CSV with columns: sampleID, ngs_runid, redcap_repeat_instance
+fasta_dir <- "/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/redcap/rabv_4b_2025_r10_run10-11/2025_run11/split_fasta/"           # Folder containing your FASTA files
+output_dir <- "/Users/kirstyn.brunker/GitHub/RABV_Philippines_2025/redcap/rabv_4b_2025_r10_run10-11/2025_run11/split_fasta_renamed/"  # Output folder for renamed FASTAs
 
 # Create output dir if it doesn't exist
 if (!dir.exists(output_dir)) dir.create(output_dir)
