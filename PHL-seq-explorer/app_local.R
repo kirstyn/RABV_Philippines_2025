@@ -352,7 +352,7 @@ server <- function(input, output, session) {
     
     pal <- colorNumeric("YlOrRd", domain = region_map$n)
     
-    leaflet(district_map) %>%
+    leaflet(region_map) %>%
       addProviderTiles(providers$CartoDB.Positron) %>%
       addPolygons(
         fillColor = ~pal(n),
