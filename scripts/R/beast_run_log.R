@@ -8,9 +8,9 @@ run_log <- tibble(
   User = Sys.info()[["user"]],           # who ran it
   BEAST_version = "v1.10.5",             # update as needed
   Alignment = "PHL_sequences_withDatesLabeled_2025-12-02_n786.nextalign.aligned_concat/nc",
-  XML_file = "analysis/xml/PHL_explore7.xml",
+  XML_file = "analysis/xml/PHL_explore9.xml",
   Substitution_model = "coding=GTR+gamma, CP112, noncoding=GTR+gamma",
-  Clock_model = "Relaxed Lognormal",
+  Clock_model = "Strict",
   Clock_rate_prior = "Lognormal(mean=0.00028113, sd=0.4)",
   Tree_prior = "Skygrid; 5 points since 86",
   Chain_length = 5e8,
@@ -23,7 +23,7 @@ run_log <- tibble(
   Migration_model = "na",
   BSSVS = FALSE,
   Location_strategy = "na",
-  Notes = "Reduced skyline intervals, imposed prior on clock rate"
+  Notes = "Strict clock to compare to 7/8"
 )
 
 # File to write log into
