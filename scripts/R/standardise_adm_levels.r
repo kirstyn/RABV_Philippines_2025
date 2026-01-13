@@ -8,7 +8,7 @@ library(tidyr)
 # Province to region mapping data:
 map_province=read.csv("raw_data/gis_data/PHL_provinceTo_region_mapping.csv")
 # Gathered metadata file to add geo standardisations to
-input_file="processed_data/processed_metadata/gathered_metadata/final/05Jan26_gathered_metadata_n811_raddl_and_manual_Corrected.csv"
+input_file="processed_data/processed_metadata/gathered_metadata/final/13Jan26_gathered_metadata_n811_raddl_and_manual_Corrected.csv"
 data_all=read.csv(input_file)
 
 
@@ -105,42 +105,49 @@ hierarchical_standardise_adm_simple <- function(df, adm, max_dist = 2) {
   # --- Province ---
   df_std$Province_std <- sapply(seq_len(nrow(df_std)), function(i) {
     prov <- df_std$Province[i]
-    
-    # Treat NA or empty string as NA
-    if(is.na(prov) || prov == "") return(NA)
+    if (is.na(prov) || prov == "") return(NA)
     
     candidates <- adm %>% 
       filter(Type == "Province") %>% 
       pull(Loc_ID)
     
-    if(length(candidates) == 0) return(NA)
-    
     candidates[which.min(stringdist(tolower(prov), tolower(candidates), method = "lv"))]
   })
   
-  # --- Municipality ---
+  # --- Municipality (FIXED) ---
   df_std$Municipality_std <- sapply(seq_len(nrow(df_std)), function(i) {
     prov_std <- df_std$Province_std[i]
     mun      <- df_std$Municipality[i]
     
-    # Treat NA or empty string as NA
-    if(is.na(mun) || mun == "") return(NA)
+    if (is.na(mun) || mun == "") return(NA)
+    if (is.na(prov_std)) return(NA)
     
-    candidates <- adm %>% 
-      filter(Type == "Municipality" & str_detect(Loc_ID, fixed(prov_std, ignore_case = TRUE))) %>% 
-      pull(Loc_ID)
+    candidates <- adm %>%
+      filter(
+        Type == "Municipality",
+        str_detect(Loc_ID, fixed(prov_std, ignore_case = TRUE))
+      ) %>%
+      mutate(
+        Municipality_only = str_trim(
+          str_remove(Loc_ID, paste0("^", prov_std, "\\s*-\\s*"))
+        )
+      )
     
-    if(length(candidates) == 0) return(NA)
+    if (nrow(candidates) == 0) return(NA)
     
-    candidates[which.min(stringdist(tolower(mun), tolower(candidates), method = "lv"))]
+    best <- candidates$Municipality_only[
+      which.min(stringdist(
+        tolower(mun),
+        tolower(candidates$Municipality_only),
+        method = "lv"
+      ))
+    ]
+    
+    paste(prov_std, best, sep = "-")
   })
-  
-  # --- Optionally, leave Barangay untouched ---
-  # df_std$Barangay_std <- df_std$Barangay
   
   return(df_std)
 }
-
 
 # First, make corrections related to Metro Manila/NCR
 # Technically metro manila has no provinces, but keeping Metropolitan Manila as province label 
@@ -171,6 +178,31 @@ data_all <- data_all %>%
   mutate(
     Province = as.character(Province),  # ensure character (prevents factor/NA coercion)
     Municipality = as.character(Municipality),
+    
+    # ---- City correctios ----
+    Municipality = case_when(
+      str_trim(str_to_lower(Municipality)) == "butuan" ~ "Butuan City",
+      str_trim(str_to_lower(Municipality)) == "tabaco" ~ "Tabaco City",
+      str_trim(str_to_lower(Municipality)) == "calbayog" ~ "Calbayog City",
+      str_trim(str_to_lower(Municipality)) == "malaybalay" ~ "Malaybalay City",
+      str_trim(str_to_lower(Municipality)) == "city of maasin" ~ "Maasin City",
+      str_trim(str_to_lower(Municipality)) == "tacurong" ~ "Tacurong City",
+      str_trim(str_to_lower(Municipality)) == "city of tacurong" ~ "Tacurong City",
+      str_trim(str_to_lower(Municipality)) == "tanauan" ~ "Tanauan City",
+      str_trim(str_to_lower(Municipality)) == "igacos" ~ "Samal City",
+      str_trim(str_to_lower(Municipality)) == "samal" ~ "Samal City",
+      str_trim(str_to_lower(Municipality)) == "panabo" ~ "Panabo City",
+      str_trim(str_to_lower(Municipality)) == "tagum" ~ "Tagum City",
+      str_trim(str_to_lower(Municipality)) == "davao" ~ "Davao City",
+      str_trim(str_to_lower(Municipality)) == "digos" ~ "Digos City",
+      str_trim(str_to_lower(Municipality)) == "santiago" ~ "Santiago City",
+      str_trim(str_to_lower(Municipality)) == "iligan" ~ "Iligan City",
+      str_trim(str_to_lower(Municipality)) == "caloocan city" ~ "Kalookan City",
+      str_trim(str_to_lower(Municipality)) == "taguig city" ~ "Taguig",
+      str_trim(str_to_lower(Municipality)) == "lucena" ~ "Lucena City",
+      str_trim(str_to_lower(Municipality)) == "unknown" ~ NA_character_,
+      TRUE ~ Municipality
+    ),
     
     # Fix specific sample
     Province = if_else(
@@ -293,6 +325,24 @@ data_std <- data_std %>%
 
 # Inspect
 head(data_std[, grep("Province|Municipality", names(data_std))])
+
+phl_region_simp <- readRDS("processed_data/gis_data/phl_region_simp.rds")
+region_lookup <- phl_region_simp %>%
+  st_drop_geometry() %>%
+  distinct(ADM1_EN) %>%
+  mutate(
+    Region_short = str_extract(ADM1_EN, "\\((.*?)\\)") %>% str_remove_all("[()]"),
+    Region_short = ifelse(is.na(Region_short),
+                          case_when(
+                            ADM1_EN == "Mimaropa Region" ~ "Mimaropa",
+                            TRUE ~ gsub(" Region", "", ADM1_EN)
+                          ),
+                          Region_short)
+  )
+
+data_std<- data_std %>%
+  left_join(region_lookup, by = c("Region_std" = "ADM1_EN")) %>%
+  mutate(Region_short = ifelse(is.na(Region_short), Region_std, Region_short))
 
 ## write the standardised data to file. 
 ## Note this is just a stepping stone code, will still need manually checked and enhanced

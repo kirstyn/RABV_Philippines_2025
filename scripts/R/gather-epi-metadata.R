@@ -47,10 +47,10 @@ map_and_clean <- function(df, col_map, template = phylo_meta) {
   existing_cols <- names(col_map)[names(col_map) %in% names(df)]
   col_map_filtered <- col_map[existing_cols]
   
-  # Select and rename
+  # Select and dplyr::rename
   df_clean <- df %>%
     select(all_of(names(col_map_filtered))) %>%
-    rename_with(~ col_map_filtered[.x], .cols = everything())
+    dplyr::rename_with(~ col_map_filtered[.x], .cols = everything())
   
   # Parse and format date as dd-MMM-yyyy
   if ("Preferred_date" %in% names(df_clean)) {
@@ -87,7 +87,7 @@ map_and_clean <- function(df, col_map, template = phylo_meta) {
 # Speedier (Google Sheet)
 genomics_link <- "https://docs.google.com/spreadsheets/d/1o9Ykf__3YTs33tqczZahjwmcnOEve90uw-AkduzDWXU/edit?gid=469362849#gid=469362849"
 speedier <- gsheet2tbl(genomics_link) %>%
-  rename(Host = Source) %>%
+  dplyr::rename(Host = Source) %>%
   # Remove duplicated sample first
   filter(sample_id != "RADDL4B-24-184") %>%
   mutate(Source = "speedier", Region = "MIMIROPA",
@@ -150,7 +150,7 @@ if(length(common_key) > 0) {
         select(isolate, primary_accession),
       by = c("Isolate.ID" = "isolate")
     ) %>%
-    rename(Accession = primary_accession)
+    dplyr::rename(Accession = primary_accession)
   
   # Remove the duplicates from vgtk
   vgtk <- vgtk %>%
@@ -172,7 +172,7 @@ if (length(common_key) > 0) {
         select(isolate, primary_accession),
       by = c("sample_id" = "isolate")
     ) %>%
-    rename(Accession = primary_accession)
+    dplyr::rename(Accession = primary_accession)
   
   # Remove the duplicates from vgtk
   vgtk <- vgtk %>%
@@ -379,9 +379,9 @@ raddl_corrections <- gsheet2tbl(raddl_link)
 
 # Clean column names and trim whitespace
 raddl_corrections <- raddl_corrections %>%
-  rename_with(~ str_trim(.x)) %>%
+  dplyr::rename_with(~ str_trim(.x)) %>%
   mutate(across(everything(), ~ str_trim(as.character(.x)))) %>%
-  rename(
+  dplyr::rename(
     Sample_ID = "Sample_id",
     Accession = "Accession No.",
     Barangay = "raddl_Brgy",
