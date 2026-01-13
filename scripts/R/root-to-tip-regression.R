@@ -9,7 +9,7 @@ library(ggtree)
 
 # ---- 1. Input files ----
 tree_file <- "analysis/ML_trees/241025_PHL_all_n794_withSEA2outgroups.ft.newick"
-meta_file <- "processed_data/processed_metadata/gathered_metadata/final/PHL_metadata_matchedToSeq_2025-11-12_n794.csv"
+meta_file <- "processed_data/processed_metadata/gathered_metadata/final/PHL_metadata_matchedToSeq_2026-01-05_n794.csv"
 
 # ---- 2. Read in tree and metadata ----
 tree <- read.tree(tree_file)
@@ -100,14 +100,14 @@ root_decimal_year
 
 # ---- 9. Plot root-to-tip regression ----
 p <- ggplot(rtt_meta, aes(x = decimal_date, y = distance)) +
-  geom_point(aes(color = Region_std), size = 2, alpha = 0.8) +
+  geom_point(aes(color = Major_Island), size = 2, alpha = 0.8) +
   geom_smooth(method = "lm", se = TRUE, color = "black", linetype = "dashed") +
   theme_minimal(base_size = 14) +
   labs(
     title = "Root-to-tip Regression",
     x = "Sampling Date (Decimal Year)",
     y = "Root-to-tip Distance",
-    color = "Region"
+    color = "Major_Island"
   ) +
   annotate("text",
            x = min(rtt_meta$decimal_date, na.rm = TRUE),
@@ -125,4 +125,119 @@ ggsave("analysis/Temporal_signal/20251023_PHL_all_filtered_withSEA2outgroups_RTT
 write.csv(rtt_meta, "analysis/Temporal_signal/27Oct25_gathered_metadata_n797_raddl_and_manual_Corrected_stdGeo_RTTmetadata.csv", row.names = FALSE)
 write.csv(meta,  "processed_data/processed_metadata/gathered_metadata/27Oct25_gathered_metadata_n782_raddl_and_manual_Corrected_stdGeo_seqNames.csv", row.names = FALSE)
 
+## Compare island groups
+# Root-to-tip regression
+rtt_meta %>%
+  filter(!is.na(Major_Island)) %>%
+  group_by(Major_Island) %>%
+  summarise(
+    n = n(),
+    min_year = min(decimal_date, na.rm = TRUE),
+    max_year = max(decimal_date, na.rm = TRUE),
+    year_span = max_year - min_year,
+    rate = coef(lm(distance ~ decimal_date))[2],
+    R2 = summary(lm(distance ~ decimal_date))$r.squared,
+    .groups = "drop"
+  )
 
+
+p_pub <- ggplot(
+  rtt_meta %>% filter(!is.na(Major_Island)),
+  aes(x = decimal_date, y = distance, colour = Major_Island)
+) +
+  geom_point(size = 1.8, alpha = 0.75) +
+  geom_smooth(
+    method = "lm",
+    se = FALSE,
+    linewidth = 1
+  ) +
+  scale_colour_viridis_d(option = "D", end = 0.9) +
+  theme_classic(base_size = 14) +
+  theme(
+    legend.position = "right",
+    legend.title = element_text(size = 12),
+    legend.text  = element_text(size = 11),
+    axis.title   = element_text(size = 14),
+    axis.text    = element_text(size = 12),
+    plot.title   = element_text(size = 16, face = "bold")
+  ) +
+  labs(
+    title = "Root-to-tip Regression by Major Island Group",
+    x = "Sampling date (decimal year)",
+    y = "Root-to-tip genetic distance",
+    colour = "Major island"
+  )
+
+print(p_pub)
+
+ggsave(
+  filename = "analysis/Temporal_signal/241025_PHL_all_n794_RTT_by_island_publication.svg",
+  plot = p_pub,
+  width = 180,
+  height = 140,
+  units = "mm"
+)
+
+
+
+
+# 1️⃣ Calculate regression stats per Region
+reg_stats <- rtt_meta %>%
+  filter(!is.na(Region_short)) %>%
+  group_by(Region_short) %>%
+  summarise(
+    n         = n(),
+    min_year  = min(decimal_date, na.rm = TRUE),
+    max_year  = max(decimal_date, na.rm = TRUE),
+    year_span = max_year - min_year,
+    rate      = coef(lm(distance ~ decimal_date))[2],
+    R2        = summary(lm(distance ~ decimal_date))$r.squared,
+    .groups = "drop"
+  ) %>%
+  mutate(
+    # Label for top-left of each facet
+    label = paste0(
+      "\nRate = ", signif(rate, 3),
+      "\nR² = ", round(R2, 3)
+    )
+  )
+
+# 2️⃣ Faceted plot by Region with top-left labels
+p_faceted_region <- ggplot(
+  rtt_meta %>% filter(!is.na(Region_short)),
+  aes(x = decimal_date, y = distance)
+) +
+  geom_point(size = 1.8, alpha = 0.75, colour = "steelblue") +
+  geom_smooth(method = "lm", se = FALSE, colour = "darkred", linewidth = 1) +
+  facet_wrap(~ Region_short, scales = "free_y") +
+  geom_text(
+    data = reg_stats,
+    aes(x = -Inf, y = Inf, label = label),
+    inherit.aes = FALSE,
+    hjust = -0.05,  # slightly inset from left
+    vjust = 0.8,   # slightly inset from top
+    size = 3.5
+  ) +
+  theme_classic(base_size = 14) +
+  theme(
+    strip.text = element_text(face = "bold", size = 12),
+    axis.title   = element_text(size = 14),
+    axis.text    = element_text(size = 12),
+    plot.title   = element_text(size = 16, face = "bold")
+  ) +
+  labs(
+    title = "Root-to-tip Regression by Region",
+    x = "Sampling date (decimal year)",
+    y = "Root-to-tip genetic distance"
+  )
+
+print(p_faceted_region)
+
+# Save as high-resolution PNG
+ggsave(
+  filename = "analysis/Temporal_signal/241025_PHL_all_n794_RTT_by_Region.png",
+  plot = p_faceted_region,
+  width = 12,       # figure width in inches
+  height = 8,       # figure height in inches
+  dpi = 600         # high resolution for print
+)
