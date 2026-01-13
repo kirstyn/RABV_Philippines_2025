@@ -33,26 +33,6 @@ fasta_seqs <- readDNAStringSet(all_seqs_fasta)
 # Source your tree plotting script (must accept region_palette argument)
 source("../scripts/R/plot-timetree-interactive.R")  
 
-# -----------------------------
-# Mapping of full region names to abbreviations
-# -----------------------------
-region_lookup <- phl_region_simp %>%
-  st_drop_geometry() %>%
-  distinct(ADM1_EN) %>%
-  mutate(
-    Region_short = str_extract(ADM1_EN, "\\((.*?)\\)") %>% str_remove_all("[()]"),
-    Region_short = ifelse(is.na(Region_short),
-                          case_when(
-                            ADM1_EN == "Mimaropa Region" ~ "Mimaropa",
-                            TRUE ~ gsub(" Region", "", ADM1_EN)
-                          ),
-                          Region_short)
-  )
-
-full_data <- full_data %>%
-  left_join(region_lookup, by = c("Region_std" = "ADM1_EN")) %>%
-  mutate(Region_short = ifelse(is.na(Region_short), Region_std, Region_short))
-
 # canonical region order from full dataset
 region_levels <- sort(unique(full_data$Region_short))
 n <- length(region_levels)
@@ -260,8 +240,13 @@ server <- function(input, output, session) {
   
   # ---- Overview Tab ----
   output$total_seq <- renderText({ nrow(full_data) })
-  output$study_seq <- renderText({ sum(full_data$Source %in% c("speedier", "phd"), na.rm = TRUE) })
-  output$public_seq <- renderText({ sum(!full_data$Source %in% c("speedier", "phd"), na.rm = TRUE) })
+  output$study_seq <- renderText({
+    sum(grepl("speedier|phd|workshop", full_data$Source, ignore.case = TRUE), na.rm = TRUE)
+  })
+  
+  output$public_seq <- renderText({
+    sum(!grepl("speedier|phd|workshop", full_data$Source, ignore.case = TRUE), na.rm = TRUE)
+  })
   
   # Host summary
   output$host_table <- renderTable({
